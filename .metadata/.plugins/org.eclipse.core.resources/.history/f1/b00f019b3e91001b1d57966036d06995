@@ -1,0 +1,7 @@
+package myCar;
+
+class Driver_Tempo {
+	@generated("blockdiagram", "133843c4")
+	public void calc() {
+	}
+}

@@ -1,0 +1,6 @@
+classType myCar.Driver_Tempo
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+}

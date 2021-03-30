@@ -14,6 +14,13 @@
  * BEGIN: DEFINITION OF ACCESS MACROS
  ******************************************************************************/
 #define power_VAL myCar_Driver_CAL_MEM.power
+#define v_target_VAL myCar_Driver_CAL_MEM.v_target
+#define Obstacles_instance_VAL myCar_Driver.Obstacles_instance
+#define Obstacles_instance_REF &(myCar_Driver.Obstacles_instance)
+#define distance_next_Obstacle_VAL myCar_Driver_RAM.distance_next_Obstacle
+#define min_dist_to_obst_VAL myCar_Driver_CAL_MEM.min_dist_to_obst
+#define Driver_Tempo_instance_VAL myCar_Driver.Driver_Tempo_instance
+#define Driver_Tempo_instance_REF &(myCar_Driver.Driver_Tempo_instance)
 /* ****************************************************************************
  * END: DEFINITION OF ACCESS MACROS
  ******************************************************************************/

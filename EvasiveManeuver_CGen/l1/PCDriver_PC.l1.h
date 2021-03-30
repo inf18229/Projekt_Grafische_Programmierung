@@ -10,6 +10,7 @@
 #include "myCar_myCar_Automatic.l1.h"
 #include "resources_CarMessages_Automatic.l1.h"
 #include "myCar_Driver_Automatic.l1.h"
+#include "resources_DriverMessages_Automatic.l1.h"
 
 /* local variables object structure */
 struct L1_PCDriver_PC_Obj {
@@ -21,6 +22,7 @@ typedef struct {
 	ASDObjectHeader objectHeader;
 	struct L1_resources_CarMessages_Automatic_Obj* resources_CarMessages_Automatic;
 	struct L1_myCar_Driver_Automatic_Obj* myCar_Driver_Automatic;
+	struct L1_resources_DriverMessages_Automatic_Obj* resources_DriverMessages_Automatic;
 	struct L1_myCar_myCar_Automatic_Obj* myCar_myCar_Automatic;
 } L1_PCDriver_PC_Class;
 

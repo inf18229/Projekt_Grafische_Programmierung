@@ -1,0 +1,14 @@
+package myCar;
+import resources.m;
+
+class Obstacles {
+	@generated("blockdiagram", "d97513d0")
+	public m calc(m in x) {
+		if (x < 200.0[m]) {
+			return(200.0[m] - x); // Main/calc 1/if-then 1
+		} // Main/calc 1
+		if (x < 450.0[m]) {
+			return(450.0[m] - x); // Main/calc 2/if-then 1
+		} // Main/calc 2
+	}
+}

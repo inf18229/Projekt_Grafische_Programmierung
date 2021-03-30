@@ -1,0 +1,134 @@
+classType myCar.Driver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_21
+		, connection_35
+		}
+	}
+
+	simpleIdentifier resources.CarMessages.power at  (601, 185) {
+		label at (0, -1)
+		inPin connection_18
+		sequenceCall {
+			inPin 
+		connection_17
+		}
+	}
+simpleIdentifier v_target at (211, 155) {
+		label at (0, -1)
+		outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.v at (211, 215) {
+		label at (0, -1)
+		outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	less at (291, 156) {
+		inPin connection_13
+		inPin connection_14 {
+			bendpoints (40, 0)
+		}
+		outPin {
+			connection_22
+		}
+	}
+	literal Numeric "0.0" at (501, 183) size (49, 0) {
+		outPin {
+			connection_18
+		}
+	}
+	simpleIdentifier resources.CarMessages.brake at (601, 255) {
+		label at (0, -1)
+		inPin connection_28
+		sequenceCall {
+			inPin connection_27 {
+				bendpoints (0, 70)
+			}
+		}
+	}
+	ifElse at (381, 161) {
+		inPin connection_22
+		ifControlFlowOutPin {
+			connection_17, connection_27
+		}
+		elseControlFlowOutPin {
+			connection_25, connection_29
+		}
+		sequenceCall {
+			inPin connection_21
+		}
+	}
+	literal Numeric "0.0" at (501, 373) size (49, 0) {
+		outPin {
+			connection_26
+		}
+	}
+	simpleIdentifier resources.CarMessages.power at (601, 315) {
+		label at (0, -1)
+		inPin connection_30 {
+			bendpoints (0, 60)
+		}
+		sequenceCall {
+			inPin connection_29 {
+				bendpoints (0, 100)
+			}
+		}
+	}
+	simpleIdentifier resources.CarMessages.brake at (601, 375) {
+		label at (0, -1)
+		inPin connection_26
+		sequenceCall {
+			inPin connection_25 {
+				bendpoints (0, 160)
+			}
+		}
+	}
+	simpleIdentifier power at (431, 255) {
+		label at (0, -1)
+		outPin {
+			connection_30, connection_28
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier Obstacles_instance at (431, 441) size (14, 8) {
+		label at (0, 1)
+		methodCall myCar.Obstacles.distance {
+			argumentPin x at (left, 0) connection_34
+			returnPin at (right, 0) {
+				connection_36
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier resources.CarMessages.x at (191, 445) {
+		label at (0, -1)
+		outPin {
+			connection_34
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier distance_next_Obstacle at (621, 445) {
+		label at (0, -1)
+		inPin connection_36
+		outPin sequenceCall {
+			inPin connection_35
+		}
+	}
+}

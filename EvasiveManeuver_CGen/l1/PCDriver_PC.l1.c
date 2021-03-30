@@ -42,7 +42,7 @@ static struct L1_PCDriver_PC_Obj* L1_PCDriver_PCInstance = NULL;
 
 /* L1 class descriptor */
 static ASDClassHeader L1_PCDriver_PC_ClassHeader = {
-	0, 2, 0, 3, &_ObjectMethodList, &_ClassMethodList
+	0, 2, 0, 4, &_ObjectMethodList, &_ClassMethodList
 };
 L1_PCDriver_PC_Class L1_PCDriver_PC_ClassObj = {{1, {&L1_PCDriver_PC_ClassHeader}, {0}}};
 
@@ -55,6 +55,7 @@ static void initClass_L1_PCDriver_PC (L1_PCDriver_PC_Class* _ASCET_class)
 {
 	_ASCET_class->resources_CarMessages_Automatic = initInstance_L1_resources_CarMessages_Automatic();
 	_ASCET_class->myCar_Driver_Automatic = initInstance_L1_myCar_Driver_Automatic();
+	_ASCET_class->resources_DriverMessages_Automatic = initInstance_L1_resources_DriverMessages_Automatic();
 	_ASCET_class->myCar_myCar_Automatic = initInstance_L1_myCar_myCar_Automatic();
 }
 

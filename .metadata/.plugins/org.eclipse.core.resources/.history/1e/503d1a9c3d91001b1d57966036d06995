@@ -1,0 +1,26 @@
+package myCar;
+import resources.CarMessages;
+import resources.velocity;
+import resources.kmh;
+import resources.m;
+
+static class Driver
+reads CarMessages.v, CarMessages.x
+writes CarMessages.power, CarMessages.brake {
+	characteristic real power = 30.0;
+	characteristic velocity v_target = 30.0[kmh];
+	Obstacles Obstacles_instance;
+	m distance_next_Obstacle;
+	@thread
+	@generated("blockdiagram", "3c4b585e")
+	public void calc() {
+		if (v_target < CarMessages.v) {
+			CarMessages.power = 0.0; // Main/calc 1/if-then 1
+			CarMessages.brake = power; // Main/calc 1/if-then 2
+		} else {
+			CarMessages.brake = 0.0; // Main/calc 1/if-else 1
+			CarMessages.power = power; // Main/calc 1/if-else 2
+		} // Main/calc 1
+		distance_next_Obstacle = Obstacles_instance.distance(CarMessages.x); // Main/calc 2
+	}
+}

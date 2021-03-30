@@ -24,6 +24,7 @@
 #include "myCar_myCar_Automatic.h"
 #include "myCar_TimeBase_Automatic.h"
 #include "resources_CarMessages_Automatic.h"
+#include "resources_DriverMessages_Automatic.h"
 
 
 /* component structure for project PCDRIVER_PC_AUTOMATIC intentionally not created */

@@ -1,0 +1,7 @@
+package myCar;
+
+class Obstacles {
+	@generated("blockdiagram", "e0e9b3e0")
+	public void calc() {
+	}
+}

@@ -1,0 +1,103 @@
+classType myCar.Driver_Tempo
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_1
+		}
+	}
+less at (131, 56) {
+		inPin connection_15
+		inPin connection_16 {
+			bendpoints (30, 0), (30, -20)
+		}
+		outPin {
+			connection_2
+		}
+	}
+	literal Numeric "0.0" at (341, 273) size (49, 0) {
+		outPin {
+			connection_4
+		}
+	}
+	simpleIdentifier power at (271, 155) {
+		label at (0, -1)
+		outPin {
+			connection_8, connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal Numeric "0.0" at (341, 83) size (49, 0) {
+		outPin {
+			connection_10
+		}
+	}
+	ifElse at (221, 61) {
+		inPin connection_2
+		ifControlFlowOutPin {
+			connection_24, connection_26
+		}
+		elseControlFlowOutPin {
+			connection_27, connection_25
+		}
+		sequenceCall {
+			inPin connection_1
+		}
+	}
+	methodArgumentIdentifier calc.v at (51, 55) {
+		label at (0, -1)
+		outPin {
+			connection_15
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.v_target at (51, 95) {
+		label at (0, -1)
+		outPin {
+			connection_16
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier power_out at (441, 85) {
+		label at (0, -1)
+		inPin connection_10
+		outPin sequenceCall {
+			inPin connection_24
+		}
+	}
+	simpleIdentifier power_out at (441, 215) {
+		label at (0, -1)
+		inPin connection_6 {
+			bendpoints (0, 60)
+		}
+		outPin sequenceCall {
+			inPin connection_25 {
+				bendpoints (0, 100)
+			}
+		}
+	}
+	simpleIdentifier brake_out at (441, 155) {
+		label at (0, -1)
+		inPin connection_8
+		outPin sequenceCall {
+			inPin connection_26 {
+				bendpoints (0, 70)
+			}
+		}
+	}
+	simpleIdentifier brake_out at (441, 275) {
+		label at (0, -1)
+		inPin connection_4
+		outPin sequenceCall {
+			inPin connection_27 {
+				bendpoints (0, 160)
+			}
+		}
+	}
+}

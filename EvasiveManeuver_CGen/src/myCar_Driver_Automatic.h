@@ -20,6 +20,8 @@
 # error NOT COMPLIANT (< compliance level 4) VERSION OF esdl.h FOUND; To fix that, delete the old headers (esdl_<...>.h) in include folder and restart build again to get the new version of those files.
 #endif
 #include "chartab.h"
+#include "myCar_Driver_Tempo_Automatic.h"
+#include "myCar_Obstacles_Automatic.h"
 
 
 /******************************************************************************
@@ -28,15 +30,41 @@
  * memory class:.................................'CAL_MEM'
  * ---------------------------------------------------------------------------*/
 struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT {
+   float32 min_dist_to_obst;
    float32 power;
+   uint16 v_target;
+   struct myCar_Driver_Tempo_Automatic_CAL_MEM_SUBSTRUCT Driver_Tempo_instance;
 };
 /* ----------------------------------------------------------------------------
  * END: DEFINITION OF MEMORY CLASS STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
  ******************************************************************************/
 
 
-/* component structure for module MYCAR_DRIVER_AUTOMATIC intentionally not created */
-/* reason: no local elements                                                  */
+/******************************************************************************
+ * BEGIN: DEFINITION OF MEMORY CLASS STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
+ * ----------------------------------------------------------------------------
+ * memory class:.................................'RAM'
+ * ---------------------------------------------------------------------------*/
+struct myCar_Driver_Automatic_RAM_SUBSTRUCT {
+   float32 distance_next_Obstacle;
+   struct myCar_Driver_Tempo_Automatic_RAM_SUBSTRUCT Driver_Tempo_instance;
+};
+/* ----------------------------------------------------------------------------
+ * END: DEFINITION OF MEMORY CLASS STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
+ ******************************************************************************/
+
+
+/******************************************************************************
+ * BEGIN: DEFINITION OF MAIN STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
+ * ----------------------------------------------------------------------------
+ * memory class:.................................'ROM'
+ * ---------------------------------------------------------------------------*/
+struct myCar_Driver_Automatic {
+   struct myCar_Driver_Tempo_Automatic Driver_Tempo_instance;
+};
+/* ----------------------------------------------------------------------------
+ * END: DEFINITION OF MAIN STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
+ ******************************************************************************/
 
 /* Following DEFINE signalizes the completion of definition                   */
 /* of data structs for component: .....................myCar_Driver_Automatic */
@@ -48,6 +76,14 @@ struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT {
 /* forward declaration of substruct variable 'myCar_Driver_CAL_MEM' */
 /* containing 'CAL_MEM' memory class tree */
 extern struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT myCar_Driver_CAL_MEM;
+
+/* forward declaration of substruct variable 'myCar_Driver_RAM' */
+/* containing 'RAM' memory class tree */
+extern struct myCar_Driver_Automatic_RAM_SUBSTRUCT myCar_Driver_RAM;
+
+/* forward declaration of component variable 'myCar_Driver' */
+/* containing 'ROM' memory class tree */
+extern const struct myCar_Driver_Automatic myCar_Driver;
 
 /******************************************************************************
  * BEGIN: declaration of global C functions defined by module myCar_Driver_Automatic

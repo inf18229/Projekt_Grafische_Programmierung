@@ -1,0 +1,104 @@
+classType myCar.Driver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_21
+		}
+	}
+
+	simpleIdentifier resources.CarMessages.power at  (601, 185) {
+		label at (0, -1)
+		inPin connection_18
+		sequenceCall {
+			inPin 
+		connection_17
+		}
+	}
+simpleIdentifier v_target at (211, 155) {
+		label at (0, -1)
+		outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.v at (211, 215) {
+		label at (0, -1)
+		outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	less at (291, 156) {
+		inPin connection_13
+		inPin connection_14 {
+			bendpoints (40, 0)
+		}
+		outPin {
+			connection_22
+		}
+	}
+	literal Numeric "0.0" at (501, 183) size (49, 0) {
+		outPin {
+			connection_18
+		}
+	}
+	simpleIdentifier resources.CarMessages.brake at (601, 245) {
+		label at (0, -1)
+		inPin connection_20
+		sequenceCall {
+			inPin connection_19 {
+				bendpoints (0, 60)
+			}
+		}
+	}
+	literal Numeric "100.0" at (501, 243) size (49, 0) {
+		outPin {
+			connection_20
+		}
+	}
+	ifElse at (381, 161) {
+		inPin connection_22
+		ifControlFlowOutPin {
+			connection_17, connection_19
+		}
+		elseControlFlowOutPin {
+			connection_23, connection_25
+		}
+		sequenceCall {
+			inPin connection_21
+		}
+	}
+	literal Numeric "100.0" at (501, 313) size (49, 0) {
+		outPin {
+			connection_24
+		}
+	}
+	literal Numeric "0.0" at (501, 373) size (49, 0) {
+		outPin {
+			connection_26
+		}
+	}
+	simpleIdentifier resources.CarMessages.power at (601, 315) {
+		label at (0, -1)
+		inPin connection_24
+		sequenceCall {
+			inPin connection_23 {
+				bendpoints (0, 100)
+			}
+		}
+	}
+	simpleIdentifier resources.CarMessages.brake at (601, 375) {
+		label at (0, -1)
+		inPin connection_26
+		sequenceCall {
+			inPin connection_25 {
+				bendpoints (0, 160)
+			}
+		}
+	}
+}

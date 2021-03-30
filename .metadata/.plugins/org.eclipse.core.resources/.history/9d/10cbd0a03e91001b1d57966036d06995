@@ -1,0 +1,21 @@
+package myCar;
+import resources.velocity;
+import resources.CarMessages;
+
+class Driver_Tempo
+writes CarMessages.brake {
+	characteristic real power = 30.0;
+	real power_out;
+	real brake_out;
+
+	@generated("blockdiagram", "840b985a")
+	public void calc(velocity in v, velocity in v_target) {
+		if (v < v_target) {
+			power_out = 0.0; // Main/calc 1/if-then 1
+			brake_out = power; // Main/calc 1/if-then 2
+		} else {
+			brake_out = 0.0; // Main/calc 1/if-else 1
+			power_out = power; // Main/calc 1/if-else 2
+		} // Main/calc 1
+	}
+}

@@ -1,0 +1,6 @@
+classType myCar.Obstacles
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+}

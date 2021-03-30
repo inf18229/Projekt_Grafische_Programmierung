@@ -21,6 +21,7 @@
 
 #include "myCar_Driver_Automatic.h"
 #include "resources_CarMessages_Automatic.h"
+#include "resources_DriverMessages_Automatic.h"
 
 
 /******************************************************************************
@@ -31,26 +32,72 @@
  * data set:.....................................'MYCAR_DRIVER_AUTOMATIC_esdl_Data_Default'
  * ---------------------------------------------------------------------------*/
 struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT myCar_Driver_CAL_MEM = {
+   /* struct element:'myCar_Driver_CAL_MEM.min_dist_to_obst' (modeled as:'min_dist_to_obst.myCar_Driver') */
+   50.0F,
    /* struct element:'myCar_Driver_CAL_MEM.power' (modeled as:'power.myCar_Driver') */
-   10.0F
+   30.0F,
+   /* struct element:'myCar_Driver_CAL_MEM.v_target' (modeled as:'v_target.myCar_Driver') */
+   3000U,
+   /* substruct: myCar_Driver_CAL_MEM.Driver_Tempo_instance (modeled as:'Driver_Tempo_instance.myCar_Driver') */
+   {
+      /* struct element:'myCar_Driver_CAL_MEM.Driver_Tempo_instance.power' (modeled as:'power.Driver_Tempo_instance.myCar_Driver') */
+      30.0F
+   }
 };
 /* ----------------------------------------------------------------------------
  * END: DEFINITION OF SUBSTRUCT VARIABLE 'myCar_Driver_CAL_MEM'
  ******************************************************************************/
 
 /******************************************************************************
- * DEFINITION OF COMPONENT VARIABLE OMITTED
+ * BEGIN: DEFINITION OF SUBSTRUCT VARIABLE 'myCar_Driver_RAM'
+ * ----------------------------------------------------------------------------
+ * memory class:.................................'RAM'
+ * model name:...................................'myCar_Driver'
+ * data set:.....................................'MYCAR_DRIVER_AUTOMATIC_esdl_Data_Default'
+ * ---------------------------------------------------------------------------*/
+struct myCar_Driver_Automatic_RAM_SUBSTRUCT myCar_Driver_RAM = {
+   /* struct element:'myCar_Driver_RAM.distance_next_Obstacle' (modeled as:'distance_next_Obstacle.myCar_Driver') */
+   0.0F,
+   /* substruct: myCar_Driver_RAM.Driver_Tempo_instance (modeled as:'Driver_Tempo_instance.myCar_Driver') */
+   {
+      /* struct element:'myCar_Driver_RAM.Driver_Tempo_instance.brake_out' (modeled as:'brake_out.Driver_Tempo_instance.myCar_Driver') */
+      0.0F,
+      /* struct element:'myCar_Driver_RAM.Driver_Tempo_instance.power_out' (modeled as:'power_out.Driver_Tempo_instance.myCar_Driver') */
+      0.0F
+   }
+};
+/* ----------------------------------------------------------------------------
+ * END: DEFINITION OF SUBSTRUCT VARIABLE 'myCar_Driver_RAM'
+ ******************************************************************************/
+
+/******************************************************************************
+ * BEGIN: DEFINITION OF COMPONENT VARIABLE 'myCar_Driver'
  * ----------------------------------------------------------------------------
  * memory class:.................................'ROM'
  * model name:...................................'myCar_Driver'
- * reason:.......................................no local elements
+ * data set:.....................................'MYCAR_DRIVER_AUTOMATIC_esdl_Data_Default'
  * ---------------------------------------------------------------------------*/
+const struct myCar_Driver_Automatic myCar_Driver = {
+   /* substruct: myCar_Driver.Driver_Tempo_instance (modeled as:'Driver_Tempo_instance.myCar_Driver') */
+   {
+      /* type descriptor pointer 'myCar_Driver_Tempo_Automatic_CAL_MEM' for memory class substruct for 'CAL_MEM' */
+      &myCar_Driver_CAL_MEM.Driver_Tempo_instance,
+      /* type descriptor pointer 'myCar_Driver_Tempo_Automatic_RAM' for memory class substruct for 'RAM' */
+      &myCar_Driver_RAM.Driver_Tempo_instance
+   }
+};
+/* ----------------------------------------------------------------------------
+ * END: DEFINITION OF COMPONENT VARIABLE 'myCar_Driver'
+ ******************************************************************************/
 
 
 
 
 
-#define power_VAL (myCar_Driver_CAL_MEM.power)
+#define distance_next_Obstacle_VAL (myCar_Driver_RAM.distance_next_Obstacle)
+#define Driver_Tempo_instance_REF (&(myCar_Driver.Driver_Tempo_instance))
+#define min_dist_to_obst_VAL (myCar_Driver_CAL_MEM.min_dist_to_obst)
+#define v_target_VAL (myCar_Driver_CAL_MEM.v_target)
 
 
 /******************************************************************************
@@ -70,15 +117,34 @@ struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT myCar_Driver_CAL_MEM = {
 void myCar_Driver_Automatic_calc (void)
 {
    /* define local message copies */
+   float32 resources_CarMessages_brake__myCar_Driver_Automatic_calc;
    float32 resources_CarMessages_power__myCar_Driver_Automatic_calc;
+   uint16 resources_CarMessages_v__myCar_Driver_Automatic_calc;
+   float32 resources_CarMessages_x__myCar_Driver_Automatic_calc;
+   boolean resources_DriverMessages_emergency__myCar_Driver_Automatic_calc;
    /* receive messages implicitly */
    {
+      DisableAllInterrupts();
+      resources_CarMessages_brake__myCar_Driver_Automatic_calc = resources_CarMessages_brake;
       resources_CarMessages_power__myCar_Driver_Automatic_calc = resources_CarMessages_power;
+      resources_CarMessages_v__myCar_Driver_Automatic_calc = resources_CarMessages_v;
+      resources_CarMessages_x__myCar_Driver_Automatic_calc = resources_CarMessages_x;
+      resources_DriverMessages_emergency__myCar_Driver_Automatic_calc = resources_DriverMessages_emergency;
+      EnableAllInterrupts();
    }
-   resources_CarMessages_power__myCar_Driver_Automatic_calc = power_VAL;
+   distance_next_Obstacle_VAL
+      = myCar_Obstacles_Automatic_distance(resources_CarMessages_x__myCar_Driver_Automatic_calc);
+   resources_DriverMessages_emergency__myCar_Driver_Automatic_calc = distance_next_Obstacle_VAL < min_dist_to_obst_VAL;
+   myCar_Driver_Tempo_Automatic_calc(Driver_Tempo_instance_REF, resources_CarMessages_v__myCar_Driver_Automatic_calc, v_target_VAL);
+   resources_CarMessages_brake__myCar_Driver_Automatic_calc = myCar_Driver_RAM.Driver_Tempo_instance.brake_out;
+   resources_CarMessages_power__myCar_Driver_Automatic_calc = myCar_Driver_RAM.Driver_Tempo_instance.power_out;
    /* send messages implicitly */
    {
+      DisableAllInterrupts();
+      resources_CarMessages_brake = resources_CarMessages_brake__myCar_Driver_Automatic_calc;
       resources_CarMessages_power = resources_CarMessages_power__myCar_Driver_Automatic_calc;
+      resources_DriverMessages_emergency = resources_DriverMessages_emergency__myCar_Driver_Automatic_calc;
+      EnableAllInterrupts();
    }
 }
 /* ----------------------------------------------------------------------------

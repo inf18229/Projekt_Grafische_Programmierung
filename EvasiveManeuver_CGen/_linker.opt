@@ -1,10 +1,13 @@
 obj/myCar_Driver_Automatic.o
+obj/myCar_Driver_Tempo_Automatic.o
 obj/myCar_myCar_Automatic.o
 obj/myCar_myDrive_3_Automatic.o
 obj/myCar_MyTurn_Automatic.o
+obj/myCar_Obstacles_Automatic.o
 obj/myCar_TimeBase_Automatic.o
 obj/PCDriver_PC_Automatic.o
 obj/resources_CarMessages_Automatic.o
+obj/resources_DriverMessages_Automatic.o
 obj/SystemLib_Math_MathLib_Automatic.o
 obj/PCDriver_PC.l1.o
 obj/myCar_myCar_Automatic.l1.o
@@ -12,6 +15,8 @@ obj/myCar_myDrive_3_Automatic.l1.o
 obj/myCar_MyTurn_Automatic.l1.o
 obj/resources_CarMessages_Automatic.l1.o
 obj/myCar_Driver_Automatic.l1.o
+obj/myCar_Driver_Tempo_Automatic.l1.o
+obj/resources_DriverMessages_Automatic.l1.o
 obj/etasConfigTask.o
 obj/etasL1Isr.o
 obj/etasL1Task.o
