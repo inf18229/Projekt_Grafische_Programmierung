@@ -69,3 +69,12 @@ Ein Teil des Pfades "C:\ETAS\workspace\Git\EvasiveManeuver\experiments\Experimen
 	at com.etas.ascet.build.ui.launcher.DefaultAscetBuildJob.build(DefaultAscetBuildJob.java:48)
 	at com.etas.ascet.build.ui.launcher.AbstractAscetBuildJob.run(AbstractAscetBuildJob.java:65)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SESSION 2021-03-30 09:42:39.107 -----------------------------------------------
+eclipse.buildId=7.6.0.202012031010
+java.version=11.0.9
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-30 09:50:13.980
+!MESSAGE Indexed 'EvasiveManeuver_CGen' (8 sources, 33 headers) in 0.677 sec: 8,022 declarations; 10,150 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
