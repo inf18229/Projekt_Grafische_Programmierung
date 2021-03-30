@@ -1,0 +1,71 @@
+!SESSION 2021-03-30 09:32:27.677 -----------------------------------------------
+eclipse.buildId=7.6.0.202012031010
+java.version=11.0.9
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-03-30 09:36:19.245
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-03-30 09:36:19.251
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-03-30 09:36:19.253
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.etas.ascet.experiment 4 0 2021-03-30 09:36:37.832
+!MESSAGE cannot open experiment PCDriver_PC
+!STACK 0
+com.jacob.com.ComFailException: Invoke of: Save
+Source: EE.Scripting
+Description: Could not save the experiment.
+Caught unhandled exception.
+Ein Teil des Pfades "C:\ETAS\workspace\Git\EvasiveManeuver\experiments\Experiments\system\PCDriver_PC_1_\InstrumentationPlugin_Files\WidgetsUI.xml" konnte nicht gefunden werden.
+
+	at com.jacob.com.Dispatch.invokev(Native Method)
+	at com.jacob.com.Dispatch.invokev(Dispatch.java:625)
+	at com.jacob.com.Dispatch.callN(Dispatch.java:453)
+	at com.jacob.com.Dispatch.call(Dispatch.java:529)
+	at com.jacob.activeX.ActiveXComponent.invoke(ActiveXComponent.java:464)
+	at com.etas.ascet.experiment.cee.CeeExperiment.close(CeeExperiment.java:39)
+	at com.etas.ascet.experiment.service.internal.CeeExperimentService.tryOpenExperiment(CeeExperimentService.java:105)
+	at com.etas.ascet.experiment.service.internal.CeeExperimentService.openExperiment(CeeExperimentService.java:78)
+	at com.etas.ascet.experiment.IExperimentService$pbryglu.openExperiment(Unknown Source)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.startExperiment(PcBuildServiceComponent.java:241)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.doBuild(PcBuildServiceComponent.java:214)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.doPerformBuild(PcBuildServiceComponent.java:151)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.performBuild(PcBuildServiceComponent.java:107)
+	at com.etas.ascet.build.core.executer.AbstractBuildService.build(AbstractBuildService.java:106)
+	at com.etas.ascet.platform.pc.build.IPcBuildService$pbryglu.build(Unknown Source)
+	at com.etas.ascet.build.ui.launcher.DefaultAscetBuildJob.build(DefaultAscetBuildJob.java:48)
+	at com.etas.ascet.build.ui.launcher.AbstractAscetBuildJob.run(AbstractAscetBuildJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.etas.ascet.experiment 4 0 2021-03-30 09:37:07.001
+!MESSAGE cannot open experiment PCDriver_PC
+!STACK 0
+com.jacob.com.ComFailException: Invoke of: Save
+Source: EE.Scripting
+Description: Could not save the experiment.
+Caught unhandled exception.
+Ein Teil des Pfades "C:\ETAS\workspace\Git\EvasiveManeuver\experiments\Experiments\system\PCDriver_PC_1_\InstrumentationPlugin_Files\WidgetsUI.xml" konnte nicht gefunden werden.
+
+	at com.jacob.com.Dispatch.invokev(Native Method)
+	at com.jacob.com.Dispatch.invokev(Dispatch.java:625)
+	at com.jacob.com.Dispatch.callN(Dispatch.java:453)
+	at com.jacob.com.Dispatch.call(Dispatch.java:529)
+	at com.jacob.activeX.ActiveXComponent.invoke(ActiveXComponent.java:464)
+	at com.etas.ascet.experiment.cee.CeeExperiment.close(CeeExperiment.java:39)
+	at com.etas.ascet.experiment.service.internal.CeeExperimentService.tryOpenExperiment(CeeExperimentService.java:105)
+	at com.etas.ascet.experiment.service.internal.CeeExperimentService.openExperiment(CeeExperimentService.java:78)
+	at com.etas.ascet.experiment.IExperimentService$pbryglu.openExperiment(Unknown Source)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.startExperiment(PcBuildServiceComponent.java:241)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.doBuild(PcBuildServiceComponent.java:214)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.doPerformBuild(PcBuildServiceComponent.java:151)
+	at com.etas.ascet.platform.pc.internal.PcBuildServiceComponent.performBuild(PcBuildServiceComponent.java:107)
+	at com.etas.ascet.build.core.executer.AbstractBuildService.build(AbstractBuildService.java:106)
+	at com.etas.ascet.platform.pc.build.IPcBuildService$pbryglu.build(Unknown Source)
+	at com.etas.ascet.build.ui.launcher.DefaultAscetBuildJob.build(DefaultAscetBuildJob.java:48)
+	at com.etas.ascet.build.ui.launcher.AbstractAscetBuildJob.run(AbstractAscetBuildJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)

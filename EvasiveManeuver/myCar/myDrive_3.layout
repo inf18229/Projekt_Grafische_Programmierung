@@ -1,0 +1,30 @@
+Component                 myCar.myDrive_3 size ( 38 , 14 ) backgroundColor #ffffff {
+	labelPosition ( 80 , -159 )
+	methodLayout move {
+		pin powerCtrl ( Left , 2 )
+		pin brakeCtrl ( Left , 9 )
+		pin mydt ( Bottom , 31 )
+		pin myg ( Bottom , 1 )
+		pin beta ( Top , 6 )
+		pin height ( Bottom , 22 )
+		pin length ( Bottom , 16 )
+	}
+	methodLayout reset {
+		pin reset ( Top , 24 )
+	}
+	memberLayout v {
+		getPinPosition ( Right , 6 )
+	}
+	memberLayout x {
+		getPinPosition ( Right , 0 )
+	}
+	memberLayout y {
+		getPinPosition ( Right , 3 )
+	}
+	memberLayout bearing {
+		getPinPosition ( Top , 30 )
+	}
+	memberLayout dist {
+		getPinPosition ( Bottom , 4 )
+	}
+}
