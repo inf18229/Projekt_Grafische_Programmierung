@@ -1,0 +1,123 @@
+classType myCar.ausweichen
+blockdiagramSpecification Main {
+	methodBody steering_out {
+		outPin active
+	{
+			connection_16
+		}
+	}
+methodArgumentIdentifier steering_out.emerg_msg at (91, 105) {
+		label at (0, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (901, 135) {
+		label at (0, 0)
+		inPin connection_18
+		sequenceCall {
+			inPin connection_2 {
+				bendpoints (150, 0), (150, -40), (420, -40)
+			}
+		}
+	}
+	literal unit resources.rad "0.2094" at (91, 203) size (49, 0) {
+		outPin {
+			connection_14
+		}
+	}
+	literal unit resources.rad "0.0" at (351, 233) size (49, 0) {
+		outPin {
+			connection_20
+		}
+	}
+	return at (601, 235) {
+		label at (0, 0)
+		inPin connection_21
+		sequenceCall {
+			inPin connection_6 {
+				bendpoints (0, 40), (100, 40), (100, 70)
+			}
+		}
+	}
+	literal unit resources.rad "0.001396" at (471, 143) size (69, 0) {
+		outPin {
+			connection_9
+		}
+	}
+	simpleIdentifier steering at (751, 135) {
+		label at (0, -1)
+		inPin connection_11
+		outPin {
+			connection_18, connection_8
+		}
+		sequenceCall {
+			inPin connection_10
+		}
+	}
+	addition at (671, 126) {
+		inPin connection_8 {
+			bendpoints (20, 0), (20, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_9
+		outPin {
+			connection_11
+		}
+	}
+	and at (361, 106) {
+		inPin connection_12
+		inPin connection_15 {
+			bendpoints (80, 0), (80, -50)
+		}
+		outPin {
+			connection_17
+		}
+	}
+	simpleIdentifier steering at (91, 145) {
+		label at (0, -1)
+		inPin outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	lessOrEqual at (191, 166) {
+		inPin connection_13 {
+			bendpoints (0, 20)
+		}
+		inPin connection_14 {
+			bendpoints (0, -20)
+		}
+		outPin {
+			connection_15
+		}
+	}
+	ifElse at (421, 111) {
+		inPin connection_17
+		ifControlFlowOutPin {
+			connection_10, connection_2
+		}
+		elseControlFlowOutPin {
+			connection_19, connection_6
+		}
+		sequenceCall {
+			inPin connection_16
+		}
+	}
+	simpleIdentifier steering at (471, 235) {
+		label at (0, -1)
+		inPin connection_20
+		outPin {
+			connection_21
+		}
+		sequenceCall {
+			inPin connection_19 {
+				bendpoints (0, 70)
+			}
+		}
+	}
+}

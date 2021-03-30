@@ -1,0 +1,157 @@
+classType myCar.Driver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_35
+		, connection_37, connection_48, connection_50, connection_52
+		}
+	}
+
+	simpleIdentifier resources.CarMessages.power at  (611, 185) {
+		label at (0, -1)
+		inPin connection_53
+		sequenceCall {
+			inPin 
+		connection_52
+		}
+	}
+simpleIdentifier v_target at (221, 235) {
+		label at (0, -1)
+		outPin {
+			connection_49
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.v at (221, 185) {
+		label at (0, -1)
+		outPin {
+			connection_47
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.brake at (611, 225) {
+		label at (0, -1)
+		inPin connection_51
+		sequenceCall at (0, -14) {
+			inPin connection_50
+		}
+	}
+	complexIdentifier Obstacles_instance at (351, 481) size (14, 8) {
+		label at (0, 1)
+		methodCall myCar.Obstacles.distance {
+			argumentPin x at (left, 0) connection_34
+			returnPin at (right, 0) {
+				connection_36
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier resources.CarMessages.x at (181, 485) {
+		label at (0, -1)
+		outPin {
+			connection_34
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier distance_next_Obstacle at (611, 485) {
+		label at (0, -1)
+		inPin connection_36
+		outPin {
+			connection_40
+		}
+		sequenceCall {
+			inPin connection_35
+		}
+	}
+	ifElse at (821, 551) {
+		inPin connection_41
+		ifControlFlowOutPin {
+			connection_42
+		}
+		elseControlFlowOutPin {
+			connection_44
+		}
+		sequenceCall {
+			inPin connection_37
+		}
+	}
+	less at (741, 546) {
+		inPin connection_40 {
+			bendpoints (70, 0), (70, 60)
+		}
+		inPin connection_39
+		outPin {
+			connection_41
+		}
+	}
+	simpleIdentifier min_dist_to_obst at (611, 565) {
+		label at (0, -1)
+		outPin {
+			connection_39
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.DriverMessages.emergency at (951, 575) {
+		label at (0, -1)
+		inPin connection_43
+		sequenceCall {
+			inPin connection_42
+		}
+	}
+	literal Boolean "true" at (891, 573) size (49, 0) {
+		outPin {
+			connection_43
+		}
+	}
+	simpleIdentifier resources.DriverMessages.emergency at (951, 625) {
+		label at (0, -1)
+		inPin connection_45
+		sequenceCall {
+			inPin connection_44 {
+				bendpoints (0, 20)
+			}
+		}
+	}
+	literal Boolean "false" at (891, 623) size (49, 0) {
+		outPin {
+			connection_45
+		}
+	}
+	complexIdentifier Driver_Tempo_instance at (391, 181) size (14, 8) {
+		label at (0, 1)
+		methodCall myCar.Driver_Tempo.calc {
+			argumentPin v at (left, 0) connection_47
+			argumentPin v_target at (left, 5) connection_49
+			sequenceCall at (-50, -30) {
+				inPin connection_48
+			}
+		}
+		elementCall (myCar.Driver_Tempo.power_out) {
+			returnPin at (right, 0) {
+				connection_53
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.Driver_Tempo.brake_out) {
+			returnPin at (right, 4) {
+				connection_51
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+}

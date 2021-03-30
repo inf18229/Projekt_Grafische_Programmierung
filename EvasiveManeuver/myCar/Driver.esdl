@@ -12,7 +12,7 @@ writes CarMessages.power, CarMessages.brake, DriverMessages.emergency {
 	characteristic velocity v_target = 30.0[kmh];
 	Obstacles Obstacles_instance;
 	m distance_next_Obstacle;
-	characteristic m min_dist_to_obst = 50.0[m];
+	characteristic m min_dist_to_obst = 100.0[m];
 	Driver_Tempo Driver_Tempo_instance;
 	@thread
 	@generated("blockdiagram", "e6b4a3f4")

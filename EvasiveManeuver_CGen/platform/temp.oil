@@ -18,23 +18,4 @@ CPU rta_cpu {
 			APPMODE = UserAppMode;
 		};
 	};
-	TASK Task1 {
-		PRIORITY = 0;
-		SCHEDULE = FULL;
-		ACTIVATION = 1;
-		AUTOSTART = FALSE;
-		//RTAOILCFG OS_USES_FP TRUE;
-	};
-	
-	ALARM alarm_Task1 {
-		COUNTER = etasCounter;
-		ACTION = ACTIVATETASK {
-			TASK = Task1;
-		};
-		AUTOSTART = TRUE {
-			ALARMTIME = 1;
-			CYCLETIME = 2000;
-			APPMODE = UserAppMode;
-		};
-	};
 }; // CPU rta_cpu

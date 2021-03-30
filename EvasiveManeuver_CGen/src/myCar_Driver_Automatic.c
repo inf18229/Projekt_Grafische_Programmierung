@@ -33,7 +33,7 @@
  * ---------------------------------------------------------------------------*/
 struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT myCar_Driver_CAL_MEM = {
    /* struct element:'myCar_Driver_CAL_MEM.min_dist_to_obst' (modeled as:'min_dist_to_obst.myCar_Driver') */
-   50.0F,
+   100.0F,
    /* struct element:'myCar_Driver_CAL_MEM.power' (modeled as:'power.myCar_Driver') */
    30.0F,
    /* struct element:'myCar_Driver_CAL_MEM.v_target' (modeled as:'v_target.myCar_Driver') */

@@ -1,0 +1,58 @@
+classType myCar.ausweichen
+blockdiagramSpecification Main {
+	methodBody steering_out {
+		outPin active
+	{
+			connection_4
+		}
+	}
+methodArgumentIdentifier steering_out.emerg_msg at (91, 105) {
+		label at (0, -1)
+		outPin {
+			connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (591, 165) {
+		label at (0, 0)
+		inPin connection_3
+		sequenceCall {
+			inPin connection_2 {
+				bendpoints (70, 0), (70, 40)
+			}
+		}
+	}
+	literal unit resources.rad "0.21" at (461, 163) size (49, 0) {
+		outPin {
+			connection_3
+		}
+	}
+	ifElse at (401, 101) {
+		inPin connection_5
+		ifControlFlowOutPin {
+			connection_2
+		}
+		elseControlFlowOutPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin connection_4
+		}
+	}
+	literal unit resources.rad "0.0" at (461, 233) size (49, 0) {
+		outPin {
+			connection_7
+		}
+	}
+	return at (571, 235) {
+		label at (0, 0)
+		inPin connection_7
+		sequenceCall {
+			inPin connection_6 {
+				bendpoints (0, 80)
+			}
+		}
+	}
+}

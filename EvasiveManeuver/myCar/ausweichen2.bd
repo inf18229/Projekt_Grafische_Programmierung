@@ -1,0 +1,271 @@
+classType myCar.ausweichen2
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin }
+methodBody calc_2 {
+		outPin active {
+			connection_2, connection_3
+		}
+	}
+	methodArgumentIdentifier calc_2.emerg_msg at (51, 145) {
+		label at (0, -1)
+		outPin {
+			connection_6, connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal unit resources.rad "0.2094" at (41, 263) size (49, 0) {
+		outPin {
+			connection_7
+		}
+	}
+	literal unit resources.rad "0.001396" at (481, 273) size (69, 0) {
+		outPin {
+			connection_8
+		}
+	}
+	simpleIdentifier steering at (761, 265) {
+		label at (0, -1)
+		inPin connection_11
+		outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin connection_14
+		}
+	}
+	addition at (681, 256) {
+		inPin connection_9 {
+			bendpoints (20, 0), (20, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_8
+		outPin {
+			connection_11
+		}
+	}
+	simpleIdentifier steering at (31, 225) {
+		label at (0, -1)
+		inPin outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	lessOrEqual at (151, 226) {
+		inPin connection_12
+		inPin connection_35
+		outPin {
+			connection_13
+		}
+	}
+	if at (431, 241) {
+		inPin connection_20
+		ifControlFlowOutPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin connection_1
+		}
+	}
+	simpleIdentifier steering at (421, 75) {
+		label at (0, -1)
+		inPin connection_16 {
+			bendpoints (30, 0), (30, 30), (-70, 30), (-70, 0)
+		}
+		outPin {
+			connection_16
+		}
+		sequenceCall {
+			inPin connection_17 {
+				bendpoints (40, 0)
+			}
+		}
+	}
+	if at (321, 21) {
+		inPin connection_18
+		ifControlFlowOutPin {
+			connection_17
+		}
+		sequenceCall {
+			inPin connection_2
+		}
+	}
+	not at (281, 21) {
+		inPin connection_5 {
+			bendpoints (190, 0)
+		}
+		outPin {
+			connection_18
+		}
+	}
+	methodArgumentIdentifier calc_2.y at (41, 325) {
+		label at (0, -1)
+		outPin {
+			connection_19
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	and at (371, 236) {
+		inPin connection_13
+		inPin connection_21 {
+			bendpoints (40, 0), (40, -80)
+		}
+		outPin {
+			connection_20
+		}
+	}
+	lessOrEqual at (281, 326) {
+		inPin connection_19
+		inPin connection_22 {
+			bendpoints (140, 0), (140, -30)
+		}
+		outPin {
+			connection_21
+		}
+	}
+	literal unit resources.m "3.0" at (41, 373) size (49, 0) {
+		outPin {
+			connection_22
+		}
+	}
+	subtraction at (651, 456) {
+		inPin connection_25 {
+			bendpoints (20, 0), (20, -40), (-140, -40), (-140, 0)
+		}
+		inPin connection_26 {
+			bendpoints (100, 0)
+		}
+		outPin {
+			connection_24
+		}
+	}
+	simpleIdentifier steering at (731, 455) {
+		label at (0, -1)
+		inPin connection_24 {
+			bendpoints (40, 0)
+		}
+		outPin {
+			connection_25
+		}
+		sequenceCall {
+			inPin connection_30
+		}
+	}
+	literal unit resources.rad "0.001396" at (481, 463) size (69, 0) {
+		outPin {
+			connection_26
+		}
+	}
+	if at (371, 151) {
+		inPin connection_6 {
+			bendpoints (280, 0)
+		}
+		ifControlFlowOutPin {
+			connection_1, connection_4
+		}
+		sequenceCall {
+			inPin connection_3
+		}
+	}
+	greaterOrEqual at (281, 416) {
+		inPin connection_28
+		inPin connection_29 {
+			bendpoints (190, 0)
+		}
+		outPin {
+			connection_27
+		}
+	}
+	methodArgumentIdentifier calc_2.y at (41, 415) {
+		label at (0, -1)
+		outPin {
+			connection_28
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal unit resources.m "3.0" at (41, 443) size (49, 0) {
+		outPin {
+			connection_29
+		}
+	}
+	if at (431, 431) {
+		inPin connection_34
+		ifControlFlowOutPin {
+			connection_30
+		}
+		sequenceCall {
+			inPin connection_4
+		}
+	}
+	literal unit resources.rad "-0.2094" at (41, 523) size (59, 0) {
+		outPin {
+			connection_31
+		}
+	}
+	simpleIdentifier steering at (41, 495) {
+		label at (0, -1)
+		inPin outPin {
+			connection_32
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greaterOrEqual at (171, 496) {
+		inPin connection_32
+		inPin connection_37 {
+			bendpoints (20, 0)
+		}
+		outPin {
+			connection_33
+		}
+	}
+	and at (361, 426) {
+		inPin connection_27
+		inPin connection_33 {
+			bendpoints (150, 0)
+		}
+		outPin {
+			connection_34
+		}
+	}
+	multiplication at (111, 266) {
+		inPin connection_7
+		inPin connection_36
+		outPin {
+			connection_35
+		}
+	}
+	simpleIdentifier c_2 at (41, 285) {
+		label at (0, -1)
+		outPin {
+			connection_36
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (111, 526) {
+		inPin connection_31
+		inPin connection_38
+		outPin {
+			connection_37
+		}
+	}
+	simpleIdentifier c_2 at (41, 545) {
+		label at (0, -1)
+		outPin {
+			connection_38
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

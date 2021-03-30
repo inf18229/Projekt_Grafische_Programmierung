@@ -1,0 +1,7 @@
+package myCar;
+
+class ausweichen2 {
+	@generated("blockdiagram", "29277305")
+	public void calc() {
+	}
+}

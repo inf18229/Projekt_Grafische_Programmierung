@@ -1,5 +1,7 @@
+obj/myCar_ausweichen_Automatic.o
 obj/myCar_Driver_Automatic.o
 obj/myCar_Driver_Tempo_Automatic.o
+obj/myCar_EvasiveManeuver_Automatic.o
 obj/myCar_myCar_Automatic.o
 obj/myCar_myDrive_3_Automatic.o
 obj/myCar_MyTurn_Automatic.o
@@ -17,6 +19,8 @@ obj/resources_CarMessages_Automatic.l1.o
 obj/myCar_Driver_Automatic.l1.o
 obj/myCar_Driver_Tempo_Automatic.l1.o
 obj/resources_DriverMessages_Automatic.l1.o
+obj/myCar_EvasiveManeuver_Automatic.l1.o
+obj/myCar_ausweichen_Automatic.l1.o
 obj/etasConfigTask.o
 obj/etasL1Isr.o
 obj/etasL1Task.o
@@ -28,7 +32,6 @@ obj/etasVpOs.o
 obj/i_osgen_wrapper.o
 obj/osekdefs.o
 obj/Task0.o
-obj/Task1.o
 obj/StartupHook.o
 obj/ShutdownHook.o
 obj/PCDriver_PC.init.o

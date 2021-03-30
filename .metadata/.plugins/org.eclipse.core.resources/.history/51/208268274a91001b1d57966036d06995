@@ -1,0 +1,92 @@
+classType myCar.ausweichen
+blockdiagramSpecification Main {
+	methodBody steering_out {
+		outPin active
+	{
+			connection_10, connection_6, connection_2
+		}
+	}
+methodArgumentIdentifier steering_out.emerg_msg at (91, 105) {
+		label at (0, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (591, 165) {
+		label at (0, 0)
+		inPin sequenceCall {
+			inPin connection_2
+		}
+	}
+	literal unit resources.rad "0.2094" at (91, 203) size (49, 0) {
+		outPin {
+			connection_14
+		}
+	}
+	literal unit resources.rad "0.0" at (461, 233) size (49, 0) {
+		outPin {
+			connection_7
+		}
+	}
+	return at (571, 235) {
+		label at (0, 0)
+		inPin connection_7
+		sequenceCall {
+			inPin connection_6
+		}
+	}
+	literal unit resources.deg "0.001396" at (151, 343) size (69, 0) {
+		outPin {
+			connection_9
+		}
+	}
+	simpleIdentifier steering at (431, 335) {
+		label at (0, -1)
+		inPin connection_11
+		outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin connection_10
+		}
+	}
+	addition at (351, 326) {
+		inPin connection_8 {
+			bendpoints (20, 0), (20, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_9
+		outPin {
+			connection_11
+		}
+	}
+	and at (361, 106) {
+		inPin connection_12
+		inPin connection_15 {
+			bendpoints (80, 0), (80, -50)
+		}
+		outPin
+	}
+	simpleIdentifier steering at (91, 145) {
+		label at (0, -1)
+		inPin outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	lessOrEqual at (191, 166) {
+		inPin connection_13 {
+			bendpoints (0, 20)
+		}
+		inPin connection_14 {
+			bendpoints (0, -20)
+		}
+		outPin {
+			connection_15
+		}
+	}
+}

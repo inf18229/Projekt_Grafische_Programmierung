@@ -290,29 +290,29 @@ stopwatch conversion {
 }
 
 
-# 133 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 121 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 134 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 122 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 idle task {
-# 135 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 123 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	locks resource osek_resource_RES_SCHEDULER;
-# 135 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 123 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 136 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 124 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	profile default_profile {
-# 137 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 125 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 		this priority duration undefined;
-# 137 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 125 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 138 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 126 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 		resource osek_resource_RES_SCHEDULER duration undefined;
-# 138 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 126 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 139 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 127 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	}
-# 139 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 127 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 140 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 128 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
@@ -419,59 +419,61 @@ task osek_task_Task0 {
 # 97 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 98 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-task osek_task_Task1 {
+taskset osek_bcc1_tasks {
 # 99 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	entry osek_task_e_Task1;
+	label osek_bcc1_ts;
 # 99 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 100 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	locks resource osek_resource_RES_SCHEDULER;
-# 100 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 101 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	profile default_profile {
-# 102 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		this priority duration undefined;
-# 102 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 103 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		resource osek_resource_RES_SCHEDULER duration undefined;
-# 103 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 104 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		 
-# 105 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	}
-# 105 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 106 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
+# 100 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 101 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 102 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+taskset osek_cc2_tasks {
+# 103 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	label osek_cc2_ts;
+# 103 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 104 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	task osek_task_etasL1Task;
+# 104 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 105 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	task osek_task_etasConfigTask;
+# 105 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
 # 106 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	task osek_task_Task0;
+# 106 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 107 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+}
+
 
 # 107 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 108 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-taskset osek_bcc1_tasks {
-# 109 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	label osek_bcc1_ts;
-# 109 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
+# 109 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+taskset osek_ecc_tasks {
 # 110 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	label osek_ecc_ts;
+# 110 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 111 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
-
-# 110 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 111 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 112 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-taskset osek_cc2_tasks {
-# 113 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	label osek_cc2_ts;
-# 113 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
+# 113 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+nonpreemption group   {
 # 114 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	task osek_task_etasL1Task;
 # 114 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
@@ -481,224 +483,132 @@ taskset osek_cc2_tasks {
 # 115 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 116 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_Task0;
-# 116 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 117 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_Task1;
-# 117 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 118 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
-# 118 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 116 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
+# 117 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 118 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+nonpreemption group   {
+# 119 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	task osek_task_etasConfigTask;
 # 119 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 120 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-taskset osek_ecc_tasks {
-# 121 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	label osek_ecc_ts;
-# 121 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	task osek_task_Task0;
+# 120 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 122 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 121 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
-
-# 122 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 123 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 124 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-nonpreemption group   {
-# 125 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_etasL1Task;
-# 125 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 126 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_etasConfigTask;
-# 126 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 127 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-}
-
-
-# 127 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 128 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 129 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-nonpreemption group   {
-# 130 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_etasConfigTask;
-# 130 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
+# 130 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+interrupt osek_interrupt_etasTimerIsr {
 # 131 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_Task0;
+	entry osE_etasTimerIsr;
 # 131 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 132 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_Task1;
+	controlled;
 # 132 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 133 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	priority 10;
+# 133 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 134 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	vector 1;
+# 134 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 135 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	profile default_profile {
+# 136 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+		this priority duration undefined;
+# 136 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 137 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	}
+# 137 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 138 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
-# 140 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 138 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
+# 139 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 140 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+interrupt osek_interrupt_etasL1Isr {
+# 141 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	entry osE_etasL1Isr;
 # 141 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 142 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-interrupt osek_interrupt_etasTimerIsr {
-# 143 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	entry osE_etasTimerIsr;
-# 143 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 144 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	controlled;
+# 142 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 143 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	priority 1;
+# 143 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 144 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	vector 16;
 # 144 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 145 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	priority 10;
-# 145 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
+	profile default_profile {
 # 146 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	vector 1;
+		this priority duration undefined;
 # 146 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 147 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	profile default_profile {
-# 148 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		this priority duration undefined;
-# 148 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 149 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	}
-# 149 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 147 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 150 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 148 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
-# 150 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 148 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
+# 149 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 150 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+interrupt osek_interrupt_etasStopOsIsr {
+# 151 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	entry osE_etasStopOsIsr;
 # 151 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 152 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-interrupt osek_interrupt_etasL1Isr {
-# 153 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	entry osE_etasL1Isr;
-# 153 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 154 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	controlled;
+# 152 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 153 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	priority 11;
+# 153 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 154 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	vector 17;
 # 154 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 155 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	priority 1;
-# 155 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
+	profile default_profile {
 # 156 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	vector 16;
+		this priority duration undefined;
 # 156 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 157 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	profile default_profile {
+	}
+# 157 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
 # 158 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		this priority duration undefined;
-# 158 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 159 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	}
-# 159 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 160 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-}
-
-
-# 160 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 161 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 162 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-interrupt osek_interrupt_etasStopOsIsr {
-# 163 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	entry osE_etasStopOsIsr;
-# 163 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 164 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	controlled;
-# 164 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 165 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	priority 11;
-# 165 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 166 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	vector 17;
-# 166 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 167 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	profile default_profile {
-# 168 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		this priority duration undefined;
-# 168 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 169 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	}
-# 169 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 170 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-}
-
-
-# 182 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 183 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 184 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-activator EtasCounter {
-# 185 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	label osek_EtasCounter;
-# 185 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 186 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	timebase ts_etasCounter;
-# 186 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 187 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	fine;
-# 187 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 188 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	driver callbacks {
-# 189 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		 now Now_etasCounter;
-# 189 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 190 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		 cancel Cancel_etasCounter;
-# 190 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 191 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		 state State_etasCounter;
-# 191 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 192 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		 set Set_etasCounter;
-# 192 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 193 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	}
-# 193 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 194 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	set "HardwareCounter"="etasCounter";
-# 194 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 195 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
@@ -707,31 +617,35 @@ activator EtasCounter {
 # 171 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 172 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-arbitration order {
+activator EtasCounter {
 # 173 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	interrupt priority 11 {
+	label osek_EtasCounter;
+# 173 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
 # 174 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		interrupt osek_interrupt_etasStopOsIsr;
+	timebase ts_etasCounter;
 # 174 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 175 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	}
+	fine;
 # 175 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 176 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	interrupt priority 10 {
+	driver callbacks {
 # 177 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		interrupt osek_interrupt_etasTimerIsr;
+		 now Now_etasCounter;
 # 177 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 178 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	}
+		 cancel Cancel_etasCounter;
 # 178 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 179 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	interrupt priority 1 {
+		 state State_etasCounter;
+# 179 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
 # 180 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-		interrupt osek_interrupt_etasL1Isr;
+		 set Set_etasCounter;
 # 180 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 181 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
@@ -739,42 +653,82 @@ arbitration order {
 # 181 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
 # 182 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	set "HardwareCounter"="etasCounter";
+# 182 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 183 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }
 
 
-# 195 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 158 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 196 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 159 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 160 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+arbitration order {
+# 161 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	interrupt priority 11 {
+# 162 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+		interrupt osek_interrupt_etasStopOsIsr;
+# 162 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 163 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	}
+# 163 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 164 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	interrupt priority 10 {
+# 165 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+		interrupt osek_interrupt_etasTimerIsr;
+# 165 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 166 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	}
+# 166 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 167 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	interrupt priority 1 {
+# 168 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+		interrupt osek_interrupt_etasL1Isr;
+# 168 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 169 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+	}
+# 169 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 170 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+}
+
+
+# 183 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+
+# 184 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 system timings undefined;
 
 
-# 196 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 184 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 197 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 185 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 interrupt recognition undefined;
 
 
-# 197 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 185 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 198 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 186 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 199 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 187 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 task priority order {
-# 200 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 188 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	task osek_task_etasL1Task;
-# 200 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 188 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 201 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 189 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	task osek_task_etasConfigTask;
-# 201 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 189 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 202 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 190 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 	task osek_task_Task0;
-# 202 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 190 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 
-# 203 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-	task osek_task_Task1;
-# 203 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
-
-# 204 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
+# 191 "C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\conf.stc"
 }

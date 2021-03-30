@@ -52,7 +52,6 @@ osgen.cpp=0
 etasL1Task.h=0
 etasConfigTask.h=0
 Task0.h=0
-Task1.h=0
 osekmain.h=0
 etasTimerIsr.h=0
 etasL1Isr.h=0

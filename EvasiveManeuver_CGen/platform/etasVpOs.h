@@ -34,25 +34,17 @@ extern void Tick_etasCounter(void);
 	extern uint32 Xcp_Event (uint32 eventId, uint32 doDaq);
 	#define XCP_DAQ_Task0 Xcp_Event(0,0);
 	#define XCP_STIM_Task0 Xcp_Event(0,1);
-	#define XCP_DAQ_Task1 Xcp_Event(1,0);
-	#define XCP_STIM_Task1 Xcp_Event(1,1);
 #else
 	#define XCP_DAQ_Task0
 	#define XCP_STIM_Task0
-	#define XCP_DAQ_Task1
-	#define XCP_STIM_Task1
 #endif
 
 #ifdef L1_PROTOCOL
 	#define SIGNAL_GENERATOR_HOOK_Task0 \
 	sgHook(1); \
 	crossbarHook(1,0);
-	#define SIGNAL_GENERATOR_HOOK_Task1 \
-	sgHook(2); \
-	crossbarHook(2,0);
 #else
 	#define SIGNAL_GENERATOR_HOOK_Task0
-	#define SIGNAL_GENERATOR_HOOK_Task1
 #endif
 
-#define XCP_NUMBER_OF_EVENTS 2
+#define XCP_NUMBER_OF_EVENTS 1

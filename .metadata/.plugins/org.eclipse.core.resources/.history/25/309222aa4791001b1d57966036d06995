@@ -1,0 +1,6 @@
+classType myCar.ausweichen
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+}

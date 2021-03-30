@@ -1,0 +1,25 @@
+package myCar;
+import resources.rad;
+import resources.m;
+
+class ausweichen {
+	characteristic real c = 0.0;
+	@get
+	rad steering = 0.0[rad];
+	characteristic real c_2 = 0.5;
+
+	@generated("blockdiagram", "9ca4a6bf")
+	public void steering_out(boolean in emerg_msg, m in y) {
+		if (!emerg_msg) {
+			steering = steering; // Main/steering_out 1/if-then 1
+		} // Main/steering_out 1
+		if (emerg_msg) {
+			if ((steering <= (0.2094[rad] * c_2)) && (y <= 3.0[m])) {
+				steering = (steering + 0.001396[rad]); // Main/steering_out 2/if-then 1/if-then 1
+			} // Main/steering_out 2/if-then 1
+			if ((y >= 3.0[m]) && (steering >= -0.2094[rad])) {
+				steering = (steering - 0.001396[rad]); // Main/steering_out 2/if-then 2/if-then 1
+			} // Main/steering_out 2/if-then 2
+		} // Main/steering_out 2
+	}
+}

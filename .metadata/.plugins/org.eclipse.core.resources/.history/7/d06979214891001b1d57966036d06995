@@ -1,0 +1,27 @@
+classType myCar.ausweichen
+blockdiagramSpecification Main {
+	methodBody steering_out {
+		outPin active
+	{
+			connection_2
+		}
+	}
+methodArgumentIdentifier steering_out.emerg_msg at (91, 105) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	return at (641, 115) {
+		label at (0, 0)
+		inPin connection_3
+		sequenceCall {
+			inPin connection_2
+		}
+	}
+	literal unit resources.rad "1.0" at (461, 113) size (49, 0) {
+		outPin {
+			connection_3
+		}
+	}
+}

@@ -21,6 +21,7 @@
 #endif
 #include "chartab.h"
 #include "myCar_Driver_Automatic.h"
+#include "myCar_EvasiveManeuver_Automatic.h"
 #include "myCar_myCar_Automatic.h"
 #include "myCar_TimeBase_Automatic.h"
 #include "resources_CarMessages_Automatic.h"

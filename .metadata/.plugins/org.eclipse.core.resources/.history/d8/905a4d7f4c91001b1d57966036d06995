@@ -1,0 +1,37 @@
+classType myCar.EvasiveManeuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_3
+		}
+	}
+complexIdentifier ausweichen_instance at (341, 151) size (14, 8) {
+		label at (0, 1)
+		methodCall myCar.ausweichen.steering_out {
+			argumentPin emerg_msg at (left, 0) connection_2
+			returnPin at (right, 0) {
+				connection_4
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier resources.DriverMessages.emergency at (211, 155) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at (571, 155) {
+		label at (0, -1)
+		inPin connection_4
+		sequenceCall {
+			inPin connection_3
+		}
+	}
+}

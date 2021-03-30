@@ -6,7 +6,7 @@
  * Build level is extended
  * Project is 'conf'
  * Last edited 'unknown'
- * File generated 'Tue Mar 30 12:02:21 2021'
+ * File generated 'Tue Mar 30 16:20:33 2021'
  * Target variant 'MinGW'
  */
 #ifndef __OS_COMN_H__
@@ -49,16 +49,14 @@ extern struct os_task OS_L0034;
 #define osek_task_etasConfigTask (&OS_L0034)
 extern struct os_task OS_L0035;
 #define osek_task_Task0 (&OS_L0035)
-extern struct os_task OS_L0036;
-#define osek_task_Task1 (&OS_L0036)
 
 /* ISR handles */
+extern struct os_task OS_L0039;
+#define osek_interrupt_etasTimerIsr (&OS_L0039)
 extern struct os_task OS_L003A;
-#define osek_interrupt_etasTimerIsr (&OS_L003A)
+#define osek_interrupt_etasL1Isr (&OS_L003A)
 extern struct os_task OS_L003B;
-#define osek_interrupt_etasL1Isr (&OS_L003B)
-extern struct os_task OS_L003C;
-#define osek_interrupt_etasStopOsIsr (&OS_L003C)
+#define osek_interrupt_etasStopOsIsr (&OS_L003B)
 
 /* activator handles */
 extern struct os_activator osek_EtasCounter;

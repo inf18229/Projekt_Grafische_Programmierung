@@ -5,7 +5,7 @@
 // Build level is extended
 // "Project is 'conf'"
 // "Last edited 'unknown'"
-// "File generated 'Tue Mar 30 12:02:21 2021'"
+// "File generated 'Tue Mar 30 16:20:33 2021'"
 // "Target variant 'MinGW'"
 #define OS_SUPPORTED
 #define RTA_OSEK
@@ -49,16 +49,6 @@ struct {
 	unsigned int _0;
 	unsigned int _1;
 	unsigned int _2;
-} OS_L0045 = {0xa2, };
-struct {
-	unsigned int _0;
-	unsigned int _1;
-	unsigned int _2;
-} OS_L0044 = {0xa2, };
-struct {
-	unsigned int _0;
-	unsigned int _1;
-	unsigned int _2;
 } OS_L0043 = {0xa2, };
 struct {
 	unsigned int _0;
@@ -74,12 +64,7 @@ struct {
 	unsigned int _0;
 	unsigned int _1;
 	unsigned int _2;
-} OS_L0048 = {0xa2, };
-struct {
-	unsigned int _0;
-	unsigned int _1;
-	unsigned int _2;
-} OS_L0047 = {0xa2, };
+} OS_L0040 = {0xa2, };
 struct {
 	unsigned int _0;
 	unsigned int _1;
@@ -88,7 +73,17 @@ struct {
 struct {
 	unsigned int _0;
 	unsigned int _1;
-} OS_L003E = {0xa2, };
+	unsigned int _2;
+} OS_L0045 = {0xa2, };
+struct {
+	unsigned int _0;
+	unsigned int _1;
+	unsigned int _2;
+} OS_L0044 = {0xa2, };
+struct {
+	unsigned int _0;
+	unsigned int _1;
+} OS_L003D = {0xa2, };
 struct {
 	unsigned int _0;
 } OS_L000F = {0xa2};
@@ -208,10 +203,10 @@ struct {
 	unsigned int _33;
 	unsigned int _34;
 } OS_L002D = {
-	0x00000004,
-	0x00000001,
 	0x00000003,
-	0x0000000f,
+	0x00000001,
+	0x00000002,
+	0x00000007,
 	0x00000000,
 	0x00000000,
 	0x00000000,
@@ -327,7 +322,7 @@ struct {
 	0x00000000,
 	0x00000000,
 	(funcptr)0,
-	&OS_L0045,
+	&OS_L0043,
 	0x00000000,
 	0x0,
 	0x00000000};
@@ -375,42 +370,42 @@ struct {
 	unsigned int _39;
 } OS_L0033 = {
 	0x00000001,
-	0x00000003,
-	0x00000008,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
+	0x00000002,
 	0x00000004,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000003,
 	(funcptr)osek_task_e_etasL1Task,
-	&OS_L0044,
+	&OS_L0042,
 	0x00000000,
 	0x0,
 	0x00000000};
@@ -458,8 +453,8 @@ struct {
 	unsigned int _39;
 } OS_L0034 = {
 	0x00000001,
+	0x00000001,
 	0x00000002,
-	0x00000004,
 	0x00000000,
 	0x00000000,
 	0x00000000,
@@ -491,9 +486,9 @@ struct {
 	0x00000000,
 	0x00000000,
 	0x00000000,
-	0x00000004,
+	0x00000003,
 	(funcptr)osek_task_e_etasConfigTask,
-	&OS_L0043,
+	&OS_L0041,
 	0x00000000,
 	0x0,
 	0x00000000};
@@ -541,46 +536,46 @@ struct {
 	unsigned int _39;
 } OS_L0035 = {
 	0x00000001,
+	0x00000000,
 	0x00000001,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	0x00000000,
 	0x00000002,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000003,
 	(funcptr)osek_task_e_Task0,
-	&OS_L0042,
+	&OS_L0040,
 	0x00000000,
 	0x0,
 	0x00000000};
-extern void osek_task_e_Task1();
+extern void osE_etasTimerIsr();
 struct {
 	unsigned int _0;
 	unsigned int _1;
@@ -622,11 +617,9 @@ struct {
 	unsigned int _37;
 	unsigned int _38;
 	unsigned int _39;
-} OS_L0036 = {
-	0x00000001,
+} OS_L0039 = {
 	0x00000000,
-	0x00000001,
-	0x00000000,
+	0xffffffff,
 	0x00000000,
 	0x00000000,
 	0x00000000,
@@ -657,13 +650,15 @@ struct {
 	0x00000000,
 	0x00000000,
 	0x00000000,
-	0x00000003,
-	(funcptr)osek_task_e_Task1,
-	&OS_L0041,
+	0x00000000,
+	0x00000000,
+	0x00000000,
+	(funcptr)osE_etasTimerIsr,
+	&OS_L0046,
 	0x00000000,
 	0x0,
-	0x00000000};
-extern void osE_etasTimerIsr();
+	0x0000000a};
+extern void osE_etasL1Isr();
 struct {
 	unsigned int _0;
 	unsigned int _1;
@@ -741,12 +736,12 @@ struct {
 	0x00000000,
 	0x00000000,
 	0x00000000,
-	(funcptr)osE_etasTimerIsr,
-	&OS_L0048,
+	(funcptr)osE_etasL1Isr,
+	&OS_L0045,
 	0x00000000,
 	0x0,
-	0x0000000a};
-extern void osE_etasL1Isr();
+	0x00000001};
+extern void osE_etasStopOsIsr();
 struct {
 	unsigned int _0;
 	unsigned int _1;
@@ -824,91 +819,8 @@ struct {
 	0x00000000,
 	0x00000000,
 	0x00000000,
-	(funcptr)osE_etasL1Isr,
-	&OS_L0047,
-	0x00000000,
-	0x0,
-	0x00000001};
-extern void osE_etasStopOsIsr();
-struct {
-	unsigned int _0;
-	unsigned int _1;
-	unsigned int _2;
-	unsigned int _3;
-	unsigned int _4;
-	unsigned int _5;
-	unsigned int _6;
-	unsigned int _7;
-	unsigned int _8;
-	unsigned int _9;
-	unsigned int _10;
-	unsigned int _11;
-	unsigned int _12;
-	unsigned int _13;
-	unsigned int _14;
-	unsigned int _15;
-	unsigned int _16;
-	unsigned int _17;
-	unsigned int _18;
-	unsigned int _19;
-	unsigned int _20;
-	unsigned int _21;
-	unsigned int _22;
-	unsigned int _23;
-	unsigned int _24;
-	unsigned int _25;
-	unsigned int _26;
-	unsigned int _27;
-	unsigned int _28;
-	unsigned int _29;
-	unsigned int _30;
-	unsigned int _31;
-	unsigned int _32;
-	unsigned int _33;
-	unsigned int _34;
-	funcptr      _35;
-	dataptr      _36;
-	unsigned int _37;
-	unsigned int _38;
-	unsigned int _39;
-} OS_L003C = {
-	0x00000000,
-	0xffffffff,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
-	0x00000000,
 	(funcptr)osE_etasStopOsIsr,
-	&OS_L0046,
+	&OS_L0044,
 	0x00000000,
 	0x0,
 	0x0000000b};
@@ -952,8 +864,8 @@ struct {
 	unsigned int _33;
 } OS_L001D = {
 	0x00000001,
-	0x00000003,
-	0x0000000f,
+	0x00000002,
+	0x00000007,
 	0x00000000,
 	0x00000000,
 	0x00000000,
@@ -1162,8 +1074,8 @@ struct {
 	unsigned int _33;
 } osek_cc2_ts = {
 	0x00000001,
-	0x00000003,
-	0x0000000f,
+	0x00000002,
+	0x00000007,
 	0x00000000,
 	0x00000000,
 	0x00000000,
@@ -1291,7 +1203,7 @@ struct {
 	unsigned int _7;
 } osek_EtasCounter = {
 	&OS_L0032,
-	&OS_L003E,
+	&OS_L003D,
 	NULL,
 	(funcptr)Set_etasCounter,
 	(funcptr)Now_etasCounter,
@@ -1523,18 +1435,10 @@ struct {
 	0x00000000,
 	0x0};
 struct {
-	unsigned int _0;
-	unsigned int _1;
-	unsigned int _2;
-} OS_iL0010 = {
-	0x00000000,
-	0x00000000,
-	0x0};
-struct {
 	dataptr      _0;
 	unsigned int _1;
-} OS_iL0011 = {
-	&OS_L003E,
+} OS_iL0010 = {
+	&OS_L003D,
 	0x0};
 struct {
 	unsigned int _0;
@@ -1547,7 +1451,7 @@ void osCat2Wrapper(vrtaAppTag tag, vrtaIntPriority oldIPL) {
 
 const vrtaVectorTable osVectorTable = {
 	RTVECU_NUM_VECTORS, {
-	{osCat2Wrapper, 10, (vrtaAppTag)&OS_L003A},
+	{osCat2Wrapper, 10, (vrtaAppTag)&OS_L0039},
 	{0, 32, (vrtaAppTag) 2},
 	{0, 32, (vrtaAppTag) 3},
 	{0, 32, (vrtaAppTag) 4},
@@ -1562,8 +1466,8 @@ const vrtaVectorTable osVectorTable = {
 	{0, 32, (vrtaAppTag)13},
 	{0, 32, (vrtaAppTag)14},
 	{0, 32, (vrtaAppTag)15},
-	{osCat2Wrapper,  1, (vrtaAppTag)&OS_L003B},
-	{osCat2Wrapper, 11, (vrtaAppTag)&OS_L003C},
+	{osCat2Wrapper,  1, (vrtaAppTag)&OS_L003A},
+	{osCat2Wrapper, 11, (vrtaAppTag)&OS_L003B},
 	{0, 32, (vrtaAppTag)18},
 	{0, 32, (vrtaAppTag)19},
 	{0, 32, (vrtaAppTag)20},
@@ -1585,15 +1489,14 @@ static int InitializeMemory(void) {
 	memcpy(&OS_L0001,&OS_iL0000,sizeof(OS_iL0000));
 	memcpy(&OS_L0002,&OS_iL0001,sizeof(OS_iL0001));
 	memcpy(&OS_L0004,&OS_iL0002,sizeof(OS_iL0002));
-	memcpy(&OS_L0045,&OS_iL0003,sizeof(OS_iL0003));
-	memcpy(&OS_L0044,&OS_iL0004,sizeof(OS_iL0004));
-	memcpy(&OS_L0043,&OS_iL0005,sizeof(OS_iL0005));
-	memcpy(&OS_L0042,&OS_iL0006,sizeof(OS_iL0006));
-	memcpy(&OS_L0041,&OS_iL0007,sizeof(OS_iL0007));
-	memcpy(&OS_L0048,&OS_iL0008,sizeof(OS_iL0008));
-	memcpy(&OS_L0047,&OS_iL0009,sizeof(OS_iL0009));
-	memcpy(&OS_L0046,&OS_iL0010,sizeof(OS_iL0010));
-	memcpy(&OS_L003E,&OS_iL0011,sizeof(OS_iL0011));
+	memcpy(&OS_L0043,&OS_iL0003,sizeof(OS_iL0003));
+	memcpy(&OS_L0042,&OS_iL0004,sizeof(OS_iL0004));
+	memcpy(&OS_L0041,&OS_iL0005,sizeof(OS_iL0005));
+	memcpy(&OS_L0040,&OS_iL0006,sizeof(OS_iL0006));
+	memcpy(&OS_L0046,&OS_iL0007,sizeof(OS_iL0007));
+	memcpy(&OS_L0045,&OS_iL0008,sizeof(OS_iL0008));
+	memcpy(&OS_L0044,&OS_iL0009,sizeof(OS_iL0009));
+	memcpy(&OS_L003D,&OS_iL0010,sizeof(OS_iL0010));
 	zlen = (int)&OS_L000E - (int)&OS_L000D;
 	if (zlen < 0) {memset(&OS_L000E,0,-zlen);}
 	else {memset(&OS_L000D,0,zlen);}

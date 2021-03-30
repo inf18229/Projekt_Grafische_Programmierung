@@ -1,0 +1,8 @@
+package myCar;
+import resources.rad;
+
+class ausweichen {
+	@generated("blockdiagram", "fb1b5578")
+	public rad calc() {
+	}
+}

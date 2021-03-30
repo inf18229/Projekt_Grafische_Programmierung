@@ -1,0 +1,7 @@
+package myCar;
+
+class EvasiveManeuver {
+	@generated("blockdiagram", "81135dec")
+	public void calc() {
+	}
+}

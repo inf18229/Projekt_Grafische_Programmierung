@@ -23,8 +23,10 @@ ADDITIONAL_LIBS=$(pathcnv SN,C:/ETAS/workspace/Projekt_Grafische_Programmierung/
 ADDITIONAL_OBJECTS=
 
 OBJECTS=\
+    $(P_OBJ)/myCar_ausweichen_Automatic.o\
     $(P_OBJ)/myCar_Driver_Automatic.o\
     $(P_OBJ)/myCar_Driver_Tempo_Automatic.o\
+    $(P_OBJ)/myCar_EvasiveManeuver_Automatic.o\
     $(P_OBJ)/myCar_myCar_Automatic.o\
     $(P_OBJ)/myCar_myDrive_3_Automatic.o\
     $(P_OBJ)/myCar_MyTurn_Automatic.o\
@@ -42,6 +44,8 @@ OBJECTS=\
     $(P_OBJ)/myCar_Driver_Automatic.l1.o\
     $(P_OBJ)/myCar_Driver_Tempo_Automatic.l1.o\
     $(P_OBJ)/resources_DriverMessages_Automatic.l1.o\
+    $(P_OBJ)/myCar_EvasiveManeuver_Automatic.l1.o\
+    $(P_OBJ)/myCar_ausweichen_Automatic.l1.o\
     $(P_OBJ)/etasConfigTask.o\
     $(P_OBJ)/etasL1Isr.o\
     $(P_OBJ)/etasL1Task.o\
@@ -53,7 +57,6 @@ OBJECTS=\
     $(P_OBJ)/i_osgen_wrapper.o\
     $(P_OBJ)/osekdefs.o\
     $(P_OBJ)/Task0.o\
-    $(P_OBJ)/Task1.o\
     $(P_OBJ)/StartupHook.o\
     $(P_OBJ)/ShutdownHook.o\
     $(P_OBJ)/PCDriver_PC.init.o
@@ -85,12 +88,18 @@ L1_DEFINES=L1_PROTOCOL
 include $(P_TARGET)/build.mk
 
 #### COMPILE RULES ####
+$(P_OBJ)/myCar_ausweichen_Automatic.o: src/myCar_ausweichen_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\myCar_ausweichen_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_ausweichen_Automatic.o src/myCar_ausweichen_Automatic.c) $(CFLAGS)
 $(P_OBJ)/myCar_Driver_Automatic.o: src/myCar_Driver_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\myCar_Driver_Automatic.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_Driver_Automatic.o src/myCar_Driver_Automatic.c) $(CFLAGS)
 $(P_OBJ)/myCar_Driver_Tempo_Automatic.o: src/myCar_Driver_Tempo_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\myCar_Driver_Tempo_Automatic.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_Driver_Tempo_Automatic.o src/myCar_Driver_Tempo_Automatic.c) $(CFLAGS)
+$(P_OBJ)/myCar_EvasiveManeuver_Automatic.o: src/myCar_EvasiveManeuver_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\myCar_EvasiveManeuver_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_EvasiveManeuver_Automatic.o src/myCar_EvasiveManeuver_Automatic.c) $(CFLAGS)
 $(P_OBJ)/myCar_myCar_Automatic.o: src/myCar_myCar_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\myCar_myCar_Automatic.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_myCar_Automatic.o src/myCar_myCar_Automatic.c) $(CFLAGS)
@@ -142,6 +151,12 @@ $(P_OBJ)/myCar_Driver_Tempo_Automatic.l1.o: l1/myCar_Driver_Tempo_Automatic.l1.c
 $(P_OBJ)/resources_DriverMessages_Automatic.l1.o: l1/resources_DriverMessages_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\l1\resources_DriverMessages_Automatic.l1.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/resources_DriverMessages_Automatic.l1.o l1/resources_DriverMessages_Automatic.l1.c) $(CFLAGS)
+$(P_OBJ)/myCar_EvasiveManeuver_Automatic.l1.o: l1/myCar_EvasiveManeuver_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\l1\myCar_EvasiveManeuver_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_EvasiveManeuver_Automatic.l1.o l1/myCar_EvasiveManeuver_Automatic.l1.c) $(CFLAGS)
+$(P_OBJ)/myCar_ausweichen_Automatic.l1.o: l1/myCar_ausweichen_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\l1\myCar_ausweichen_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_ausweichen_Automatic.l1.o l1/myCar_ausweichen_Automatic.l1.c) $(CFLAGS)
 $(P_OBJ)/etasConfigTask.o: F:/Software/ETAS/ASCET-DEVELOPER7.6/configuration/org.eclipse.osgi/54/0/.cp/platform/code/etasConfigTask.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [F:\Software\ETAS\ASCET-DEVELOPER7.6\configuration\org.eclipse.osgi\54\0\.cp\platform\code\etasConfigTask.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/etasConfigTask.o F:/Software/ETAS/ASCET-DEVELOPER7.6/configuration/org.eclipse.osgi/54/0/.cp/platform/code/etasConfigTask.c) $(CFLAGS)
@@ -175,9 +190,6 @@ $(P_OBJ)/osekdefs.o: platform/osekdefs.c $(P_OBJ) $(CC_OPTIONS_FILE)
 $(P_OBJ)/Task0.o: platform/Task0.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\Task0.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/Task0.o platform/Task0.c) $(CFLAGS)
-$(P_OBJ)/Task1.o: platform/Task1.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\Task1.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/Task1.o platform/Task1.c) $(CFLAGS)
 $(P_OBJ)/StartupHook.o: platform/StartupHook.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\platform\StartupHook.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/StartupHook.o platform/StartupHook.c) $(CFLAGS)

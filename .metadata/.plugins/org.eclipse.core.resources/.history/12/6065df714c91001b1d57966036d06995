@@ -1,0 +1,19 @@
+package myCar;
+import resources.rad;
+
+class ausweichen {
+	characteristic real c = 0.0;
+	rad steering = 0.0[rad];
+
+	@generated("blockdiagram", "36af575b")
+	public rad steering_out(boolean in emerg_msg) {
+		if (emerg_msg && (steering <= 0.2094[rad])) {
+			steering = (steering + 0.001396[rad]); // Main/steering_out 1/if-then 1
+			return steering; // Main/steering_out 1/if-then 2
+		} // Main/steering_out 1
+		if (emerg_msg) {
+			steering = 0.0[rad]; // Main/steering_out 2/if-then 1
+			return steering; // Main/steering_out 2/if-then 2
+		} // Main/steering_out 2
+	}
+}

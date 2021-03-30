@@ -38,17 +38,15 @@ T_appModeTable appModeTable = {
 
 DECLARE_TASK_MONITOR(etasConfigTask);
 DECLARE_TASK_MONITOR(Task0);
-DECLARE_TASK_MONITOR(Task1);
 
 T_taskTableEntry taskTableEntries[] = {
 	{(TaskType *)&etasConfigTask, "etasConfigTask", TASK_MONITOR_PTR(etasConfigTask)},
 	{(TaskType *)&Task0, "Task0", TASK_MONITOR_PTR(Task0)},
-	{(TaskType *)&Task1, "Task1", TASK_MONITOR_PTR(Task1)},
 };
 
 T_taskTable taskTable = {
 	/* number of tasks (user defined tasks + internally defined tasks) */
-	3,
+	2,
 	/* pointers to tasks */
 	&taskTableEntries[0]
 };
@@ -194,16 +192,14 @@ void Tick_etasCounter(void)
 }
 
 /******** stimuligenerator table  *********/
-sgTaskTableEntry sgTaskTable[2+1] = {NULL};
+sgTaskTableEntry sgTaskTable[1+1] = {NULL};
 
 /*********** crossbar hooks ***************/
 crossbarHookTableEntry crossbarHookTableTask0[1] = {NULL}; /* crossbar hook in task Task0 */
-crossbarHookTableEntry crossbarHookTableTask1[1] = {NULL}; /* crossbar hook in task Task1 */
 crossbarHookTableEntry crossbarHookTableEtasInitTask[1] = {NULL}; /* crossbar hook in task EtasInitTask */
-crossbarTaskTableEntry crossbarTaskTable[5] = {   /* crossbar task table */
+crossbarTaskTableEntry crossbarTaskTable[4] = {   /* crossbar task table */
 	{NULL},
 	{&crossbarHookTableTask0[0]},
-	{&crossbarHookTableTask1[0]},
 	{&crossbarHookTableEtasInitTask[0]},
 	{NULL}
 };

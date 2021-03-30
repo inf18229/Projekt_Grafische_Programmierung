@@ -1,0 +1,301 @@
+classType myCar.ausweichen
+blockdiagramSpecification Main {
+	methodBody steering_out {
+		outPin active
+	{
+			connection_74, connection_93, connection_95
+		}
+	}
+methodArgumentIdentifier steering_out.emerg_msg at (91, 105) {
+		label at (0, -1)
+		outPin {
+			connection_85, connection_105, connection_73
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal unit resources.rad "0.2094" at (91, 283) size (49, 0) {
+		outPin {
+			connection_79
+		}
+	}
+	literal unit resources.rad "0.001396" at (521, 233) size (69, 0) {
+		outPin {
+			connection_66
+		}
+	}
+	methodArgumentIdentifier steering_out.y at (91, 165) {
+		label at (0, -1)
+		outPin {
+			connection_81, connection_107, connection_70
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier steering at (681, 225) {
+		label at (0, -1)
+		inPin connection_68
+		outPin {
+			connection_69
+		}
+		sequenceCall {
+			inPin connection_67 {
+				bendpoints (40, 0), (40, 90)
+			}
+		}
+	}
+	addition at (621, 216) {
+		inPin connection_69 {
+			bendpoints (40, 0), (40, -50), (-130, -50), (-130, -10)
+		}
+		inPin connection_66
+		outPin {
+			connection_68
+		}
+	}
+	and at (401, 106) size (2, 5) {
+		inPin connection_73
+		inPin connection_72 {
+			bendpoints (50, 0), (50, -50)
+		}
+		inPin connection_80 {
+			bendpoints (140, 0)
+		}
+		outPin {
+			connection_75
+		}
+	}
+	less at (301, 166) {
+		inPin connection_70
+		inPin connection_71 {
+			bendpoints (90, 0), (90, -20)
+		}
+		outPin {
+			connection_72
+		}
+	}
+	literal unit resources.m "0.75" at (91, 203) size (49, 0) {
+		outPin {
+			connection_82, connection_71
+		}
+	}
+	if at (461, 111) {
+		inPin connection_75 {
+			bendpoints (20, 0)
+		}
+		ifControlFlowOutPin {
+			connection_67
+		}
+		sequenceCall {
+			inPin connection_74
+		}
+	}
+	less at (221, 246) {
+		inPin connection_78
+		inPin connection_79 {
+			bendpoints (80, 0)
+		}
+		outPin {
+			connection_80
+		}
+	}
+	simpleIdentifier steering at (81, 235) {
+		label at (0, -1)
+		inPin outPin {
+			connection_76
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (171, 236) {
+		inPin connection_76
+		inPin connection_77 {
+			bendpoints (20, 0)
+		}
+		outPin {
+			connection_78
+		}
+	}
+	literal unit resources.rad "0.001396" at (81, 263) size (69, 0) {
+		outPin {
+			connection_77
+		}
+	}
+	and at (371, 336) size (2, 5) {
+		inPin connection_85 {
+			bendpoints (240, 0)
+		}
+		inPin connection_84
+		inPin connection_88 {
+			bendpoints (50, 0)
+		}
+		outPin {
+			connection_94
+		}
+	}
+	between at (281, 346) {
+		inPin connection_81 {
+			bendpoints (150, 0)
+		}
+		inPin connection_82 {
+			bendpoints (90, 0), (90, -20), (120, -20), (120, 150)
+		}
+		inPin connection_83
+		outPin {
+			connection_84
+		}
+	}
+	literal unit resources.m "1.5" at (91, 363) size (49, 0) {
+		outPin {
+			connection_108, connection_83
+		}
+	}
+	simpleIdentifier steering at (91, 415) {
+		label at (0, -1)
+		inPin outPin {
+			connection_86
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greaterOrEqual at (281, 416) {
+		inPin connection_86
+		inPin connection_87 {
+			bendpoints (140, 0)
+		}
+		outPin {
+			connection_88
+		}
+	}
+	literal unit resources.rad "0.0" at (91, 453) size (49, 0) {
+		outPin {
+			connection_87
+		}
+	}
+	subtraction at (581, 386) {
+		inPin connection_91 {
+			bendpoints (40, 0), (40, -50), (-130, -50), (-130, -10)
+		}
+		inPin connection_92
+		outPin {
+			connection_90
+		}
+	}
+	simpleIdentifier steering at (641, 395) {
+		label at (0, -1)
+		inPin connection_90
+		outPin {
+			connection_91
+		}
+		sequenceCall {
+			inPin connection_89 {
+				bendpoints (50, 0), (50, 20)
+			}
+		}
+	}
+	literal unit resources.rad "0.001396" at (481, 403) size (69, 0) {
+		outPin {
+			connection_92
+		}
+	}
+	if at (441, 351) {
+		inPin connection_94
+		ifControlFlowOutPin {
+			connection_89
+		}
+		sequenceCall {
+			inPin connection_93
+		}
+	}
+	between at (301, 506) {
+		inPin connection_107 {
+			bendpoints (140, 0), (140, 340)
+		}
+		inPin connection_108 {
+			bendpoints (90, 0), (90, 150)
+		}
+		inPin connection_97
+		outPin {
+			connection_96
+		}
+	}
+	literal unit resources.m "2.25" at (111, 523) size (49, 0) {
+		outPin {
+			connection_97
+		}
+	}
+	literal unit resources.rad "0.0" at (111, 613) size (49, 0) {
+		outPin {
+			connection_98
+		}
+	}
+	simpleIdentifier steering at (111, 575) {
+		label at (0, -1)
+		inPin outPin {
+			connection_99
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greaterOrEqual at (301, 576) {
+		inPin connection_99
+		inPin connection_98 {
+			bendpoints (140, 0)
+		}
+		outPin {
+			connection_100
+		}
+	}
+	and at (391, 496) size (2, 5) {
+		inPin connection_105 {
+			bendpoints (220, 0), (220, 390)
+		}
+		inPin connection_96
+		inPin connection_100 {
+			bendpoints (50, 0)
+		}
+		outPin {
+			connection_101
+		}
+	}
+	if at (461, 511) {
+		inPin connection_101
+		ifControlFlowOutPin {
+			connection_102
+		}
+		sequenceCall {
+			inPin connection_95
+		}
+	}
+	subtraction at (601, 546) {
+		inPin connection_104 {
+			bendpoints (40, 0), (40, -50), (-130, -50), (-130, -10)
+		}
+		inPin connection_109
+		outPin {
+			connection_103
+		}
+	}
+	simpleIdentifier steering at (661, 555) {
+		label at (0, -1)
+		inPin connection_103
+		outPin {
+			connection_104
+		}
+		sequenceCall {
+			inPin connection_102 {
+				bendpoints (50, 0), (50, 20)
+			}
+		}
+	}
+	literal unit resources.rad "0.001396" at (511, 563) size (69, 0) {
+		outPin {
+			connection_109
+		}
+	}
+}
