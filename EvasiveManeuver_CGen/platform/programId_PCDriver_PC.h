@@ -6,5 +6,5 @@
  ********************************************************************************/
 #ifndef ESDL_UNIQUE_PROGRAM_ID
 #define ESDL_UNIQUE_PROGRAM_ID
-#define UNIQUE_PROGRAM_ID 1937781619U
+#define UNIQUE_PROGRAM_ID 1937791987U
 #endif /* ESDL_UNIQUE_PROGRAM_ID */
