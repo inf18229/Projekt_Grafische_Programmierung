@@ -1,0 +1,32 @@
+package myCar;
+
+class SM_ausweichen {
+	@set
+	private boolean emergency_msg;
+	integer count;
+	Linkslenken obj_links;
+
+	@generated("statemachine", "000000")
+	public void sM_ausweichenStatemachineTrigger() triggers SM_ausweichenStatemachine;
+
+	@generated("statemachine", "5ec8cadb")
+	statemachine SM_ausweichenStatemachine using SM_ausweichenStatemachineStates {
+		start idle;
+
+		state idle {
+			transition emergency_msg == true to turn_left;
+		}
+
+		state turn_left {
+			static {
+				count = count + 1;
+				obj_links.calc();
+			}
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_ausweichenStatemachineStates is enum {
+	idle,
+	turn_left
+};

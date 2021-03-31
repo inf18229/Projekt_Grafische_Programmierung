@@ -1,0 +1,37 @@
+package myCar;
+import resources.rad;
+
+class SM_ausweichen {
+	@set
+	private boolean emergency_msg;
+	integer count;
+	Linkslenken obj_links;
+	@get
+	private rad steering_out;
+	characteristic integer max_count = 0.0;
+
+	@generated("statemachine", "000000")
+	public void sM_ausweichenStatemachineTrigger() triggers SM_ausweichenStatemachine;
+
+	@generated("statemachine", "ae9d16ca")
+	statemachine SM_ausweichenStatemachine using SM_ausweichenStatemachineStates {
+		start idle;
+
+		state idle {
+			transition emergency_msg == true to turn_left;
+		}
+
+		state turn_left {
+			static {
+				count = count + 1;
+				obj_links.calc();
+				steering_out = obj_links.steering;
+			}
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_ausweichenStatemachineStates is enum {
+	idle,
+	turn_left
+};

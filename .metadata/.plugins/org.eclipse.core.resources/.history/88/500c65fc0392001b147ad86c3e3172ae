@@ -1,0 +1,8 @@
+package myCar;
+
+class SM_ausweichen {
+}
+
+type SM_ausweichenStatemachineStates is enum {
+	StateA
+};

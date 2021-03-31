@@ -1,0 +1,81 @@
+package myCar;
+
+class SM_laneChange_right {
+	@generated("statemachine", "000000")
+	public void sM_laneChange_rightStatemachineTrigger() triggers SM_laneChange_rightStatemachine;
+
+	@generated("statemachine", "40409fa8")
+	@error("statemachine")
+	statemachine SM_laneChange_rightStatemachine using SM_laneChange_rightStatemachineStates {
+		start idle;
+
+		state idle {
+			transition emergency_msg == true to turn_left;
+		}
+
+		state turn_left {
+			entry {
+				count = 0;
+				obj_links.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_links.calc();
+				steering_out = obj_links.steering;
+			}
+			transition count == max_count to straighten_right;
+		}
+
+		state straighten_right {
+			entry {
+				count = 0;
+				obj_rechts.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_rechts.calc();
+				steering_out = obj_rechts.steering;
+			}
+			transition count == max_count to turn_right;
+		}
+
+		state turn_right {
+			entry {
+				count = 0;
+				obj_rechts.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_rechts.calc();
+				steering_out = obj_rechts.steering;
+			}
+			transition count == max_count to straighten_left;
+		}
+
+		state straighten_left {
+			entry {
+				count = 0;
+				obj_links.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_links.calc();
+				steering_out = obj_links.steering;
+			}
+			transition count == max_count to Done;
+		}
+
+		state Done {
+			transition emergency_msg == false to idle;
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_laneChange_rightStatemachineStates is enum {
+	idle,
+	turn_left,
+	straighten_right,
+	turn_right,
+	straighten_left,
+	Done
+};

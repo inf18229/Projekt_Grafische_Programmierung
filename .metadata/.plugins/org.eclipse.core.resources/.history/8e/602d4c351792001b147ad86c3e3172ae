@@ -1,0 +1,185 @@
+classType myCar.EvasiveManeuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_26
+		, connection_27
+		, connection_32
+		, connection_7, connection_9, connection_20, connection_22, connection_33, connection_28, connection_34
+		}
+	}
+
+	simpleIdentifier resources.DriverMessages.emergency at  (151, 155) {
+		label at (0, -1)
+		outPin {
+			connection_10
+		, connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at  (611, 155) {
+		label at (0, -1)
+		inPin connection_5
+		sequenceCall {
+			inPin 
+		
+		connection_4
+		{
+				bendpoints (80, 0), (80, -90), (-70, -90)
+			}
+		}
+	}
+	
+complexIdentifier    EdgeRising_instance at (281, 141) size (3, 3) backgroundColor #ffffff {
+		label at (-90, -49)
+		methodCall SystemLib.Miscellaneous.EdgeRising.compute {
+			argumentPin signal at (left, 1) connection_8
+			sequenceCall at (-10, -64) {
+				inPin connection_7
+			}
+		}
+		methodCall SystemLib.Miscellaneous.EdgeRising.value {
+			returnPin at (right, 1) {
+				connection_3
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier EdgeFalling_instance at (261, 361) size (3, 3) backgroundColor #ffffff {
+		label at (-90, 11)
+		methodCall SystemLib.Miscellaneous.EdgeFalling.compute {
+			argumentPin signal at (left, 1) connection_10 {
+				bendpoints (50, 0), (50, 220)
+			}
+			sequenceCall at (0, -44) {
+				inPin connection_9
+			}
+		}
+		methodCall SystemLib.Miscellaneous.EdgeFalling.value {
+			returnPin at (right, 1) {
+				connection_25
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at (611, 375) {
+		label at (0, -1)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_11 {
+				bendpoints (90, 0), (90, -100), (-60, -100)
+			}
+		}
+	}
+	if at (621, 201) {
+		inPin connection_21
+		ifControlFlowOutPin {
+			connection_4
+		}
+		sequenceCall at (0, 30) {
+			inPin connection_20
+		}
+	}
+	if at (611, 421) {
+		inPin connection_23
+		ifControlFlowOutPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin connection_22
+		}
+	}
+	simpleIdentifier max_count at (111, 295) {
+		label at (0, -1)
+		outPin {
+			connection_35, connection_29
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier SM_laneChange_left_instance at (371, 151) size (20, 11) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_left.sM_ausweichenStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_26
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.emergency_msg) {
+			argumentPin at (left, 0) connection_3
+			
+		sequenceCall at (-70, 16) {
+				inPin connection_27
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.steering_out) {
+			returnPin at (right, 0) {
+				connection_5
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.max_count) {
+			argumentPin at (left, 5) connection_29 {
+				bendpoints (0, -90)
+			}
+			sequenceCall at (-60, 6) {
+				inPin connection_28
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.^active) {
+			returnPin at (right, 5) {
+				connection_21
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier SM_laneChange_right_instance at (371, 371) size (20, 10) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_right.sM_laneChange_rightStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -50) {
+				inPin connection_32
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.emergency_msg) {
+			argumentPin at (left, 0) connection_25
+			sequenceCall at (-20, -34) {
+				inPin connection_33
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.steering_out) {
+			returnPin at (right, 0) {
+				connection_12
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.^active) {
+			returnPin at (right, 5) {
+				connection_23
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.max_count) {
+			argumentPin at (left, 5) connection_35 {
+				bendpoints (0, 130)
+			}
+			sequenceCall at (-60, 6) {
+				inPin connection_34
+			}
+		}
+	}
+}

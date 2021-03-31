@@ -1,0 +1,92 @@
+package myCar;
+import resources.rad;
+
+class SM_laneChange_left {
+	@set
+	private boolean emergency_msg;
+	integer count;
+	linksLenken obj_links;
+	rechtsLenken obj_rechts;
+	@get
+	private rad steering_out;
+	characteristic integer max_count = 150;
+	@get
+	private real active;
+
+	@generated("statemachine", "000000")
+	public void sM_ausweichenStatemachineTrigger() triggers SM_ausweichenStatemachine;
+
+	@generated("statemachine", "a2ade153")
+	statemachine SM_ausweichenStatemachine using SM_ausweichenStatemachineStates {
+		start idle;
+
+		state idle {
+			transition emergency_msg == true to turn_left;
+		}
+
+		state turn_left {
+			entry {
+				count = 0;
+				obj_links.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_links.calc();
+				steering_out = obj_links.steering;
+			}
+			transition count == max_count to straighten_right;
+		}
+
+		state straighten_right {
+			entry {
+				count = 0;
+				obj_rechts.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_rechts.calc();
+				steering_out = obj_rechts.steering;
+			}
+			transition count == max_count to turn_right;
+		}
+
+		state turn_right {
+			entry {
+				count = 0;
+				obj_rechts.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_rechts.calc();
+				steering_out = obj_rechts.steering;
+			}
+			transition count == max_count to straighten_left;
+		}
+
+		state straighten_left {
+			entry {
+				count = 0;
+				obj_links.steering = steering_out;
+			}
+			static {
+				count = count + 1;
+				obj_links.calc();
+				steering_out = obj_links.steering;
+			}
+			transition count == max_count to Done;
+		}
+
+		state Done {
+			transition emergency_msg == false to idle;
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_ausweichenStatemachineStates is enum {
+	idle,
+	turn_left,
+	straighten_right,
+	turn_right,
+	straighten_left,
+	Done
+};

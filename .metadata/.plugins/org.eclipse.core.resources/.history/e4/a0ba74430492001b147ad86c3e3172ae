@@ -1,0 +1,27 @@
+package myCar;
+
+class SM_ausweichen {
+	@set
+	private real emergency_msg;
+
+	@generated("statemachine", "000000")
+	public void sM_ausweichenStatemachineTrigger() triggers SM_ausweichenStatemachine;
+
+	@generated("statemachine", "69153087")
+	@error("statemachine")
+	statemachine SM_ausweichenStatemachine using SM_ausweichenStatemachineStates {
+		start idle;
+
+		state idle {
+			transition emergency_msg == true to turn_left;
+		}
+
+		state turn_left {
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_ausweichenStatemachineStates is enum {
+	idle,
+	turn_left
+};

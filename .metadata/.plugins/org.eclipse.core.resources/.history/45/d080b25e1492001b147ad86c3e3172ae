@@ -1,0 +1,160 @@
+classType myCar.EvasiveManeuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_17
+		, connection_18
+		, connection_19
+		, connection_7, connection_9, connection_20, connection_22, connection_24
+		}
+	}
+
+	simpleIdentifier resources.DriverMessages.emergency at  (181, 155) {
+		label at (0, -1)
+		outPin {
+			connection_10
+		, connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at  (611, 155) {
+		label at (0, -1)
+		inPin connection_5
+		sequenceCall {
+			inPin 
+		
+		connection_4
+		{
+				bendpoints (90, 0), (90, -70), (-60, -70)
+			}
+		}
+	}
+	
+complexIdentifier    EdgeRising_instance at (281, 141) size (3, 3) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Miscellaneous.EdgeRising.compute {
+			argumentPin signal at (left, 1) connection_8
+			sequenceCall at (-70, -30) {
+				inPin connection_7
+			}
+		}
+		methodCall SystemLib.Miscellaneous.EdgeRising.value {
+			returnPin at (right, 1) {
+				connection_3
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier EdgeFalling_instance at (271, 311) size (3, 3) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Miscellaneous.EdgeFalling.compute {
+			argumentPin signal at (left, 1) connection_10 {
+				bendpoints (20, 0), (20, 170)
+			}
+			sequenceCall at (-70, -30) {
+				inPin connection_9
+			}
+		}
+		methodCall SystemLib.Miscellaneous.EdgeFalling.value {
+			returnPin at (right, 1) {
+				connection_25
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at (611, 325) {
+		label at (0, -1)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_11 {
+				bendpoints (80, 0), (80, -90), (-70, -90)
+			}
+		}
+	}
+	complexIdentifier SM_ausweichen_instance at (371, 151) size (19, 10) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_left.sM_ausweichenStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_17
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.emergency_msg) {
+			argumentPin at (left, 0) connection_3
+			
+		sequenceCall {
+				inPin connection_18
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.steering_out) {
+			returnPin at (right, 0) {
+				connection_5
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.^active) {
+			returnPin at (right, 3) {
+				connection_21
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier SM_laneChange_right_instance at (351, 321) size (21, 11) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_right.sM_laneChange_rightStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_19
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.emergency_msg) {
+			argumentPin at (left, 0) connection_25
+			sequenceCall {
+				inPin connection_24
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.steering_out) {
+			returnPin at (right, 0) {
+				connection_12
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.^active) {
+			returnPin at (right, 5) {
+				connection_23
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	if at (611, 181) {
+		inPin connection_21
+		ifControlFlowOutPin {
+			connection_4
+		}
+		sequenceCall at (0, 30) {
+			inPin connection_20
+		}
+	}
+	if at (621, 371) {
+		inPin connection_23
+		ifControlFlowOutPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin connection_22
+		}
+	}
+}

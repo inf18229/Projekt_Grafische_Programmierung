@@ -1,0 +1,18 @@
+package myCar;
+
+class SM_laneChange_right {
+	@generated("statemachine", "000000")
+	public void sM_laneChange_rightStatemachineTrigger() triggers SM_laneChange_rightStatemachine;
+
+	@generated("statemachine", "9e39356a")
+	statemachine SM_laneChange_rightStatemachine using SM_laneChange_rightStatemachineStates {
+		start StateA;
+
+		state StateA {
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_laneChange_rightStatemachineStates is enum {
+	StateA
+};

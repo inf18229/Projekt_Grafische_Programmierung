@@ -1,0 +1,18 @@
+package myCar;
+
+class SM_ausweichen {
+	@generated("statemachine", "000000")
+	public void sM_ausweichenStatemachineTrigger() triggers SM_ausweichenStatemachine;
+
+	@generated("statemachine", "594fe317")
+	statemachine SM_ausweichenStatemachine using SM_ausweichenStatemachineStates {
+		start StateA;
+
+		state StateA {
+		}
+	}
+}
+@generated("statemachine", "000000")
+type SM_ausweichenStatemachineStates is enum {
+	StateA
+};

@@ -1,0 +1,17 @@
+package myCar;
+import resources.DriverMessages;
+import resources.CarMessages;
+
+static class EvasiveManeuver
+reads DriverMessages.emergency, CarMessages.y
+writes CarMessages.steering {
+	ausweichen ausweichen_instance;
+	SM_ausweichen SM_ausweichen_instance;
+	@thread
+	@generated("blockdiagram", "03ea3a1b")
+	public void calc() {
+		SM_ausweichen_instance.sM_ausweichenStatemachineTrigger(); // Main/calc 1
+		SM_ausweichen_instance.emergency_msg = DriverMessages.emergency; // Main/calc 2
+		CarMessages.steering = SM_ausweichen_instance.steering_out; // Main/calc 3
+	}
+}

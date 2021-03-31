@@ -1,0 +1,96 @@
+classType myCar.Linkslenken
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_1
+		, connection_14
+		}
+	}
+literal unit resources.rad "0.001396" at (231, 183) size (69, 0) {
+		outPin {
+			connection_2
+		}
+	}
+	less at (391, 166) {
+		inPin connection_4
+		inPin connection_10 {
+			bendpoints (100, 0)
+		}
+		outPin {
+			connection_16
+		, connection_13
+		}
+	}
+	addition at (321, 156) {
+		inPin connection_6
+		inPin connection_2 {
+			bendpoints (20, 0)
+		}
+		outPin {
+			connection_4
+		}
+	}
+	simpleIdentifier steering at (231, 155) {
+		label at (0, -1)
+		inPin outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal unit resources.rad "0.001396" at (501, 203) size (69, 0) {
+		outPin {
+			connection_7
+		}
+	}
+	addition at (601, 186) {
+		inPin connection_11 {
+			bendpoints (40, 0), (40, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_7
+		outPin {
+			connection_9
+		}
+	}
+	literal unit resources.rad "0.2094" at (241, 203) size (49, 0) {
+		outPin {
+			connection_10
+		}
+	}
+	simpleIdentifier steering at (661, 195) {
+		label at (0, -1)
+		inPin connection_9
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin connection_12
+		}
+	}
+	if at (441, 171) {
+		inPin connection_13
+		ifControlFlowOutPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin connection_1
+		}
+	}
+simpleIdentifier full at (661, 245) {
+		label at (0, -1)
+		inPin connection_15
+		outPin sequenceCall {
+			inPin connection_14
+		}
+	}
+	not at (511, 241) {
+		inPin connection_16 {
+			bendpoints (0, 70)
+		}
+		outPin {
+			connection_15
+		}
+	}
+}

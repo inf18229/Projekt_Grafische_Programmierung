@@ -1,0 +1,52 @@
+classType myCar.EvasiveManeuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_1
+		, connection_2
+		, connection_4
+		}
+	}
+
+	simpleIdentifier resources.DriverMessages.emergency at (211, 155) {
+		label at (0, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at (571, 155) {
+		label at (0, -1)
+		inPin connection_5
+		sequenceCall {
+			inPin 
+		
+		connection_4
+		}
+	}
+	complexIdentifier SM_ausweichen_instance at (351, 151) size (19, 10) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_left.sM_ausweichenStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_1
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.emergency_msg) {
+			argumentPin at (left, 0) connection_3
+			sequenceCall {
+				inPin connection_2
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.steering_out) {
+			returnPin at (right, 0) {
+				connection_5
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+}

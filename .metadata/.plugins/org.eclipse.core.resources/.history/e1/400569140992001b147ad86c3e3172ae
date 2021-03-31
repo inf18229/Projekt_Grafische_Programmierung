@@ -1,0 +1,8 @@
+package myCar;
+
+class SM_laneChange_right {
+}
+
+type SM_laneChange_rightStatemachineStates is enum {
+	StateA
+};

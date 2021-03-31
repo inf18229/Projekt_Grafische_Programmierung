@@ -1,0 +1,18 @@
+Component   myCar.SM_laneChange_left size ( 20 , 11 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout sM_ausweichenStatemachineTrigger {
+		pin sM_ausweichenStatemachineTrigger ( Top , 0 )
+	}
+	memberLayout emergency_msg {
+		setPinPosition ( Left , 0 )
+	}
+	memberLayout steering_out {
+		getPinPosition ( Right , 0 )
+	}
+	memberLayout max_count {
+		setPinPosition ( Left , 5 )
+	}
+	memberLayout active {
+		getPinPosition ( Right , 1 )
+	}
+}

@@ -1,0 +1,15 @@
+Component myCar.SM_laneChange_right size ( 20 , 10 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout sM_laneChange_rightStatemachineTrigger {
+		pin sM_laneChange_rightStatemachineTrigger ( Top , 0 )
+	}
+	memberLayout emergency_msg {
+		setPinPosition ( Left , 0 )
+	}
+	memberLayout steering_out {
+		getPinPosition ( Right , 0 )
+	}
+	memberLayout active {
+		getPinPosition ( Right , 5 )
+	}
+}
