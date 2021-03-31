@@ -15,6 +15,7 @@ P_OBJ=obj
 P_ADDITIONAL_INCLUDE=$(pathcnv SN,C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/include\
     C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/src\
     C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/platform\
+    C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/coverage\
     C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/l1\
     F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/com.etas.rta_osek_1.0.4/rta/VRTA/inc\
     F:/Software/ETAS/ASCET-DEVELOPER7.6/configuration/org.eclipse.osgi/54/0/.cp/platform/rta_osek\
@@ -23,6 +24,7 @@ ADDITIONAL_LIBS=$(pathcnv SN,C:/ETAS/workspace/Projekt_Grafische_Programmierung/
 ADDITIONAL_OBJECTS=
 
 OBJECTS=\
+    $(P_OBJ)/coverageLib_CoverageInstrumentation_Automatic.o\
     $(P_OBJ)/myCar_ausweichen_Automatic.o\
     $(P_OBJ)/myCar_Driver_Automatic.o\
     $(P_OBJ)/myCar_Driver_Tempo_Automatic.o\
@@ -42,6 +44,7 @@ OBJECTS=\
     $(P_OBJ)/SystemLib_Math_MathLib_Automatic.o\
     $(P_OBJ)/SystemLib_Miscellaneous_EdgeFalling_Impl.o\
     $(P_OBJ)/SystemLib_Miscellaneous_EdgeRising_Impl.o\
+    $(P_OBJ)/esdl_coverage.o\
     $(P_OBJ)/PCDriver_PC.l1.o\
     $(P_OBJ)/myCar_myCar_Automatic.l1.o\
     $(P_OBJ)/myCar_myDrive_3_Automatic.l1.o\
@@ -100,6 +103,9 @@ L1_DEFINES=L1_PROTOCOL
 include $(P_TARGET)/build.mk
 
 #### COMPILE RULES ####
+$(P_OBJ)/coverageLib_CoverageInstrumentation_Automatic.o: src/coverageLib_CoverageInstrumentation_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\coverageLib_CoverageInstrumentation_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/coverageLib_CoverageInstrumentation_Automatic.o src/coverageLib_CoverageInstrumentation_Automatic.c) $(CFLAGS)
 $(P_OBJ)/myCar_ausweichen_Automatic.o: src/myCar_ausweichen_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\myCar_ausweichen_Automatic.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/myCar_ausweichen_Automatic.o src/myCar_ausweichen_Automatic.c) $(CFLAGS)
@@ -157,6 +163,9 @@ $(P_OBJ)/SystemLib_Miscellaneous_EdgeFalling_Impl.o: src/SystemLib_Miscellaneous
 $(P_OBJ)/SystemLib_Miscellaneous_EdgeRising_Impl.o: src/SystemLib_Miscellaneous_EdgeRising_Impl.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\src\SystemLib_Miscellaneous_EdgeRising_Impl.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/SystemLib_Miscellaneous_EdgeRising_Impl.o src/SystemLib_Miscellaneous_EdgeRising_Impl.c) $(CFLAGS)
+$(P_OBJ)/esdl_coverage.o: coverage/esdl_coverage.cpp $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\coverage\esdl_coverage.cpp]
+	@$(CXX) $(call CXX_INPUT,$(P_OBJ)/esdl_coverage.o coverage/esdl_coverage.cpp) $(CXXFLAGS)
 $(P_OBJ)/PCDriver_PC.l1.o: l1/PCDriver_PC.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver_CGen\l1\PCDriver_PC.l1.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/PCDriver_PC.l1.o l1/PCDriver_PC.l1.c) $(CFLAGS)

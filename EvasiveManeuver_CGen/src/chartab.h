@@ -9,11 +9,11 @@ struct CharTable1_real32_128_real32_TYPE {
    float32 values [128];
 };
 
-/* definition of characteristic table type: 'CharTable1_real32_5_real32_TYPE' */
-struct CharTable1_real32_5_real32_TYPE {
+/* definition of characteristic table type: 'CharTable1_real32_12_real32_TYPE' */
+struct CharTable1_real32_12_real32_TYPE {
    uint16 xSize;
-   float32 xDist [5];
-   float32 values [5];
+   float32 xDist [12];
+   float32 values [12];
 };
 
 /* definition of characteristic table type: 'CharTable1_real32_6_real32_TYPE' */
@@ -36,6 +36,9 @@ struct CharTable2_real32_6_real32_6_real32_TYPE {
 /*-----------------------------------------------------------------------------
  *    Service Classes Type Definitions
  *----------------------------------------------------------------------------*/
+
+/* definition of Service Class type: "coverageLib_CoverageInstrumentation::Automatic" */
+typedef struct coverageLib_CoverageInstrumentation_Automatic coverageLib_CoverageInstrumentation_Automatic_Type;
 
 /* definition of Service Class type: "SystemLib_Math_MathLib::Automatic" */
 typedef struct SystemLib_Math_MathLib_Automatic SystemLib_Math_MathLib_Automatic_Type;

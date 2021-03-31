@@ -1,3 +1,4 @@
+obj/coverageLib_CoverageInstrumentation_Automatic.o
 obj/myCar_ausweichen_Automatic.o
 obj/myCar_Driver_Automatic.o
 obj/myCar_Driver_Tempo_Automatic.o
@@ -17,6 +18,7 @@ obj/resources_DriverMessages_Automatic.o
 obj/SystemLib_Math_MathLib_Automatic.o
 obj/SystemLib_Miscellaneous_EdgeFalling_Impl.o
 obj/SystemLib_Miscellaneous_EdgeRising_Impl.o
+obj/esdl_coverage.o
 obj/PCDriver_PC.l1.o
 obj/myCar_myCar_Automatic.l1.o
 obj/myCar_myDrive_3_Automatic.l1.o

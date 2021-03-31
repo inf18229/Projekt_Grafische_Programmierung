@@ -20,6 +20,8 @@
  *----------------------------------------------------------------------------*/
 
 #include "myCar_Driver_Automatic.h"
+#include "coverageLib_CoverageInstrumentation_Automatic.h"
+#include "PCDriver_PC_Automatic.h"
 #include "resources_CarMessages_Automatic.h"
 #include "resources_DriverMessages_Automatic.h"
 
@@ -134,12 +136,27 @@ void myCar_Driver_Automatic_calc (void)
       resources_DriverMessages_v_target__myCar_Driver_Automatic_calc = resources_DriverMessages_v_target;
       EnableAllInterrupts();
    }
+   _cov_statement_(67U);
    distance_next_Obstacle_VAL
       = myCar_Obstacles_Automatic_distance(resources_CarMessages_x__myCar_Driver_Automatic_calc);
-   resources_DriverMessages_emergency__myCar_Driver_Automatic_calc = distance_next_Obstacle_VAL < min_dist_to_obst_VAL;
+   _cov_statement_(68U);
+   if (_cov_binary_branch_(10U, distance_next_Obstacle_VAL < min_dist_to_obst_VAL))
+   {
+      _cov_statement_(69U);
+      resources_DriverMessages_emergency__myCar_Driver_Automatic_calc = true;
+   }
+   else
+   {
+      _cov_statement_(70U);
+      resources_DriverMessages_emergency__myCar_Driver_Automatic_calc = false;
+   } /* end if */
+   _cov_statement_(71U);
    myCar_Driver_Tempo_Automatic_calc(Driver_Tempo_instance_REF, resources_CarMessages_v__myCar_Driver_Automatic_calc, v_target_VAL);
+   _cov_statement_(72U);
    resources_CarMessages_brake__myCar_Driver_Automatic_calc = myCar_Driver_RAM.Driver_Tempo_instance.brake_out;
+   _cov_statement_(73U);
    resources_CarMessages_power__myCar_Driver_Automatic_calc = myCar_Driver_RAM.Driver_Tempo_instance.power_out;
+   _cov_statement_(74U);
    resources_DriverMessages_v_target__myCar_Driver_Automatic_calc = v_target_VAL;
    /* send messages implicitly */
    {

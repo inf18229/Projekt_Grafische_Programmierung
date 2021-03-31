@@ -1,6 +1,0 @@
-classType myCar.ausweichen
-blockdiagramSpecification Main {
-	methodBody steering_out {
-		outPin active
-	}
-}

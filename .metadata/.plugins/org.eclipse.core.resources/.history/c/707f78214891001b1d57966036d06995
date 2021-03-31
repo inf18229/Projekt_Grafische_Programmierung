@@ -1,9 +1,0 @@
-package myCar;
-import resources.rad;
-
-class ausweichen {
-	@generated("blockdiagram", "98a51060")
-	public rad steering_out(boolean in emerg_msg) {
-		return 1.0[rad]; // Main/steering_out 1
-	}
-}

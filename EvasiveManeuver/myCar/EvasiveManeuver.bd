@@ -80,10 +80,7 @@ complexIdentifier    EdgeRising_instance at (281, 141) size (3, 3) backgroundCol
 		}
 	}
 	if at (621, 201) {
-		inPin connection_21 {
-			bendpoints (40, 0)
-		}
-		ifControlFlowOutPin {
+		inPin connection_21 ifControlFlowOutPin {
 			connection_4
 		}
 		sequenceCall at (0, 30) {
@@ -125,14 +122,14 @@ complexIdentifier    EdgeRising_instance at (281, 141) size (3, 3) backgroundCol
 		elementCall (myCar.SM_laneChange_left.max_count) {
 			argumentPin at (left, 5) connection_29 {
 				bendpoints 
-			(200, 0)
+			(40, 0)
 			}
 			sequenceCall at (-60, -24) {
 				inPin connection_38
 			}
 		}
 		elementCall (myCar.SM_laneChange_left.^active) {
-			returnPin at (right, 1) {
+			returnPin  at (right, 5) {
 				connection_21
 			}
 			sequenceCall {
@@ -172,14 +169,14 @@ complexIdentifier    EdgeRising_instance at (281, 141) size (3, 3) backgroundCol
 		elementCall (myCar.SM_laneChange_right.max_count) {
 			argumentPin at (left, 5) connection_35 {
 				bendpoints 
-			(200, 0)
+			(40, 0)
 			}
 			sequenceCall at (-70, 6) {
 				inPin connection_41
 			}
 		}
 	}
-simpleIdentifier max_count_line at  (191, 491) {
+simpleIdentifier max_count_line at  (131, 271) {
 		label at (0, 1)
 		inPin connection_47 outPin {
 			connection_49
@@ -187,7 +184,7 @@ simpleIdentifier max_count_line at  (191, 491) {
 			inPin
 		}
 	}
-simpleIdentifier resources.DriverMessages.v_target at (81, 505) {
+simpleIdentifier resources.DriverMessages.v_target at (51, 285) {
 		label at (0, -1)
 		outPin {
 			connection_47
@@ -196,11 +193,9 @@ simpleIdentifier resources.DriverMessages.v_target at (81, 505) {
 			inPin
 		}
 	}
-	simpleIdentifier max_count_var at (111, 295) {
+	simpleIdentifier max_count_var at (271, 285) {
 		label at (0, -1)
-		inPin connection_49 {
-			bendpoints (0, -40), (-170, -40), (-170, -210)
-		}
+		inPin connection_49
 		outPin {
 			connection_35, connection_29
 		}

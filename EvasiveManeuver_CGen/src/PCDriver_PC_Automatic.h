@@ -20,6 +20,7 @@
 # error NOT COMPLIANT (< compliance level 4) VERSION OF esdl.h FOUND; To fix that, delete the old headers (esdl_<...>.h) in include folder and restart build again to get the new version of those files.
 #endif
 #include "chartab.h"
+#include "coverageLib_CoverageInstrumentation_Automatic.h"
 #include "myCar_Driver_Automatic.h"
 #include "myCar_EvasiveManeuver_Automatic.h"
 #include "myCar_myCar_Automatic.h"
@@ -40,6 +41,7 @@
 /******************************************************************************
  * BEGIN: declaration of global C variables exported by project PCDriver_PC_Automatic
  ******************************************************************************/
+
 
 
 

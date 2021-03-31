@@ -20,6 +20,7 @@
 -I"C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/include"
 -I"C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/src"
 -I"C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/platform"
+-I"C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/coverage"
 -I"C:/ETAS/workspace/Projekt_Grafische_Programmierung/EvasiveManeuver_CGen/l1"
 -I"F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/com.etas.rta_osek_1.0.4/rta/VRTA/inc"
 -I"F:/Software/ETAS/ASCET-DEVELOPER7.6/configuration/org.eclipse.osgi/54/0/.cp/platform/rta_osek"
