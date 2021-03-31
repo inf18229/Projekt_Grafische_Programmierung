@@ -9,6 +9,13 @@ struct CharTable1_real32_128_real32_TYPE {
    float32 values [128];
 };
 
+/* definition of characteristic table type: 'CharTable1_real32_5_real32_TYPE' */
+struct CharTable1_real32_5_real32_TYPE {
+   uint16 xSize;
+   float32 xDist [5];
+   float32 values [5];
+};
+
 /* definition of characteristic table type: 'CharTable1_real32_6_real32_TYPE' */
 struct CharTable1_real32_6_real32_TYPE {
    uint16 xSize;

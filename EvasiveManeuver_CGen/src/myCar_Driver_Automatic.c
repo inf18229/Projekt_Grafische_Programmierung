@@ -122,6 +122,7 @@ void myCar_Driver_Automatic_calc (void)
    uint16 resources_CarMessages_v__myCar_Driver_Automatic_calc;
    float32 resources_CarMessages_x__myCar_Driver_Automatic_calc;
    boolean resources_DriverMessages_emergency__myCar_Driver_Automatic_calc;
+   uint16 resources_DriverMessages_v_target__myCar_Driver_Automatic_calc;
    /* receive messages implicitly */
    {
       DisableAllInterrupts();
@@ -130,6 +131,7 @@ void myCar_Driver_Automatic_calc (void)
       resources_CarMessages_v__myCar_Driver_Automatic_calc = resources_CarMessages_v;
       resources_CarMessages_x__myCar_Driver_Automatic_calc = resources_CarMessages_x;
       resources_DriverMessages_emergency__myCar_Driver_Automatic_calc = resources_DriverMessages_emergency;
+      resources_DriverMessages_v_target__myCar_Driver_Automatic_calc = resources_DriverMessages_v_target;
       EnableAllInterrupts();
    }
    distance_next_Obstacle_VAL
@@ -138,12 +140,14 @@ void myCar_Driver_Automatic_calc (void)
    myCar_Driver_Tempo_Automatic_calc(Driver_Tempo_instance_REF, resources_CarMessages_v__myCar_Driver_Automatic_calc, v_target_VAL);
    resources_CarMessages_brake__myCar_Driver_Automatic_calc = myCar_Driver_RAM.Driver_Tempo_instance.brake_out;
    resources_CarMessages_power__myCar_Driver_Automatic_calc = myCar_Driver_RAM.Driver_Tempo_instance.power_out;
+   resources_DriverMessages_v_target__myCar_Driver_Automatic_calc = v_target_VAL;
    /* send messages implicitly */
    {
       DisableAllInterrupts();
       resources_CarMessages_brake = resources_CarMessages_brake__myCar_Driver_Automatic_calc;
       resources_CarMessages_power = resources_CarMessages_power__myCar_Driver_Automatic_calc;
       resources_DriverMessages_emergency = resources_DriverMessages_emergency__myCar_Driver_Automatic_calc;
+      resources_DriverMessages_v_target = resources_DriverMessages_v_target__myCar_Driver_Automatic_calc;
       EnableAllInterrupts();
    }
 }

@@ -701,6 +701,20 @@
 			/end IF_DATA
 		/end MEASUREMENT
 
+		/begin MEASUREMENT resources.DriverMessages.v_target
+			/* long identifier    */ ""
+			/* datatype           */ UWORD
+			/* conversion         */ esdl_f0_01_kmh
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0.0
+			/* upper limit        */ 200.0
+			ECU_ADDRESS 0x0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 5
+			/end IF_DATA
+		/end MEASUREMENT
+
 		/begin MEASUREMENT myCar.EvasiveManeuver.ausweichen_instance.steering
 			/* long identifier    */ ""
 			/* datatype           */ FLOAT32_IEEE
@@ -804,12 +818,12 @@
 
 		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_left_instance.count
 			/* long identifier    */ ""
-			/* datatype           */ SLONG
+			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -2147483648
-			/* upper limit        */ 2147483647
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 3 1000 2 1000 3
@@ -832,12 +846,12 @@
 
 		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_left_instance.max_count
 			/* long identifier    */ ""
-			/* datatype           */ SLONG
+			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -2147483648
-			/* upper limit        */ 2147483647
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 3 1000 2 1000 5
@@ -948,12 +962,12 @@
 
 		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_right_instance.count
 			/* long identifier    */ ""
-			/* datatype           */ SLONG
+			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -2147483648
-			/* upper limit        */ 2147483647
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 3 1000 3 1000 3
@@ -976,12 +990,12 @@
 
 		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_right_instance.max_count
 			/* long identifier    */ ""
-			/* datatype           */ SLONG
+			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -2147483648
-			/* upper limit        */ 2147483647
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 3 1000 3 1000 5
@@ -1076,6 +1090,34 @@
 			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 3 1000 5
 			/end IF_DATA
 		/end CHARACTERISTIC
+
+		/begin MEASUREMENT myCar.EvasiveManeuver.v_int
+			/* long identifier    */ ""
+			/* datatype           */ SLONG
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -2147483648
+			/* upper limit        */ 2147483647
+			ECU_ADDRESS 0x0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 3 1000 7
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT myCar.EvasiveManeuver.max_count_var
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 3 1000 6
+			/end IF_DATA
+		/end MEASUREMENT
 
 		/begin COMPU_METHOD esdl_f0_01_kmh
 			/* long identifier    */ ""
@@ -1242,6 +1284,7 @@
 				resources.CarMessages.brake
 				resources.CarMessages.power
 				resources.DriverMessages.emergency
+				resources.DriverMessages.v_target
 			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
 				myCar.Driver.distance_next_Obstacle
@@ -1270,12 +1313,18 @@
 				myCar.EvasiveManeuver.max_count
 			/end DEF_CHARACTERISTIC
 			/begin IN_MEASUREMENT
+				resources.CarMessages.v
 				resources.CarMessages.y
 				resources.DriverMessages.emergency
+				resources.DriverMessages.v_target
 			/end IN_MEASUREMENT
 			/begin OUT_MEASUREMENT
 				resources.CarMessages.steering
 			/end OUT_MEASUREMENT
+			/begin LOC_MEASUREMENT
+				myCar.EvasiveManeuver.max_count_var
+				myCar.EvasiveManeuver.v_int
+			/end LOC_MEASUREMENT
 			/begin SUB_FUNCTION
 				myCar.EvasiveManeuver.EdgeFalling_instance
 				myCar.EvasiveManeuver.EdgeRising_instance
@@ -1420,6 +1469,10 @@
 			/begin REF_CHARACTERISTIC
 				myCar.EvasiveManeuver.max_count
 			/end REF_CHARACTERISTIC
+			/begin REF_MEASUREMENT
+				myCar.EvasiveManeuver.max_count_var
+				myCar.EvasiveManeuver.v_int
+			/end REF_MEASUREMENT
 			/begin SUB_GROUP
 				myCar.EvasiveManeuver.EdgeFalling_instance
 				myCar.EvasiveManeuver.EdgeRising_instance
@@ -1588,6 +1641,7 @@
 				resources.DriverMessages.emergency
 				resources.DriverMessages.on
 				resources.DriverMessages.power
+				resources.DriverMessages.v_target
 			/end REF_MEASUREMENT
 		/end GROUP
 	/end MODULE

@@ -4,20 +4,20 @@ import resources.rad;
 class SM_laneChange_right {
 	@set
 	private boolean emergency_msg;
-	integer count;
+	real count;
 	linksLenken obj_links;
 	rechtsLenken obj_rechts;
 	@get
 	private rad steering_out;
 	@set
-	private integer max_count;
+	private real max_count;
 	@get
 	private boolean active;
 
 	@generated("statemachine", "000000")
 	public void sM_laneChange_rightStatemachineTrigger() triggers SM_laneChange_rightStatemachine;
 
-	@generated("statemachine", "e7d86158")
+	@generated("statemachine", "1d6859f6")
 	statemachine SM_laneChange_rightStatemachine using SM_laneChange_rightStatemachineStates {
 		start idle;
 
@@ -27,11 +27,11 @@ class SM_laneChange_right {
 
 		state turn_left {
 			entry {
-				count = 0;
+				count = 0.0;
 				obj_links.steering = steering_out;
 			}
 			static {
-				count = count + 1;
+				count = count + 1.0;
 				obj_links.calc();
 				steering_out = obj_links.steering;
 			}
@@ -40,11 +40,11 @@ class SM_laneChange_right {
 
 		state straighten_right {
 			entry {
-				count = 0;
+				count = 0.0;
 				obj_rechts.steering = steering_out;
 			}
 			static {
-				count = count + 1;
+				count = count + 1.0;
 				if (!between(steering_out, - 0.001[rad], 0.001[rad])) {
 					obj_rechts.calc();
 				}
@@ -55,12 +55,12 @@ class SM_laneChange_right {
 
 		state turn_right {
 			entry {
-				count = 0;
+				count = 0.0;
 				obj_rechts.steering = steering_out;
 				active = true;
 			}
 			static {
-				count = count + 1;
+				count = count + 1.0;
 				obj_rechts.calc();
 				steering_out = obj_rechts.steering;
 			}
@@ -69,11 +69,11 @@ class SM_laneChange_right {
 
 		state straighten_left {
 			entry {
-				count = 0;
+				count = 0.0;
 				obj_links.steering = steering_out;
 			}
 			static {
-				count = count + 1;
+				count = count + 1.0;
 				if (!between(steering_out, - 0.001[rad], 0.001[rad])) {
 					obj_links.calc();
 				}
