@@ -21,6 +21,10 @@
 #define min_dist_to_obst_VAL myCar_Driver_CAL_MEM.min_dist_to_obst
 #define Driver_Tempo_instance_VAL myCar_Driver.Driver_Tempo_instance
 #define Driver_Tempo_instance_REF &(myCar_Driver.Driver_Tempo_instance)
+#define c_VAL myCar_Driver_CAL_MEM.c
+#define max_count_line_VAL myCar_Driver_RAM.max_count_line
+#define max_count_line_REF &(myCar_Driver_RAM.max_count_line)
+#define min_dist_to_obstacle_VAL myCar_Driver_RAM.min_dist_to_obstacle
 /* ****************************************************************************
  * END: DEFINITION OF ACCESS MACROS
  ******************************************************************************/

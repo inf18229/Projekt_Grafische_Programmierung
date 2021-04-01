@@ -15,8 +15,6 @@
  *----------------------------------------------------------------------------*/
 
 #include "myCar_myDrive_3_Automatic.h"
-#include "coverageLib_CoverageInstrumentation_Automatic.h"
-#include "PCDriver_PC_Automatic.h"
 #include "ESDL_Linear_Interpolation.h"
 /******************************************************************************
  * BEGIN: source code of a multiple instance class
@@ -65,40 +63,29 @@ void myCar_myDrive_3_Automatic_move (
    /* temp. variables */
    float32 _t1real32;
 
-   _cov_statement_(38U);
-   if (_cov_binary_branch_(7U, dist_VAL > length))
+   if (dist_VAL > length)
    {
-      _cov_statement_(39U);
       dist_VAL = dist_VAL - length;
    } /* end if */
-   _cov_statement_(40U);
+   _t1real32 = (float32)v_VAL * 0.01F;
    momentum_VAL
-      = ESDL_Linear_CharTable2_getAt_r32r32r32((EngineMomentum_REF)->xSize, (EngineMomentum_REF)->xDist, (EngineMomentum_REF)->ySize, (EngineMomentum_REF)->yDist, (EngineMomentum_REF)->values, powerCtrl, (float32)v_VAL * 0.01F);
-   _cov_statement_(41U);
+      = ESDL_Linear_CharTable2_getAt_r32r32r32((EngineMomentum_REF)->xSize, (EngineMomentum_REF)->xDist, (EngineMomentum_REF)->ySize, (EngineMomentum_REF)->yDist, (EngineMomentum_REF)->values, powerCtrl, _t1real32);
    ds_VAL = (float32)v_VAL * mydt * 2.77777777777778e-3F;
-   _cov_statement_(42U);
    dist_VAL = ds_VAL + dist_VAL;
-   _cov_statement_(43U);
    dh_VAL = h_VAL - height;
-   _cov_statement_(44U);
    h_VAL = height;
-   _cov_statement_(45U);
    _t1real32
-      = ((ESDL_Linear_CharTable1_getAt_r32r32((BrakeMomentum_REF)->xSize, (BrakeMomentum_REF)->xDist, (BrakeMomentum_REF)->values, brakeCtrl) + momentum_VAL + ESDL_Linear_CharTable1_getAt_r32r32((AirFriction_REF)->xSize, (AirFriction_REF)->xDist, (AirFriction_REF)->values, (float32)v_VAL * 0.01F) + (myg * (((ds_VAL == 0.0F) ? dh_VAL : (dh_VAL / ds_VAL))) * 9.81F)) * mydt * 360.0F) + (float32)v_VAL;
+      = ((ESDL_Linear_CharTable1_getAt_r32r32((BrakeMomentum_REF)->xSize, (BrakeMomentum_REF)->xDist, (BrakeMomentum_REF)->values, brakeCtrl) + momentum_VAL + ESDL_Linear_CharTable1_getAt_r32r32((AirFriction_REF)->xSize, (AirFriction_REF)->xDist, (AirFriction_REF)->values, _t1real32) + (myg * (((ds_VAL == 0.0F) ? dh_VAL : (dh_VAL / ds_VAL))) * 9.81F)) * mydt * 360.0F) + (float32)v_VAL;
    _t1real32
       = ((_t1real32 >= 0.0F) ? (((_t1real32 <= 20000.0F) ? _t1real32 : 20000.0F)) : 0.0F);
    _t1real32
       = ((_t1real32 < 0.0F) ? (_t1real32 - 0.5F) : (_t1real32 + 0.5F));
    v_VAL
       = ((_t1real32 >= 0.0F) ? (((_t1real32 <= 20000.0F) ? (uint16)_t1real32 : 20000U)) : 0U);
-   _cov_statement_(46U);
    myCar_MyTurn_Automatic_move(MyTurn_instance_REF, beta, (float32)v_VAL * 0.01F, mydt);
-   _cov_statement_(47U);
    bearing_VAL
       = self->MyTurn_instance.myCar_MyTurn_Automatic_RAM->bearing * 57.2957812199555F;
-   _cov_statement_(48U);
    x_VAL = self->MyTurn_instance.myCar_MyTurn_Automatic_RAM->x;
-   _cov_statement_(49U);
    y_VAL = self->MyTurn_instance.myCar_MyTurn_Automatic_RAM->y;
 }
 /* ----------------------------------------------------------------------------
@@ -117,19 +104,12 @@ void myCar_myDrive_3_Automatic_move (
 
 void myCar_myDrive_3_Automatic_reset ( const struct myCar_myDrive_3_Automatic * self)
 {
-   _cov_statement_(50U);
    h_VAL = 0.0F;
-   _cov_statement_(51U);
    dist_VAL = h_VAL;
-   _cov_statement_(52U);
    x_VAL = dist_VAL;
-   _cov_statement_(53U);
    y_VAL = x_VAL;
-   _cov_statement_(54U);
    v_VAL = 0U;
-   _cov_statement_(55U);
    bearing_VAL = 0.0F;
-   _cov_statement_(56U);
    myCar_MyTurn_Automatic_reset(MyTurn_instance_REF);
 }
 /* ----------------------------------------------------------------------------

@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 2063613198
+		         /* programm id */ 2189441845
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -583,7 +583,7 @@
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 3
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
 			/end IF_DATA
 		/end CHARACTERISTIC
 
@@ -597,7 +597,7 @@
 			/* lower limit        */ 0.0
 			/* upper limit        */ 200.0
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 4
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
 			/end IF_DATA
 		/end CHARACTERISTIC
 
@@ -611,7 +611,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 1
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 2
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -625,9 +625,37 @@
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 2
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 3
 			/end IF_DATA
 		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC myCar.Driver.c
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x0
+			/* record layout      */ STANDARD_VALUE_R32
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 1
+			/end IF_DATA
+		/end CHARACTERISTIC
+
+		/begin MEASUREMENT myCar.Driver.min_dist_to_obstacle
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 4
+			/end IF_DATA
+		/end MEASUREMENT
 
 		/begin MEASUREMENT resources.DriverMessages.power
 			/* long identifier    */ ""
@@ -1275,6 +1303,7 @@
 				myCar.Driver.power
 				myCar.Driver.v_target
 				myCar.Driver.min_dist_to_obst
+				myCar.Driver.c
 			/end DEF_CHARACTERISTIC
 			/begin IN_MEASUREMENT
 				resources.CarMessages.v
@@ -1288,6 +1317,7 @@
 			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
 				myCar.Driver.distance_next_Obstacle
+				myCar.Driver.min_dist_to_obstacle
 			/end LOC_MEASUREMENT
 			/begin SUB_FUNCTION
 				myCar.Driver.Driver_Tempo_instance
@@ -1411,9 +1441,6 @@
 				myCar.EvasiveManeuver.EdgeFalling_instance.oldSignal
 			/end LOC_MEASUREMENT
 		/end FUNCTION
-		/begin FUNCTION coverageLib.CoverageInstrumentation
-			""
-		/end FUNCTION
 
 		/begin RECORD_LAYOUT STANDARD_CURVE_R32R32
 		/* axis size          */ NO_AXIS_PTS_X 1 UWORD
@@ -1437,10 +1464,6 @@
 			/* value              */ FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
 		/end RECORD_LAYOUT
 
-		/begin GROUP coverageLib.CoverageInstrumentation
-			""
-			ROOT
-		/end GROUP
 		/begin GROUP myCar.Driver
 			""
 			ROOT
@@ -1448,9 +1471,11 @@
 				myCar.Driver.power
 				myCar.Driver.v_target
 				myCar.Driver.min_dist_to_obst
+				myCar.Driver.c
 			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
 				myCar.Driver.distance_next_Obstacle
+				myCar.Driver.min_dist_to_obstacle
 			/end REF_MEASUREMENT
 			/begin SUB_GROUP
 				myCar.Driver.Driver_Tempo_instance

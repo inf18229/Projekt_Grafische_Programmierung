@@ -20,7 +20,6 @@
  *----------------------------------------------------------------------------*/
 
 #include "myCar_myCar_Automatic.h"
-#include "coverageLib_CoverageInstrumentation_Automatic.h"
 #include "PCDriver_PC_Automatic.h"
 #include "resources_CarMessages_Automatic.h"
 #include "ESDL_Linear_Interpolation.h"
@@ -248,17 +247,11 @@ void myCar_myCar_Automatic_calc (void)
       resources_CarMessages_y__myCar_myCar_Automatic_calc = resources_CarMessages_y;
       EnableAllInterrupts();
    }
-   _cov_statement_(31U);
    resources_CarMessages_v__myCar_myCar_Automatic_calc = myCar_myCar_RAM.myVehicle.v;
-   _cov_statement_(32U);
    resources_CarMessages_x__myCar_myCar_Automatic_calc = myCar_myCar_RAM.myVehicle.x;
-   _cov_statement_(33U);
    resources_CarMessages_y__myCar_myCar_Automatic_calc = myCar_myCar_RAM.myVehicle.y;
-   _cov_statement_(34U);
    time_VAL = dT_VAL + time_VAL;
-   _cov_statement_(35U);
    resources_CarMessages_bearing__myCar_myCar_Automatic_calc = myCar_myCar_RAM.myVehicle.bearing;
-   _cov_statement_(36U);
    myCar_myDrive_3_Automatic_move(myVehicle_REF, resources_CarMessages_power__myCar_myCar_Automatic_calc, resources_CarMessages_brake__myCar_myCar_Automatic_calc, dT_VAL, g_VAL * 1.01936799184506e-1F, resources_CarMessages_steering__myCar_myCar_Automatic_calc, ESDL_Linear_CharTable1_getAt_r32r32((Landscape_REF)->xSize, (Landscape_REF)->xDist, (Landscape_REF)->values, myCar_myCar_RAM.myVehicle.dist), TrackSize_VAL);
    /* send messages implicitly */
    {
@@ -286,7 +279,6 @@ void myCar_myCar_Automatic_calc (void)
 
 void myCar_myCar_Automatic_reset (void)
 {
-   _cov_statement_(37U);
    myCar_myDrive_3_Automatic_reset(myVehicle_REF);
 }
 /* ----------------------------------------------------------------------------

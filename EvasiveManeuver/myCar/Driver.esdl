@@ -4,6 +4,7 @@ import resources.velocity;
 import resources.kmh;
 import resources.m;
 import resources.DriverMessages;
+import resources.curve_max_count;
 
 static class Driver
 reads CarMessages.v, CarMessages.x
@@ -14,11 +15,14 @@ writes CarMessages.power, CarMessages.brake, DriverMessages.emergency, DriverMes
 	m distance_next_Obstacle;
 	characteristic m min_dist_to_obst = 100.0[m];
 	Driver_Tempo Driver_Tempo_instance;
+	characteristic real c = 0.0;
+	curve_max_count max_count_line[12] = {{5.0[kmh], 10.0[kmh], 15.0[kmh], 20.0[kmh], 25.0[kmh], 30.0[kmh], 35.0[kmh], 40.0[kmh], 45.0[kmh], 50.0[kmh], 55.0[kmh], 60.0[kmh]}, {706.0, 419.0, 236.0, 177.0, 149.0, 128.0, 116.0, 105.0, 97.0, 90.0, 84.0, 80.0}};
+	m min_dist_to_obstacle;
 	@thread
-	@generated("blockdiagram", "470a9237")
+	@generated("blockdiagram", "ea4a8157")
 	public void calc() {
 		distance_next_Obstacle = Obstacles_instance.distance(CarMessages.x); // Main/calc 1
-		if (distance_next_Obstacle < min_dist_to_obst) {
+		if (distance_next_Obstacle < min_dist_to_obstacle) {
 			DriverMessages.emergency = true; // Main/calc 2/if-then 1
 		} else {
 			DriverMessages.emergency = false; // Main/calc 2/if-else 1
@@ -27,5 +31,6 @@ writes CarMessages.power, CarMessages.brake, DriverMessages.emergency, DriverMes
 		CarMessages.brake = Driver_Tempo_instance.brake_out; // Main/calc 4
 		CarMessages.power = Driver_Tempo_instance.power_out; // Main/calc 5
 		DriverMessages.v_target = v_target; // Main/calc 6
+		min_dist_to_obstacle = (((max_count_line.getAt(v_target) * (((v_target / 3.6[kmh]) * 4.0) * 1.1)) * 0.01) * 1.0[m]); // Main/calc 7
 	}
 }

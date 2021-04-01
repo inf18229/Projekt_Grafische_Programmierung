@@ -14,8 +14,10 @@
 struct L1_myCar_Driver_Automatic_Obj {
 	ASDObjectHeader objectHeader;
 	struct L1_myCar_Driver_Tempo_Automatic_Obj* Driver_Tempo_instance;
+	scalarWrapper_Obj* c;
 	scalarWrapper_Obj* distance_next_Obstacle;
 	scalarWrapper_Obj* min_dist_to_obst;
+	scalarWrapper_Obj* min_dist_to_obstacle;
 	scalarWrapper_Obj* power;
 	scalarWrapper_Obj* v_target;
 };
