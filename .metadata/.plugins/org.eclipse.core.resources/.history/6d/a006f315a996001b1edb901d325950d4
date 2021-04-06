@@ -1,0 +1,133 @@
+classType myCar.Pre_Condition_Maneuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_3
+		}
+	}
+methodArgumentIdentifier calc.v_target_in at (131, 205) {
+		label at (-20, 9)
+		outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.emergency_in at (131, 35) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.lane_change_right_in at (131, 325) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.lane_change_left_in at (131, 115) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier max_count_out at (651, 205) {
+		label at (0, -1)
+		inPin outPin sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier SM_left_Change_out at (681, 75) {
+		label at (0, -1)
+		inPin outPin sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier SM_right_Change_out at (631, 305) {
+		label at (0, -1)
+		inPin outPin sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier EdgeFalling_instance at (481, 281) size (3, 3) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Miscellaneous.EdgeFalling.compute {
+			argumentPin signal at (left, 1) sequenceCall at (0, 6) {
+				inPin
+			}
+		}
+		methodCall SystemLib.Miscellaneous.EdgeFalling.value {
+			returnPin at (right, 1) {
+				connection_1
+			}
+			sequenceCall at (0, 0) {
+				inPin
+			}
+		}
+	}
+	and at (341, 346) {
+		inPin inPin outPin {
+			connection_2
+		}
+	}
+	or at (521, 76) {
+		inPin connection_6
+		inPin connection_7 {
+			bendpoints (60, 0), (60, -20)
+		}
+		outPin
+	}
+	simpleIdentifier max_count_line at (341, 191) {
+		label at (0, 1)
+		inPin connection_8
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	not at (341, 101) {
+		inPin outPin {
+			connection_5
+		}
+	}
+	complexIdentifier EdgeRising_instance at (481, 61) size (3, 3) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Miscellaneous.EdgeRising.compute {
+			argumentPin signal at (left, 1) sequenceCall at (0, 6) {
+				inPin
+			}
+		}
+		methodCall SystemLib.Miscellaneous.EdgeRising.value {
+			returnPin at (right, 1) {
+				connection_6
+			}
+			sequenceCall at (0, 0) {
+				inPin
+			}
+		}
+	}
+	and at (381, 106) {
+		inPin connection_5
+		inPin outPin {
+			connection_7
+		}
+	}
+	simpleIdentifier max_count_var at (481, 205) {
+		label at (0, -1)
+		inPin connection_4
+		outPin sequenceCall {
+			inPin connection_3
+		}
+	}
+	or at (531, 296) {
+		inPin connection_1
+		inPin connection_2 {
+			bendpoints (130, 0), (130, -40)
+		}
+		outPin
+	}
+}

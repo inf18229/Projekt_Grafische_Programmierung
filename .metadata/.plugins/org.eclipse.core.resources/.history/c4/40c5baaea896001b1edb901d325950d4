@@ -1,0 +1,36 @@
+classType myCar.Pre_Condition_Maneuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+methodArgumentIdentifier calc.v_target_in at (131, 75) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.emergency_in at (131, 145) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.lane_change_right_in at (131, 225) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.lane_change_left_in at (131, 315) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier max_count_out at (661, 65) {
+		label at (0, -1)
+		inPin outPin sequenceCall {
+			inPin
+		}
+	}
+}

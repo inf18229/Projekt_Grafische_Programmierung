@@ -1,0 +1,6 @@
+classType myCar.Pre_Condition_Maneuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+}

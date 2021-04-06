@@ -3,7 +3,8 @@ blockdiagramSpecification Main {
 	methodBody distance {
 		outPin active
 	{
-			connection_2, connection_11, connection_20, connection_28
+			connection_64, connection_2, connection_11, connection_20
+		, connection_28
 		}
 	}
 methodArgumentIdentifier distance.x at (91, 155) {
@@ -247,6 +248,103 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			inPin connection_49 {
 				bendpoints (80, 0), (80, 60)
 			}
+		}
+	}
+simpleIdentifier min_dist_to_obst at (721, 115) {
+		label at (0, -1)
+		inPin connection_65
+		outPin sequenceCall {
+			inPin connection_64
+		}
+	}
+	division at (321, 76) {
+		inPin connection_67 {
+			bendpoints (180, 0), (180, 10)
+		} inPin connection_60
+		outPin {
+			connection_51
+		}
+	}
+	multiplication at (651, 106) {
+		inPin connection_57
+		inPin connection_59
+		outPin {
+			connection_65
+		}
+	}
+	literal Numeric "0.01" at (471, 123) size (49, 0) {
+		outPin {
+			connection_52
+		}
+	}
+	multiplication at (381, 86) {
+		inPin connection_51
+		inPin connection_58 {
+			bendpoints (30, 0)
+		}
+		outPin {
+			connection_53
+		}
+	}
+	literal Numeric "1.1" at (371, 123) size (49, 0) {
+		outPin {
+			connection_54
+		}
+	}
+	multiplication at (431, 96) {
+		inPin connection_53
+		inPin connection_54 {
+			bendpoints (10, 0)
+		}
+		outPin {
+			connection_55
+		}
+	}
+	multiplication at (481, 86) {
+		inPin connection_61
+		inPin connection_55
+		outPin {
+			connection_56
+		}
+	}
+	multiplication at (521, 96) {
+		inPin connection_56
+		inPin connection_52
+		outPin {
+			connection_57
+		}
+	}
+	literal Numeric "4.0" at (301, 113) size (49, 0) {
+		outPin {
+			connection_58
+		}
+	}
+	literal unit resources.m "1.0" at (591, 123) size (49, 0) {
+		outPin {
+			connection_59
+		}
+	}
+	literal unit resources.kmh "3.6" at (251, 93) size (49, 0) {
+		outPin {
+			connection_60
+		}
+	}
+	simpleIdentifier max_count_line at (421, 51) {
+		label at (-190, -39)
+		inPin connection_66 outPin {
+			connection_61
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+methodArgumentIdentifier distance.v_target_in at (91, 65) {
+		label at (0, -1)
+		outPin {
+			connection_67, connection_66
+		}
+		sequenceCall {
+			inPin
 		}
 	}
 }

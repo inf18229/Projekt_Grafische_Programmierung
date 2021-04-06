@@ -6,7 +6,7 @@
  * Build level is extended
  * Project is 'conf'
  * Last edited 'unknown'
- * File generated 'Thu Apr 01 12:22:57 2021'
+ * File generated 'Tue Apr 06 10:03:12 2021'
  * Target variant 'MinGW'
  */
 #ifndef __OS_GEN_H__

@@ -1,0 +1,14 @@
+package myCar;
+
+class Pre_Condition_Maneuver {
+	@get
+	real max_count_out;
+	@get
+	boolean SM_left_Change_out;
+	@get
+	boolean SM_right_Change_out;
+
+	@generated("blockdiagram", "75e7a956")
+	public void calc(real in v_target_in, boolean in emergency_in, boolean in lane_change_right_in, boolean in lane_change_left_in) {
+	}
+}

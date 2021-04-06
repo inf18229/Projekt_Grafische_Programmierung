@@ -8,4 +8,6 @@ data interface DriverMessages {
 	real deviation = 0.0;
 	boolean emergency = false;
 	velocity v_target = 0.0[kmh];
+	boolean laneChange_right = false;
+	boolean laneChange_left = false;
 }

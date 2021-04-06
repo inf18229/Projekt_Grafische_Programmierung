@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/EvasiveManeuver/myCar/ausweichen.bd" element2="/EvasiveManeuver/myCar/ausweichen.esdl" element3="/EvasiveManeuver/myCar/ausweichen2.bd" element4="/EvasiveManeuver/myCar/ausweichen2.esdl" element5="/EvasiveManeuver/myCar/ausweichen3.bd" element6="/EvasiveManeuver/myCar/ausweichen3.esdl" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1617696093998"/>
+</session>

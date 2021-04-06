@@ -8,17 +8,18 @@
  ********************************************************************************/
 #include "a_basdef.h"
 #include "myCar_Driver_Automatic.h"
+#include "myCar_Obstacles_Automatic.l1.h"
 #include "myCar_Driver_Tempo_Automatic.l1.h"
 
 /* local variables object structure */
 struct L1_myCar_Driver_Automatic_Obj {
 	ASDObjectHeader objectHeader;
 	struct L1_myCar_Driver_Tempo_Automatic_Obj* Driver_Tempo_instance;
-	scalarWrapper_Obj* c;
+	struct L1_myCar_Obstacles_Automatic_Obj* Obstacles_instance;
+	scalarWrapper_Obj* Lane_Change_left;
+	scalarWrapper_Obj* Lane_Change_right;
 	scalarWrapper_Obj* distance_next_Obstacle;
-	scalarWrapper_Obj* min_dist_to_obst;
 	scalarWrapper_Obj* min_dist_to_obstacle;
-	scalarWrapper_Obj* power;
 	scalarWrapper_Obj* v_target;
 };
 

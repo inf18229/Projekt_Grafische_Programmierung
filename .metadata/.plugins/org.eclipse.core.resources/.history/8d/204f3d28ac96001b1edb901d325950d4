@@ -1,0 +1,26 @@
+package myCar;
+import resources.m;
+import resources.velocity;
+
+class Obstacles {
+	m min_dist_to_obst;
+
+	@generated("blockdiagram", "eba86e5d")
+	@error("blockdiagram")
+	public m distance(m in x) {
+		if (x < 200.0[m]) {
+			return(200.0[m] - x); // Main/distance 1/if-then 1
+		} // Main/distance 1
+		if ((!(x < 200.0[m])) && (x < 450.0[m])) {
+			return(450.0[m] - x); // Main/distance 2/if-then 1
+		} // Main/distance 2
+		if ((!(x < 450.0[m])) && (x < 700.0[m])) {
+			return(700.0[m] - x); // Main/distance 3/if-then 1
+		} // Main/distance 3
+		if ((!(x < 700.0[m])) && (x < 950.0[m])) {
+			return(950.0[m] - x); // Main/distance 4/if-then 1
+		} else {
+			return 1000.0[m]; // Main/distance 4/if-else 1
+		} // Main/distance 4
+	}
+}

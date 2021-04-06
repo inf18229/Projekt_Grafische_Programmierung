@@ -1,0 +1,11 @@
+Component myCar.Obstacles size ( 14 , 14 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout distance {
+		pin x ( Left , 6 )
+		pin v_target_in ( Left , 1 )
+		pin distance ( Right , 1 )
+	}
+	memberLayout min_dist_to_obst {
+		getPinPosition ( Right , 8 )
+	}
+}

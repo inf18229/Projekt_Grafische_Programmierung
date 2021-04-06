@@ -1,0 +1,13 @@
+Component myCar.Driver_Tempo size ( 14 , 8 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout calc {
+		pin v ( Left , 0 )
+		pin v_target ( Left , 5 )
+	}
+	memberLayout power_out {
+		getPinPosition ( Right , 0 )
+	}
+	memberLayout brake_out {
+		getPinPosition ( Right , 4 )
+	}
+}

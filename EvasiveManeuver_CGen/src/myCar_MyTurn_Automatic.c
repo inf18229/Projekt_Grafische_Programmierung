@@ -15,6 +15,8 @@
  *----------------------------------------------------------------------------*/
 
 #include "myCar_MyTurn_Automatic.h"
+#include "coverageLib_CoverageInstrumentation_Automatic.h"
+#include "PCDriver_PC_Automatic.h"
 /******************************************************************************
  * BEGIN: source code of a multiple instance class
  ******************************************************************************/
@@ -48,18 +50,25 @@ void myCar_MyTurn_Automatic_move (
    /* IN    */ const float32                         mydt
    )
 {
+   _cov_statement_(26U);
    bearing_VAL
       = bearing_VAL + ((((D_VAL == 0.0F) ? v : (v / D_VAL))) * (float32)tan((float64)beta) * mydt * 7.71604938271605e-2F);
-   if (bearing_VAL > pi_VAL)
+   _cov_statement_(27U);
+   if (_cov_binary_branch_(1U, bearing_VAL > pi_VAL))
    {
+      _cov_statement_(28U);
       bearing_VAL = bearing_VAL - dpi_VAL;
    } /* end if */
-   if (bearing_VAL < -pi_VAL)
+   _cov_statement_(29U);
+   if (_cov_binary_branch_(2U, bearing_VAL < -pi_VAL))
    {
+      _cov_statement_(30U);
       bearing_VAL = bearing_VAL + dpi_VAL;
    } /* end if */
+   _cov_statement_(31U);
    x_VAL
       = x_VAL + (v * (float32)cos((float64)bearing_VAL) * mydt * 2.77777777777778e-1F);
+   _cov_statement_(32U);
    y_VAL
       = y_VAL + (v * (float32)sin((float64)bearing_VAL) * mydt * 2.77777777777778e-1F);
 }
@@ -79,8 +88,11 @@ void myCar_MyTurn_Automatic_move (
 
 void myCar_MyTurn_Automatic_reset ( const struct myCar_MyTurn_Automatic * self)
 {
+   _cov_statement_(33U);
    bearing_VAL = 0.0F;
+   _cov_statement_(34U);
    x_VAL = 0.0F;
+   _cov_statement_(35U);
    y_VAL = 0.0F;
 }
 /* ----------------------------------------------------------------------------

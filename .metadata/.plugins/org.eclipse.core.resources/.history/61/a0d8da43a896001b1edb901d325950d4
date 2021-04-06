@@ -1,0 +1,7 @@
+package myCar;
+
+class Pre_Condition_Maneuver {
+	@generated("blockdiagram", "e0158488")
+	public void calc() {
+	}
+}

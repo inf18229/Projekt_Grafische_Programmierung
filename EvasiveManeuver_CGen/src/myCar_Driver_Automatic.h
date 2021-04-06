@@ -30,10 +30,9 @@
  * memory class:.................................'CAL_MEM'
  * ---------------------------------------------------------------------------*/
 struct myCar_Driver_Automatic_CAL_MEM_SUBSTRUCT {
-   float32 c;
-   float32 min_dist_to_obst;
-   float32 power;
    uint16 v_target;
+   boolean Lane_Change_left;
+   boolean Lane_Change_right;
    struct myCar_Driver_Tempo_Automatic_CAL_MEM_SUBSTRUCT Driver_Tempo_instance;
 };
 /* ----------------------------------------------------------------------------
@@ -50,7 +49,7 @@ struct myCar_Driver_Automatic_RAM_SUBSTRUCT {
    float32 distance_next_Obstacle;
    float32 min_dist_to_obstacle;
    struct myCar_Driver_Tempo_Automatic_RAM_SUBSTRUCT Driver_Tempo_instance;
-   struct CharTable1_real32_12_real32_TYPE max_count_line;
+   struct myCar_Obstacles_Automatic_RAM_SUBSTRUCT Obstacles_instance;
 };
 /* ----------------------------------------------------------------------------
  * END: DEFINITION OF MEMORY CLASS STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
@@ -64,6 +63,7 @@ struct myCar_Driver_Automatic_RAM_SUBSTRUCT {
  * ---------------------------------------------------------------------------*/
 struct myCar_Driver_Automatic {
    struct myCar_Driver_Tempo_Automatic Driver_Tempo_instance;
+   struct myCar_Obstacles_Automatic Obstacles_instance;
 };
 /* ----------------------------------------------------------------------------
  * END: DEFINITION OF MAIN STRUCTURE FOR MODULE 'myCar_Driver_Automatic'
