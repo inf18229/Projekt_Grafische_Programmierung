@@ -37,9 +37,6 @@ struct CharTable2_real32_6_real32_6_real32_TYPE {
  *    Service Classes Type Definitions
  *----------------------------------------------------------------------------*/
 
-/* definition of Service Class type: "coverageLib_CoverageInstrumentation::Automatic" */
-typedef struct coverageLib_CoverageInstrumentation_Automatic coverageLib_CoverageInstrumentation_Automatic_Type;
-
 /* definition of Service Class type: "SystemLib_Math_MathLib::Automatic" */
 typedef struct SystemLib_Math_MathLib_Automatic SystemLib_Math_MathLib_Automatic_Type;
 

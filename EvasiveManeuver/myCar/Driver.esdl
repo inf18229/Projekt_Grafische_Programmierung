@@ -19,9 +19,9 @@ writes CarMessages.power, CarMessages.brake, DriverMessages.emergency, DriverMes
 	calcDistance calcDistance_instance;
 	characteristic boolean manual_lane_changing = false;
 	@thread
-	@generated("blockdiagram", "0c9bc488")
+	@generated("blockdiagram", "a61e96c7")
 	public void calc() {
-		distance_next_Obstacle = Obstacles_instance.distance(CarMessages.x, v_target, CarMessages.y); // Main/calc 1
+		distance_next_Obstacle = Obstacles_instance.distance(CarMessages.x, v_target); // Main/calc 1
 		if (min_dist_to_obstacle >= distance_next_Obstacle) {
 			DriverMessages.emergency = true; // Main/calc 2/if-then 1
 		} else {
@@ -32,7 +32,7 @@ writes CarMessages.power, CarMessages.brake, DriverMessages.emergency, DriverMes
 		CarMessages.power = Driver_Tempo_instance.power_out; // Main/calc 5
 		DriverMessages.v_target = v_target; // Main/calc 6
 		min_dist_to_obstacle = Obstacles_instance.min_dist_to_obst; // Main/calc 7
-		real_distance_to_next_obst = calcDistance_instance.calc(Obstacles_instance.distance(CarMessages.x, v_target, CarMessages.y), CarMessages.y); // Main/calc 8
+		real_distance_to_next_obst = calcDistance_instance.calc(Obstacles_instance.distance(CarMessages.x, v_target), CarMessages.y); // Main/calc 8
 		DriverMessages.laneChange_right = (Lane_Change_right || DriverMessages.automatic_laneChange_right); // Main/calc 9
 		DriverMessages.laneChange_left = (Lane_Change_left || DriverMessages.automatic_laneChange_left); // Main/calc 10
 	}

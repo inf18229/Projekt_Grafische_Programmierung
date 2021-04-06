@@ -1,0 +1,350 @@
+classType myCar.Obstacles
+blockdiagramSpecification Main {
+	methodBody distance {
+		outPin active
+	{
+			connection_64, connection_2, connection_11, connection_20
+		, connection_28
+		}
+	}
+methodArgumentIdentifier distance.x at (91, 155) {
+		label at (0, -1)
+		outPin {
+			connection_8, connection_14, connection_15, connection_24, connection_25, connection_32, connection_34, connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (531, 265) {
+		label at (0, 0)
+		inPin connection_10
+		sequenceCall {
+			inPin connection_1 {
+				bendpoints (80, 0), (80, 20)
+			}
+		}
+	}
+	literal unit resources.m "200.0" at (91, 233) size (59, 0) {
+		outPin {
+			connection_9, connection_3
+		}
+	}
+	if at (311, 221) {
+		inPin connection_5
+		ifControlFlowOutPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin connection_2
+		}
+	}
+	lessOrEqual at (251, 216) {
+		inPin connection_4 {
+			bendpoints (80, 0), (80, 60)
+		}
+		inPin connection_3
+		outPin {
+			connection_37, connection_5
+		}
+	}
+	subtraction at (401, 256) {
+		inPin connection_9 {
+			bendpoints (0, 20)
+		}
+		inPin connection_8 {
+			bendpoints (260, 0), (260, 120)
+		}
+		outPin {
+			connection_10
+		}
+	}
+	lessOrEqual at (251, 326) {
+		inPin connection_14 {
+			bendpoints (80, 0), (80, 170)
+		}
+		inPin connection_13
+		outPin {
+			connection_41, connection_39
+		}
+	}
+	if at (411, 321) {
+		inPin connection_40
+		ifControlFlowOutPin {
+			connection_17
+		}
+		sequenceCall {
+			inPin connection_11
+		}
+	}
+	subtraction at (411, 366) {
+		inPin connection_16 {
+			bendpoints (0, 20)
+		}
+		inPin connection_15 {
+			bendpoints (260, 0), (260, 230)
+		}
+		outPin {
+			connection_18
+		}
+	}
+	literal unit resources.m "450.0" at (91, 343) size (59, 0) {
+		outPin {
+			connection_16, connection_13
+		}
+	}
+	literal unit resources.m "700.0" at (91, 453) size (59, 0) {
+		outPin {
+			connection_26, connection_23
+		}
+	}
+	literal unit resources.m "950.0" at (91, 573) size (59, 0) {
+		outPin {
+			connection_33, connection_31
+		}
+	}
+	return at (531, 375) {
+		label at (0, 0)
+		inPin connection_18
+		sequenceCall {
+			inPin connection_17 {
+				bendpoints (0, 30)
+			}
+		}
+	}
+	subtraction at (411, 476) {
+		inPin connection_26 {
+			bendpoints (0, 20)
+		}
+		inPin connection_25 {
+			bendpoints (260, 0), (260, 340)
+		}
+		outPin {
+			connection_21
+		}
+	}
+	lessOrEqual at (251, 436) {
+		inPin connection_24 {
+			bendpoints (80, 0), (80, 280)
+		}
+		inPin connection_23
+		outPin {
+			connection_45, connection_43
+		}
+	}
+	return at (531, 485) {
+		label at (0, 0)
+		inPin connection_21
+		sequenceCall {
+			inPin connection_19 {
+				bendpoints (60, 0)
+			}
+		}
+	}
+	if at (411, 431) {
+		inPin connection_44
+		ifControlFlowOutPin {
+			connection_19
+		}
+		sequenceCall {
+			inPin connection_20
+		}
+	}
+	subtraction at (411, 606) {
+		inPin connection_33 {
+			bendpoints (0, 30)
+		}
+		inPin connection_34 {
+			bendpoints (260, 0), (260, 470)
+		}
+		outPin {
+			connection_29
+		}
+	}
+	lessOrEqual at (251, 556) {
+		inPin connection_32 {
+			bendpoints (80, 0), (80, 400)
+		}
+		inPin connection_31
+		outPin {
+			connection_46
+		}
+	}
+	return at (531, 615) {
+		label at (0, 0)
+		inPin connection_29
+		sequenceCall {
+			inPin connection_27 {
+				bendpoints (60, 0)
+			}
+		}
+	}
+	ifElse at (411, 551) {
+		inPin connection_48
+		ifControlFlowOutPin {
+			connection_27
+		}
+		elseControlFlowOutPin {
+			connection_49
+		}
+		sequenceCall {
+			inPin connection_28
+		}
+	}
+	not at (291, 281) {
+		inPin connection_37
+		outPin {
+			connection_38
+		}
+	}
+	and at (341, 316) {
+		inPin connection_38 {
+			bendpoints (0, 30)
+		}
+		inPin connection_39
+		outPin {
+			connection_40
+		}
+	}
+	not at (291, 391) {
+		inPin connection_41
+		outPin {
+			connection_42
+		}
+	}
+	and at (341, 426) {
+		inPin connection_42 {
+			bendpoints (0, 30)
+		}
+		inPin connection_43
+		outPin {
+			connection_44
+		}
+	}
+	not at (291, 511) {
+		inPin connection_45
+		outPin {
+			connection_47
+		}
+	}
+	and at (341, 546) {
+		inPin connection_47 {
+			bendpoints (0, 30)
+		}
+		inPin connection_46
+		outPin {
+			connection_48
+		}
+	}
+	literal unit resources.m "1000.0" at (341, 663) size (69, 0) {
+		outPin {
+			connection_50
+		}
+	}
+	return at (531, 665) {
+		label at (0, 0)
+		inPin connection_50
+		sequenceCall {
+			inPin connection_49 {
+				bendpoints (80, 0), (80, 60)
+			}
+		}
+	}
+simpleIdentifier min_dist_to_obst at  (721, 85) {
+		label at (0, -1)
+		inPin connection_65
+		outPin sequenceCall {
+			inPin connection_64
+		}
+	}
+	division at  (321, 46) {
+		inPin connection_67 {
+			bendpoints (180, 0), (180, 10)
+		} inPin connection_60
+		outPin {
+			connection_51
+		}
+	}
+	multiplication at  (651, 76) {
+		inPin connection_57
+		inPin connection_59
+		outPin {
+			connection_65
+		}
+	}
+	literal Numeric "0.01" at  (471, 93) size (49, 0) {
+		outPin {
+			connection_52
+		}
+	}
+	multiplication at  (381, 56) {
+		inPin connection_51
+		inPin connection_58 {
+			bendpoints (30, 0)
+		}
+		outPin {
+			connection_53
+		}
+	}
+	literal Numeric "1.1" at  (371, 93) size (49, 0) {
+		outPin {
+			connection_54
+		}
+	}
+	multiplication at  (431, 66) {
+		inPin connection_53
+		inPin connection_54 {
+			bendpoints (10, 0)
+		}
+		outPin {
+			connection_55
+		}
+	}
+	multiplication at  (481, 56) {
+		inPin connection_61
+		inPin connection_55
+		outPin {
+			connection_56
+		}
+	}
+	multiplication at  (521, 66) {
+		inPin connection_56
+		inPin connection_52
+		outPin {
+			connection_57
+		}
+	}
+	literal Numeric "4.0" at  (301, 83) size (49, 0) {
+		outPin {
+			connection_58
+		}
+	}
+	literal unit resources.m "1.0" at  (591, 93) size (49, 0) {
+		outPin {
+			connection_59
+		}
+	}
+	literal unit resources.kmh "3.6" at  (251, 63) size (49, 0) {
+		outPin {
+			connection_60
+		}
+	}
+	simpleIdentifier max_count_line at  (421, 21) {
+		label at (-190, -39)
+		inPin connection_66 outPin {
+			connection_61
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+methodArgumentIdentifier distance.v_target_in at  (91, 35) {
+		label at (0, -1)
+		outPin {
+			connection_67, connection_66
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

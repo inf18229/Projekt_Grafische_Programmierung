@@ -25,7 +25,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			}
 		}
 	}
-	literal unit resources.m "200.0" at (91, 233) size (49, 0) {
+	literal unit resources.m "200.0" at (91, 233) size (59, 0) {
 		outPin {
 			connection_9, connection_3
 		}
@@ -88,17 +88,17 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_18
 		}
 	}
-	literal unit resources.m "450.0" at (91, 343) size (49, 0) {
+	literal unit resources.m "450.0" at (91, 343) size (59, 0) {
 		outPin {
 			connection_16, connection_13
 		}
 	}
-	literal unit resources.m "700.0" at (91, 453) size (49, 0) {
+	literal unit resources.m "700.0" at (91, 453) size (59, 0) {
 		outPin {
 			connection_26, connection_23
 		}
 	}
-	literal unit resources.m "950.0" at (91, 573) size (49, 0) {
+	literal unit resources.m "950.0" at (91, 573) size (59, 0) {
 		outPin {
 			connection_33, connection_31
 		}
@@ -236,7 +236,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_48
 		}
 	}
-	literal unit resources.m "1000.0" at (341, 663) size (49, 0) {
+	literal unit resources.m "1000.0" at (341, 663) size (69, 0) {
 		outPin {
 			connection_50
 		}
@@ -345,25 +345,6 @@ methodArgumentIdentifier distance.v_target_in at  (91, 35) {
 		}
 		sequenceCall {
 			inPin
-		}
-	}
-methodArgumentIdentifier distance.y at (91, 115) {
-		label at (0, -1)
-		outPin {
-			connection_69
-		}
-		sequenceCall {
-			inPin
-		}
-	}
-	greaterOrEqual at (501, 116) {
-		inPin connection_69
-		inPin connection_68
-		outPin
-	}
-	literal unit resources.m "3.0" at (431, 133) size (49, 0) {
-		outPin {
-			connection_68
 		}
 	}
 }

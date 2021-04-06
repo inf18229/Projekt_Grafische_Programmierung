@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 2818591350
+		         /* programm id */ 2818595342
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -1550,9 +1550,6 @@
 				myCar.systemTest.systemTest_sucess
 			/end LOC_MEASUREMENT
 		/end FUNCTION
-		/begin FUNCTION coverageLib.CoverageInstrumentation
-			""
-		/end FUNCTION
 
 		/begin RECORD_LAYOUT STANDARD_CURVE_R32R32
 		/* axis size          */ NO_AXIS_PTS_X 1 UWORD
@@ -1576,10 +1573,6 @@
 			/* value              */ FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
 		/end RECORD_LAYOUT
 
-		/begin GROUP coverageLib.CoverageInstrumentation
-			""
-			ROOT
-		/end GROUP
 		/begin GROUP myCar.Driver
 			""
 			ROOT

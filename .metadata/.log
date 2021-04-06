@@ -2929,3 +2929,90 @@ java.io.FileNotFoundException: C:\Users\Michael\Documents\Projekt_Grafische_Prog
 
 !ENTRY org.eclipse.core.resources 2 10035 2021-04-06 15:00:14.611
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-04-06 17:57:32.111 -----------------------------------------------
+eclipse.buildId=7.6.0.202012031010
+java.version=11.0.9
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-06 17:57:50.943
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-06 18:00:13.118
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-06 18:00:13.123
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-06 18:00:13.124
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.etas.ascet.platform.pc 4 4 2021-04-06 18:02:56.317
+!MESSAGE Build aborted
+!SUBENTRY 1 com.etas.ascet.platform.pc 4 0 2021-04-06 18:02:56.317
+!MESSAGE ERROR: Build aborted
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-06 18:02:59.420
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\fschi\ETAS\ASCET-DEVELOPER-7.6.0\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.etas.ascet.platform.pc 4 4 2021-04-06 18:03:14.745
+!MESSAGE Build aborted
+!SUBENTRY 1 com.etas.ascet.platform.pc 4 0 2021-04-06 18:03:14.745
+!MESSAGE ERROR: Build aborted
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-06 18:03:22.080
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\fschi\ETAS\ASCET-DEVELOPER-7.6.0\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-06 18:03:30.081
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\fschi\ETAS\ASCET-DEVELOPER-7.6.0\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.etas.ascet.platform.pc 4 4 2021-04-06 18:03:30.331
+!MESSAGE Build aborted
+!SUBENTRY 1 com.etas.ascet.platform.pc 4 0 2021-04-06 18:03:30.331
+!MESSAGE ERROR: Build aborted
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-06 18:04:18.317
+!MESSAGE Indexed 'EvasiveManeuver_CGen' (21 sources, 59 headers) in 0.901 sec: 8,263 declarations; 11,340 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)

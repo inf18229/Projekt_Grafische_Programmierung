@@ -3,7 +3,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 configDescList=org.eclipse.launchbar.core.descriptorType.default\:UnitTest_DriverTempo_EUnit,org.eclipse.launchbar.core.descriptorType.default\:UnitTest_Obstacles_EUnit,org.eclipse.launchbar.core.descriptorType.default\:UnitTest_PreConditionManeuver_EUnit,org.eclipse.launchbar.core.descriptorType.default\:UnitTest_Lenken_EUnit,org.eclipse.launchbar.core.descriptorType.default\:UnitTest_SMLaneChangeLeft_EUnit,org.eclipse.launchbar.core.descriptorType.default\:UnitTest_SMLaneChange_EUnit,org.eclipse.launchbar.core.descriptorType.default\:UnitTests_EUnit,org.eclipse.launchbar.core.descriptorType.default\:PCDriver_PC
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:PCDriver_PC/activeLaunchMode=coverage
+org.eclipse.launchbar.core.descriptorType.default\:PCDriver_PC/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:PCDriver_PC/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:UnitTest_Obstacles_EUnit/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:UnitTest_PreConditionManeuver_EUnit/activeLaunchMode=run

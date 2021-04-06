@@ -57,7 +57,7 @@ simpleIdentifier v_target at    (141, 95) {
 			inPin
 		}
 	}
-	simpleIdentifier distance_next_Obstacle at    (471, 305) {
+	simpleIdentifier distance_next_Obstacle at     (471, 295) {
 		label at (0, -1)
 		inPin connection_36 outPin {
 			connection_99
@@ -84,7 +84,8 @@ simpleIdentifier v_target at    (141, 95) {
 			bendpoints (100, 0)
 		}
 		inPin connection_99 {
-			bendpoints (110, 0)
+			bendpoints 
+		(110, 0)
 		} outPin {
 			connection_41
 		}
@@ -212,8 +213,7 @@ simpleIdentifier Lane_Change_right at  (141, 425) {
 simpleIdentifier resources.CarMessages.y at (141, 375) {
 		label at (0, -1)
 		outPin {
-			connection_98
-		, connection_96
+			connection_96
 		}
 		sequenceCall {
 			inPin
@@ -231,7 +231,8 @@ simpleIdentifier resources.CarMessages.y at (141, 375) {
 		methodCall myCar.calcDistance.calc {
 			argumentPin x at (left, 0) connection_97 {
 				bendpoints (30, 0), 
-			(30, 60)
+			
+			(30, 70)
 			}
 			argumentPin y at (left, 1) connection_96
 			returnPin at (right, 0) {
@@ -242,39 +243,7 @@ simpleIdentifier resources.CarMessages.y at (141, 375) {
 			}
 		}
 	}
-complexIdentifier Obstacles_instance at (241, 201) size (14, 14) {
-		label at (0, 1)
-		methodCall myCar.Obstacles.distance {
-			argumentPin x at (left, 6) connection_34
-			
-			
-		
-			
-		
-			
-			
-		argumentPin v_target_in at (left, 1) connection_82 {
-				bendpoints (0, 120)
-			}
-			argumentPin y at (left, 11) connection_98 {
-				bendpoints (20, 0), (20, -60)
-			}
-			returnPin at (right, 10) {
-				connection_97, connection_36
-			}
-			sequenceCall {
-				inPin
-			}
-		}
-		elementCall (myCar.Obstacles.min_dist_to_obst) {
-			returnPin at (right, 3) {
-				connection_81
-			}
-			sequenceCall {
-				inPin
-			}
-		}
-	}
+
 simpleIdentifier resources.DriverMessages.automatic_laneChange_right at (141, 465) {
 		label at (0, -1)
 		outPin {
@@ -313,6 +282,44 @@ simpleIdentifier resources.DriverMessages.automatic_laneChange_right at (141, 46
 		}
 		outPin {
 			connection_79
+		}
+	}
+complexIdentifier Obstacles_instance at (211, 201) size (17, 14) {
+		label at (0, 1)
+		methodCall myCar.Obstacles.distance {
+			argumentPin x at (left, 6) connection_34
+			
+			
+		
+			
+		
+			
+			
+		
+			
+			
+			
+		argumentPin v_target_in at (left, 1) connection_82 {
+				bendpoints 
+			(0, 120)
+			}
+			
+			
+			
+		returnPin at (right, 9) {
+				connection_97, connection_36
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.Obstacles.min_dist_to_obst) {
+			returnPin at (right, 3) {
+				connection_81
+			}
+			sequenceCall {
+				inPin
+			}
 		}
 	}
 }
