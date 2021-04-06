@@ -7,6 +7,7 @@ blockdiagramSpecification Main {
 		, connection_39
 		, connection_20
 		, connection_22, connection_76, connection_78, connection_80, connection_82, connection_87
+		, connection_89, connection_91
 		}
 	}
 
@@ -97,7 +98,8 @@ blockdiagramSpecification Main {
 		}
 		elementCall (myCar.SM_laneChange_left.^active) {
 			returnPin  at (right, 5) {
-				connection_21
+				connection_90
+			, connection_21
 			}
 			sequenceCall {
 				inPin
@@ -129,7 +131,8 @@ blockdiagramSpecification Main {
 		}
 		elementCall (myCar.SM_laneChange_right.^active) {
 			returnPin at (right, 5) {
-				connection_23
+				connection_92
+			, connection_23
 			}
 			sequenceCall {
 				inPin
@@ -208,6 +211,24 @@ simpleIdentifier   resources.DriverMessages.laneChange_right at (31, 375) {
 			sequenceCall {
 				inPin
 			}
+		}
+	}
+simpleIdentifier resources.CarMessages.SM_left_active at (841, 245) {
+		label at (0, -1)
+		inPin connection_90 {
+			bendpoints (10, 0), (10, 40)
+		}
+		sequenceCall {
+			inPin connection_89
+		}
+	}
+	simpleIdentifier resources.CarMessages.SM_right_active at (841, 465) {
+		label at (0, -1)
+		inPin connection_92 {
+			bendpoints (10, 0), (10, 40)
+		}
+		sequenceCall {
+			inPin connection_91
 		}
 	}
 }

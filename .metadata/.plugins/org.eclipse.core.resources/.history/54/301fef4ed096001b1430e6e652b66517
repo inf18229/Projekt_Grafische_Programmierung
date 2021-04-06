@@ -1,0 +1,9 @@
+package myCar;
+import resources.m;
+import resources.CarMessages;
+
+static class systemTest reads CarMessages.x{
+	if(x > 1000 [m]){
+		
+	}
+}

@@ -1,0 +1,7 @@
+package myCar;
+
+class calcDistance {
+	@generated("blockdiagram", "431cd8d1")
+	public void calc() {
+	}
+}

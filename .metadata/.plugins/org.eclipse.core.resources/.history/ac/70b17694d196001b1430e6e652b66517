@@ -1,0 +1,213 @@
+classType myCar.EvasiveManeuver
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_36
+		, connection_39
+		, connection_20
+		, connection_22, connection_76, connection_78, connection_80, connection_82, connection_87
+		}
+	}
+
+	simpleIdentifier resources.DriverMessages.emergency at   (31, 165) {
+		label at (0, -1)
+		outPin {
+			connection_84
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.CarMessages.steering at   (741, 155) {
+		label at (0, -1)
+		inPin connection_5
+		sequenceCall {
+			inPin 
+		
+		connection_4
+		{
+				bendpoints (80, 0), (80, -90), (-70, -90)
+			}
+		}
+	}
+	
+
+	
+	simpleIdentifier resources.CarMessages.steering at  (741, 375) {
+		label at (0, -1)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_11 {
+				bendpoints (90, 0), (90, -100), (-60, -100)
+			}
+		}
+	}
+	if at  (751, 201) {
+		inPin connection_21 ifControlFlowOutPin {
+			connection_4
+		}
+		sequenceCall at (0, 30) {
+			inPin connection_20
+		}
+	}
+	if at  (741, 421) {
+		inPin connection_23
+		ifControlFlowOutPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin connection_22
+		}
+	}
+	
+	complexIdentifier SM_laneChange_left_instance at  (501, 151) size (20, 11) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_left.sM_ausweichenStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_36
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.emergency_msg) {
+			argumentPin  
+			
+		at (left, 1) connection_83
+			
+		sequenceCall at (30, -34) {
+				inPin 
+			connection_82
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.steering_out) {
+			returnPin at (right, 0) {
+				connection_5
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.max_count) {
+			argumentPin at (left, 5) connection_79 {
+				bendpoints (0, -50)
+			}
+			sequenceCall at  (0, 16) {
+				inPin 
+			connection_78
+			}
+		}
+		elementCall (myCar.SM_laneChange_left.^active) {
+			returnPin  at (right, 5) {
+				connection_21
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier SM_laneChange_right_instance at  (501, 371) size (20, 10) {
+		label at (0, 1)
+		methodCall myCar.SM_laneChange_right.sM_laneChange_rightStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_39
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.emergency_msg) {
+			argumentPin  
+			at (left, 1) connection_77
+			sequenceCall at  (40, -34) {
+				inPin 
+			connection_76
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.steering_out) {
+			returnPin at (right, 0) {
+				connection_12
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.^active) {
+			returnPin at (right, 5) {
+				connection_23
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.SM_laneChange_right.max_count) {
+			argumentPin at (left, 5) connection_81 {
+				bendpoints (0, 170)
+			}
+			sequenceCall at  (0, 16) {
+				inPin 
+			connection_80
+			}
+		}
+	}
+
+simpleIdentifier resources.DriverMessages.v_target at  (31, 225) {
+		label at (0, -1)
+		outPin {
+			connection_85
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.DriverMessages.laneChange_left at (31, 295) {
+		label at (0, -1)
+		outPin {
+			connection_86
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+
+simpleIdentifier   resources.DriverMessages.laneChange_right at (31, 375) {
+		label at (0, -1)
+		outPin {
+			connection_88
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier Pre_Condition_Maneuver_instance at (211, 151) size (25, 32) {
+		label at (0, 1)
+		methodCall myCar.Pre_Condition_Maneuver.calc {
+			argumentPin v_target_in at (left, 7) connection_85
+			argumentPin emergency_in at (left, 1) connection_84
+			argumentPin lane_change_right_in at (left, 22) connection_88
+			argumentPin lane_change_left_in at (left, 14) connection_86
+			sequenceCall at (0, -114) {
+				inPin connection_87
+			}
+		}
+		elementCall (myCar.Pre_Condition_Maneuver.max_count_out) {
+			returnPin at (right, 10) {
+				connection_81, connection_79
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.Pre_Condition_Maneuver.SM_left_Change_out) {
+			returnPin at (right, 1) {
+				connection_83
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (myCar.Pre_Condition_Maneuver.SM_right_Change_out) {
+			returnPin at (right, 23) {
+				connection_77
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+}

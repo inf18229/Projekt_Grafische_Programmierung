@@ -1,0 +1,7 @@
+Component SystemLib.Math.MathLib size ( 7 , 3 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout sqrt {
+		pin val ( Left , 0 )
+		pin sqrt ( Right , 0 )
+	}
+}

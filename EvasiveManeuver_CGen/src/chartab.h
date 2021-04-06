@@ -2,6 +2,13 @@
 #define _ASD_CHARTAB_H_
 
 
+/* definition of characteristic table type: 'CharTable1_real32_128_real32_TYPE' */
+struct CharTable1_real32_128_real32_TYPE {
+   uint16 xSize;
+   float32 xDist [128];
+   float32 values [128];
+};
+
 /* definition of characteristic table type: 'CharTable1_real32_12_real32_TYPE' */
 struct CharTable1_real32_12_real32_TYPE {
    uint16 xSize;
@@ -9,16 +16,32 @@ struct CharTable1_real32_12_real32_TYPE {
    float32 values [12];
 };
 
+/* definition of characteristic table type: 'CharTable1_real32_6_real32_TYPE' */
+struct CharTable1_real32_6_real32_TYPE {
+   uint16 xSize;
+   float32 xDist [6];
+   float32 values [6];
+};
+
+/* definition of characteristic table type: 'CharTable2_real32_6_real32_6_real32_TYPE' */
+struct CharTable2_real32_6_real32_6_real32_TYPE {
+   uint16 xSize;
+   uint16 ySize;
+   float32 xDist [6];
+   float32 yDist [6];
+   float32 values [6 * 6];
+};
+
 
 /*-----------------------------------------------------------------------------
  *    Service Classes Type Definitions
  *----------------------------------------------------------------------------*/
 
-/* definition of Service Class type: "assertLib_Assert::Impl" */
-typedef struct assertLib_Assert_Impl assertLib_Assert_Impl_Type;
-
 /* definition of Service Class type: "coverageLib_CoverageInstrumentation::Automatic" */
 typedef struct coverageLib_CoverageInstrumentation_Automatic coverageLib_CoverageInstrumentation_Automatic_Type;
+
+/* definition of Service Class type: "SystemLib_Math_MathLib::Automatic" */
+typedef struct SystemLib_Math_MathLib_Automatic SystemLib_Math_MathLib_Automatic_Type;
 
 
 #endif /* _ASD_CHARTAB_H_ */

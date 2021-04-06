@@ -1,0 +1,13 @@
+package myCar;
+import resources.DriverMessages;
+import resources.m;
+import resources.CarMessages;
+
+static class systemTest reads CarMessages.x writes DriverMessages.laneChange_left, DriverMessages.laneChange_right{
+	@thread
+	public void calc(){
+		if(CarMessages.x > 1000.0[m]){
+			
+		}
+	}
+}

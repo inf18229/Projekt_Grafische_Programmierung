@@ -1,0 +1,6 @@
+package myCar;
+import resources.CarMessages;
+
+static class systemTest reads CarMessages.x{
+	
+}

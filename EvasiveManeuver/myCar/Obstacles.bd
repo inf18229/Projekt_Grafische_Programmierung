@@ -25,7 +25,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			}
 		}
 	}
-	literal unit resources.m "200.0" at (91, 233) size (59, 0) {
+	literal unit resources.m "200.0" at (91, 233) size (49, 0) {
 		outPin {
 			connection_9, connection_3
 		}
@@ -88,17 +88,17 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_18
 		}
 	}
-	literal unit resources.m "450.0" at (91, 343) size (59, 0) {
+	literal unit resources.m "450.0" at (91, 343) size (49, 0) {
 		outPin {
 			connection_16, connection_13
 		}
 	}
-	literal unit resources.m "700.0" at (91, 453) size (59, 0) {
+	literal unit resources.m "700.0" at (91, 453) size (49, 0) {
 		outPin {
 			connection_26, connection_23
 		}
 	}
-	literal unit resources.m "950.0" at (91, 573) size (59, 0) {
+	literal unit resources.m "950.0" at (91, 573) size (49, 0) {
 		outPin {
 			connection_33, connection_31
 		}
@@ -236,7 +236,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_48
 		}
 	}
-	literal unit resources.m "1000.0" at (341, 663) size (69, 0) {
+	literal unit resources.m "1000.0" at (341, 663) size (49, 0) {
 		outPin {
 			connection_50
 		}
@@ -250,14 +250,14 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			}
 		}
 	}
-simpleIdentifier min_dist_to_obst at (721, 115) {
+simpleIdentifier min_dist_to_obst at  (721, 85) {
 		label at (0, -1)
 		inPin connection_65
 		outPin sequenceCall {
 			inPin connection_64
 		}
 	}
-	division at (321, 76) {
+	division at  (321, 46) {
 		inPin connection_67 {
 			bendpoints (180, 0), (180, 10)
 		} inPin connection_60
@@ -265,19 +265,19 @@ simpleIdentifier min_dist_to_obst at (721, 115) {
 			connection_51
 		}
 	}
-	multiplication at (651, 106) {
+	multiplication at  (651, 76) {
 		inPin connection_57
 		inPin connection_59
 		outPin {
 			connection_65
 		}
 	}
-	literal Numeric "0.01" at (471, 123) size (49, 0) {
+	literal Numeric "0.01" at  (471, 93) size (49, 0) {
 		outPin {
 			connection_52
 		}
 	}
-	multiplication at (381, 86) {
+	multiplication at  (381, 56) {
 		inPin connection_51
 		inPin connection_58 {
 			bendpoints (30, 0)
@@ -286,12 +286,12 @@ simpleIdentifier min_dist_to_obst at (721, 115) {
 			connection_53
 		}
 	}
-	literal Numeric "1.1" at (371, 123) size (49, 0) {
+	literal Numeric "1.1" at  (371, 93) size (49, 0) {
 		outPin {
 			connection_54
 		}
 	}
-	multiplication at (431, 96) {
+	multiplication at  (431, 66) {
 		inPin connection_53
 		inPin connection_54 {
 			bendpoints (10, 0)
@@ -300,36 +300,36 @@ simpleIdentifier min_dist_to_obst at (721, 115) {
 			connection_55
 		}
 	}
-	multiplication at (481, 86) {
+	multiplication at  (481, 56) {
 		inPin connection_61
 		inPin connection_55
 		outPin {
 			connection_56
 		}
 	}
-	multiplication at (521, 96) {
+	multiplication at  (521, 66) {
 		inPin connection_56
 		inPin connection_52
 		outPin {
 			connection_57
 		}
 	}
-	literal Numeric "4.0" at (301, 113) size (49, 0) {
+	literal Numeric "4.0" at  (301, 83) size (49, 0) {
 		outPin {
 			connection_58
 		}
 	}
-	literal unit resources.m "1.0" at (591, 123) size (49, 0) {
+	literal unit resources.m "1.0" at  (591, 93) size (49, 0) {
 		outPin {
 			connection_59
 		}
 	}
-	literal unit resources.kmh "3.6" at (251, 93) size (49, 0) {
+	literal unit resources.kmh "3.6" at  (251, 63) size (49, 0) {
 		outPin {
 			connection_60
 		}
 	}
-	simpleIdentifier max_count_line at (421, 51) {
+	simpleIdentifier max_count_line at  (421, 21) {
 		label at (-190, -39)
 		inPin connection_66 outPin {
 			connection_61
@@ -338,13 +338,32 @@ simpleIdentifier min_dist_to_obst at (721, 115) {
 			inPin
 		}
 	}
-methodArgumentIdentifier distance.v_target_in at (91, 65) {
+methodArgumentIdentifier distance.v_target_in at  (91, 35) {
 		label at (0, -1)
 		outPin {
 			connection_67, connection_66
 		}
 		sequenceCall {
 			inPin
+		}
+	}
+methodArgumentIdentifier distance.y at (91, 115) {
+		label at (0, -1)
+		outPin {
+			connection_69
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greaterOrEqual at (501, 116) {
+		inPin connection_69
+		inPin connection_68
+		outPin
+	}
+	literal unit resources.m "3.0" at (431, 133) size (49, 0) {
+		outPin {
+			connection_68
 		}
 	}
 }

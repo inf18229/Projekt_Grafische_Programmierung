@@ -1,0 +1,12 @@
+package myCar;
+import resources.m;
+import resources.CarMessages;
+
+static class systemTest reads CarMessages.x{
+	@thread
+	public void calc(){
+		if(CarMessages.x > 1000.0[m]){
+			
+		}
+	}
+}

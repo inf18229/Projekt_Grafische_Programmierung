@@ -20,6 +20,12 @@ esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;p
 //@specifications.0/@node.10/@memberCalls.3
 esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/SimpleAssign;statements.4;/CompositeIdentifierAccess;rhs;
 #
+//@specifications.0/@node.11
+esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/SimpleAssign;statements.9;
+#
+//@specifications.0/@node.12
+esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/SimpleAssign;statements.10;
+#
 //@specifications.0/@node.2
 esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/IfStatement;statements.3;/StatementBlock;ifBlock;/SimpleAssign;statements.0;
 #
@@ -43,6 +49,7 @@ esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;p
 #
 //@specifications.0/@node.5/@memberCalls.4
 esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/IfStatement;statements.2;/CompositeIdentifierAccess;ifExpression;
+esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/SimpleAssign;statements.9;/CompositeIdentifierAccess;rhs;
 #
 //@specifications.0/@node.6/@memberCalls.0
 esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/CompositeIdentifierAccess;statements.1;
@@ -55,6 +62,7 @@ esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;p
 #
 //@specifications.0/@node.6/@memberCalls.3
 esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/IfStatement;statements.3;/CompositeIdentifierAccess;ifExpression;
+esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/SimpleAssign;statements.10;/CompositeIdentifierAccess;rhs;
 #
 //@specifications.0/@node.6/@memberCalls.4
 esdlLink_PackageDecl;;myCar/ClassType;definitions.0;EvasiveManeuver/MethodDecl;parts.3;calc/StatementBlock;block;/SimpleAssign;statements.6;

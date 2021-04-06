@@ -13,4 +13,6 @@ data interface CarMessages {
 	m x = 0.0 [m];
 	@a2l_unit_label("m")
 	m y = 0.0 [m];
+	boolean SM_left_active = false;
+	boolean SM_right_active = false;
 }

@@ -1,0 +1,43 @@
+package myCar;
+import resources.DriverMessages;
+import resources.m;
+import resources.CarMessages;
+
+static class systemTest 
+reads CarMessages.x,
+CarMessages.y,
+DriverMessages.laneChange_left,
+DriverMessages.laneChange_right,
+CarMessages.SM_left_active, 
+CarMessages.SM_right_active,
+DriverMessages.real_distance_to_next_obst
+writes DriverMessages.laneChange_left, 
+DriverMessages.laneChange_right{
+	
+	boolean systemTest_sucess = true;
+	
+	@thread
+	public void calc(){
+		if(CarMessages.x < 1000.0[m]){
+			if(!between(CarMessages.y,-0.5[m],5.0[m])){
+				systemTest_sucess = false;
+			}
+			if(DriverMessages.real_distance_to_next_obst < (1.5[m]+2.85[m]/2.0)){
+				
+			}
+		}
+		if(between(CarMessages.x,1000.0[m],1010.0[m])){
+			DriverMessages.laneChange_left = true;
+		}
+		if(between(CarMessages.x,1010.0[m],1020.0[m]) && DriverMessages.laneChange_left && !CarMessages.SM_left_active){
+			DriverMessages.laneChange_left = false;
+		}
+		if(between(CarMessages.x,1030.0[m],1040.0[m])){
+			DriverMessages.laneChange_right = true;
+		}
+		if(between(CarMessages.x,1040.0[m],1050.0[m]) && DriverMessages.laneChange_right && !CarMessages.SM_right_active){
+			DriverMessages.laneChange_right = false;
+		}
+		
+	}
+}

@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 2818586643
+		         /* programm id */ 2818591350
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -443,7 +443,7 @@
 			/* upper limit        */ 200.0
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 4
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 6
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -457,7 +457,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 2
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 4
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -471,7 +471,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 1
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 3
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -485,7 +485,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 3
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 5
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -499,7 +499,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 0
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 2
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -513,7 +513,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 5
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 7
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -527,7 +527,37 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 6
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 8
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT resources.CarMessages.SM_left_active
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x0
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT resources.CarMessages.SM_right_active
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x0
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1001 1
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -597,7 +627,7 @@
 			/* lower limit        */ 0.0
 			/* upper limit        */ 200.0
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 8
 			/end IF_DATA
 		/end CHARACTERISTIC
 
@@ -625,7 +655,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -659,6 +689,35 @@
 			/end IF_DATA
 		/end CHARACTERISTIC
 
+		/begin MEASUREMENT myCar.Driver.real_distance_to_next_obst
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 7
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin CHARACTERISTIC myCar.Driver.manual_lane_changing
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x0
+			/* record layout      */ STANDARD_VALUE_U8
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
+			/end IF_DATA
+		/end CHARACTERISTIC
+
 		/begin MEASUREMENT resources.DriverMessages.power
 			/* long identifier    */ ""
 			/* datatype           */ FLOAT32_IEEE
@@ -669,7 +728,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 6
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 8
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -683,7 +742,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 0
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 2
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -698,7 +757,7 @@
 			ECU_ADDRESS 0x0
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 5
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 7
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -712,7 +771,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 1
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 3
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -727,7 +786,7 @@
 			ECU_ADDRESS 0x0
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 2
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 4
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -741,7 +800,7 @@
 			/* upper limit        */ 200.0
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 7
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 10
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -756,7 +815,22 @@
 			ECU_ADDRESS 0x0
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 4
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 6
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT resources.DriverMessages.automatic_laneChange_right
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x0
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 1
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -771,7 +845,36 @@
 			ECU_ADDRESS 0x0
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 3
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 5
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT resources.DriverMessages.automatic_laneChange_left
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x0
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT resources.DriverMessages.real_distance_to_next_obst
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 9
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -784,21 +887,6 @@
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 1 1000 0 1000 1
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links.full
-			/* long identifier    */ ""
-			/* datatype           */ UBYTE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ 0
-			/* upper limit        */ 1
-			ECU_ADDRESS 0x0
-			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 1 1000 0 1000 0
 			/end IF_DATA
@@ -813,21 +901,6 @@
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 1 1000 1 1000 1
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts.full
-			/* long identifier    */ ""
-			/* datatype           */ UBYTE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ 0
-			/* upper limit        */ 1
-			ECU_ADDRESS 0x0
-			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 1 1000 1 1000 0
 			/end IF_DATA
@@ -929,21 +1002,6 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 2 1000 0 1000 1
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links.full
-			/* long identifier    */ ""
-			/* datatype           */ UBYTE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ 0
-			/* upper limit        */ 1
-			ECU_ADDRESS 0x0
-			BIT_MASK 0x1
-			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 2 1000 0 1000 0
 			/end IF_DATA
 		/end MEASUREMENT
@@ -957,21 +1015,6 @@
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 2 1000 1 1000 1
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts.full
-			/* long identifier    */ ""
-			/* datatype           */ UBYTE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ 0
-			/* upper limit        */ 1
-			ECU_ADDRESS 0x0
-			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 3 1000 2 1000 1 1000 0
 			/end IF_DATA
@@ -1167,6 +1210,21 @@
 			/end IF_DATA
 		/end MEASUREMENT
 
+		/begin MEASUREMENT myCar.systemTest.systemTest_sucess
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x0
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
 		/begin COMPU_METHOD esdl_f0_01_kmh
 			/* long identifier    */ ""
 			/* type               */ RAT_FUNC
@@ -1323,10 +1381,14 @@
 				myCar.Driver.v_target
 				myCar.Driver.Lane_Change_right
 				myCar.Driver.Lane_Change_left
+				myCar.Driver.manual_lane_changing
 			/end DEF_CHARACTERISTIC
 			/begin IN_MEASUREMENT
 				resources.CarMessages.v
 				resources.CarMessages.x
+				resources.CarMessages.y
+				resources.DriverMessages.automatic_laneChange_left
+				resources.DriverMessages.automatic_laneChange_right
 			/end IN_MEASUREMENT
 			/begin OUT_MEASUREMENT
 				resources.CarMessages.brake
@@ -1339,10 +1401,12 @@
 			/begin LOC_MEASUREMENT
 				myCar.Driver.distance_next_Obstacle
 				myCar.Driver.min_dist_to_obstacle
+				myCar.Driver.real_distance_to_next_obst
 			/end LOC_MEASUREMENT
 			/begin SUB_FUNCTION
 				myCar.Driver.Driver_Tempo_instance
 				myCar.Driver.Obstacles_instance
+				myCar.Driver.calcDistance_instance
 			/end SUB_FUNCTION
 		/end FUNCTION
 		/begin FUNCTION myCar.Driver.Obstacles_instance
@@ -1361,6 +1425,15 @@
 				myCar.Driver.Driver_Tempo_instance.power_out
 			/end LOC_MEASUREMENT
 		/end FUNCTION
+		/begin FUNCTION myCar.Driver.calcDistance_instance
+			""
+			/begin SUB_FUNCTION
+				myCar.Driver.calcDistance_instance.MathLib_instance
+			/end SUB_FUNCTION
+		/end FUNCTION
+		/begin FUNCTION myCar.Driver.calcDistance_instance.MathLib_instance
+			"MathLib is a C code class that returns the results of numerous mathematical functions."
+		/end FUNCTION
 		/begin FUNCTION myCar.EvasiveManeuver
 			""
 			/begin IN_MEASUREMENT
@@ -1370,6 +1443,8 @@
 				resources.DriverMessages.v_target
 			/end IN_MEASUREMENT
 			/begin OUT_MEASUREMENT
+				resources.CarMessages.SM_left_active
+				resources.CarMessages.SM_right_active
 				resources.CarMessages.steering
 			/end OUT_MEASUREMENT
 			/begin SUB_FUNCTION
@@ -1396,14 +1471,12 @@
 		/begin FUNCTION myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links
 			""
 			/begin LOC_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links.full
 				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links.steering
 			/end LOC_MEASUREMENT
 		/end FUNCTION
 		/begin FUNCTION myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts
 			""
 			/begin LOC_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts.full
 				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts.steering
 			/end LOC_MEASUREMENT
 		/end FUNCTION
@@ -1425,14 +1498,12 @@
 		/begin FUNCTION myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links
 			""
 			/begin LOC_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links.full
 				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links.steering
 			/end LOC_MEASUREMENT
 		/end FUNCTION
 		/begin FUNCTION myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts
 			""
 			/begin LOC_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts.full
 				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts.steering
 			/end LOC_MEASUREMENT
 		/end FUNCTION
@@ -1462,6 +1533,26 @@
 				myCar.EvasiveManeuver.Pre_Condition_Maneuver_instance.EdgeRising_instance.oldSignal
 			/end LOC_MEASUREMENT
 		/end FUNCTION
+		/begin FUNCTION myCar.systemTest
+			""
+			/begin IN_MEASUREMENT
+				resources.CarMessages.SM_left_active
+				resources.CarMessages.SM_right_active
+				resources.CarMessages.x
+				resources.CarMessages.y
+				resources.DriverMessages.real_distance_to_next_obst
+			/end IN_MEASUREMENT
+			/begin OUT_MEASUREMENT
+				resources.DriverMessages.automatic_laneChange_left
+				resources.DriverMessages.automatic_laneChange_right
+			/end OUT_MEASUREMENT
+			/begin LOC_MEASUREMENT
+				myCar.systemTest.systemTest_sucess
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		/begin FUNCTION coverageLib.CoverageInstrumentation
+			""
+		/end FUNCTION
 
 		/begin RECORD_LAYOUT STANDARD_CURVE_R32R32
 		/* axis size          */ NO_AXIS_PTS_X 1 UWORD
@@ -1485,6 +1576,10 @@
 			/* value              */ FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
 		/end RECORD_LAYOUT
 
+		/begin GROUP coverageLib.CoverageInstrumentation
+			""
+			ROOT
+		/end GROUP
 		/begin GROUP myCar.Driver
 			""
 			ROOT
@@ -1492,14 +1587,17 @@
 				myCar.Driver.v_target
 				myCar.Driver.Lane_Change_right
 				myCar.Driver.Lane_Change_left
+				myCar.Driver.manual_lane_changing
 			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
 				myCar.Driver.distance_next_Obstacle
 				myCar.Driver.min_dist_to_obstacle
+				myCar.Driver.real_distance_to_next_obst
 			/end REF_MEASUREMENT
 			/begin SUB_GROUP
 				myCar.Driver.Driver_Tempo_instance
 				myCar.Driver.Obstacles_instance
+				myCar.Driver.calcDistance_instance
 			/end SUB_GROUP
 		/end GROUP
 		/begin GROUP myCar.Driver.Driver_Tempo_instance
@@ -1517,6 +1615,15 @@
 			/begin REF_MEASUREMENT
 				myCar.Driver.Obstacles_instance.min_dist_to_obst
 			/end REF_MEASUREMENT
+		/end GROUP
+		/begin GROUP myCar.Driver.calcDistance_instance
+			""
+			/begin SUB_GROUP
+				myCar.Driver.calcDistance_instance.MathLib_instance
+			/end SUB_GROUP
+		/end GROUP
+		/begin GROUP myCar.Driver.calcDistance_instance.MathLib_instance
+			"MathLib is a C code class that returns the results of numerous mathematical functions."
 		/end GROUP
 		/begin GROUP myCar.EvasiveManeuver
 			""
@@ -1571,14 +1678,12 @@
 		/begin GROUP myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links
 			""
 			/begin REF_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links.full
 				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_links.steering
 			/end REF_MEASUREMENT
 		/end GROUP
 		/begin GROUP myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts
 			""
 			/begin REF_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts.full
 				myCar.EvasiveManeuver.SM_laneChange_left_instance.obj_rechts.steering
 			/end REF_MEASUREMENT
 		/end GROUP
@@ -1600,14 +1705,12 @@
 		/begin GROUP myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links
 			""
 			/begin REF_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links.full
 				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_links.steering
 			/end REF_MEASUREMENT
 		/end GROUP
 		/begin GROUP myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts
 			""
 			/begin REF_MEASUREMENT
-				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts.full
 				myCar.EvasiveManeuver.SM_laneChange_right_instance.obj_rechts.steering
 			/end REF_MEASUREMENT
 		/end GROUP
@@ -1671,10 +1774,19 @@
 		/begin GROUP myCar.myCar.myVehicle.MyTurn_instance.Lib
 			"MathLib is a C code class that returns the results of numerous mathematical functions."
 		/end GROUP
+		/begin GROUP myCar.systemTest
+			""
+			ROOT
+			/begin REF_MEASUREMENT
+				myCar.systemTest.systemTest_sucess
+			/end REF_MEASUREMENT
+		/end GROUP
 		/begin GROUP resources.CarMessages
 			""
 			ROOT
 			/begin REF_MEASUREMENT
+				resources.CarMessages.SM_left_active
+				resources.CarMessages.SM_right_active
 				resources.CarMessages.bearing
 				resources.CarMessages.brake
 				resources.CarMessages.power
@@ -1688,6 +1800,8 @@
 			""
 			ROOT
 			/begin REF_MEASUREMENT
+				resources.DriverMessages.automatic_laneChange_left
+				resources.DriverMessages.automatic_laneChange_right
 				resources.DriverMessages.brake
 				resources.DriverMessages.deviation
 				resources.DriverMessages.emergency
@@ -1695,6 +1809,7 @@
 				resources.DriverMessages.laneChange_right
 				resources.DriverMessages.on
 				resources.DriverMessages.power
+				resources.DriverMessages.real_distance_to_next_obst
 				resources.DriverMessages.v_target
 			/end REF_MEASUREMENT
 		/end GROUP

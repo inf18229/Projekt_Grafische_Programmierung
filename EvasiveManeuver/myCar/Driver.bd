@@ -6,8 +6,9 @@ blockdiagramSpecification Main {
 			connection_35
 		, connection_37, connection_48, connection_50, connection_52
 		, connection_56
-		, connection_76
-		, connection_78, connection_80
+		, connection_80
+		, connection_94, connection_76
+		, connection_78
 		}
 	}
 
@@ -56,16 +57,16 @@ simpleIdentifier v_target at    (141, 95) {
 			inPin
 		}
 	}
-	simpleIdentifier distance_next_Obstacle at   (481, 215) {
+	simpleIdentifier distance_next_Obstacle at    (471, 305) {
 		label at (0, -1)
 		inPin connection_36 outPin {
-			connection_40
+			connection_99
 		}
 		sequenceCall {
 			inPin connection_35
 		}
 	}
-	ifElse at  (711, 271) {
+	ifElse at   (711, 261) {
 		inPin connection_41
 		ifControlFlowOutPin {
 			connection_42
@@ -77,24 +78,26 @@ simpleIdentifier v_target at    (141, 95) {
 			inPin connection_37
 		}
 	}
-	less at  (631, 266) {
-		inPin connection_40 {
-			bendpoints (90, 0), 
-		(90, 50)
+	greaterOrEqual at   (631, 256) {
+		inPin 
+		connection_73 {
+			bendpoints (100, 0)
 		}
-		inPin connection_73 outPin {
+		inPin connection_99 {
+			bendpoints (110, 0)
+		} outPin {
 			connection_41
 		}
 	}
 	
-	simpleIdentifier resources.DriverMessages.emergency at  (841, 295) {
+	simpleIdentifier resources.DriverMessages.emergency at   (841, 285) {
 		label at (0, -1)
 		inPin connection_43
 		sequenceCall {
 			inPin connection_42
 		}
 	}
-	literal Boolean "true" at  (781, 293) size (49, 0) {
+	literal Boolean "true" at   (781, 283) size (49, 0) {
 		outPin {
 			connection_43
 		}
@@ -104,7 +107,8 @@ simpleIdentifier v_target at    (141, 95) {
 		inPin connection_45
 		sequenceCall {
 			inPin connection_44 {
-				bendpoints (0, 20)
+				bendpoints 
+			(0, 30)
 			}
 		}
 	}
@@ -159,7 +163,7 @@ simpleIdentifier resources.DriverMessages.v_target at   (841, 165) {
 	
 	
 	
-	simpleIdentifier min_dist_to_obstacle at  (481, 285) {
+	simpleIdentifier min_dist_to_obstacle at   (481, 235) {
 		label at (-50, -1)
 		inPin connection_81
 		outPin {
@@ -172,39 +176,73 @@ simpleIdentifier resources.DriverMessages.v_target at   (841, 165) {
 	}
 	
 	
-simpleIdentifier Lane_Change_right at (141, 425) {
+simpleIdentifier Lane_Change_right at  (141, 425) {
 		label at (0, -1)
 		outPin {
-			connection_77
+			connection_104
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	simpleIdentifier Lane_Change_left at (141, 465) {
+	simpleIdentifier Lane_Change_left at  (141, 495) {
 		label at (0, -1)
 		outPin {
-			connection_79
+			connection_106
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	simpleIdentifier resources.DriverMessages.laneChange_right at  (841, 425) {
+	simpleIdentifier resources.DriverMessages.laneChange_right at   (841, 445) {
 		label at (0, -1)
 		inPin connection_77
 		sequenceCall {
 			inPin connection_76
 		}
 	}
-	simpleIdentifier resources.DriverMessages.laneChange_left at  (841, 465) {
+	simpleIdentifier resources.DriverMessages.laneChange_left at   (841, 515) {
 		label at (0, -1)
 		inPin connection_79
 		sequenceCall {
 			inPin connection_78
 		}
 	}
-	complexIdentifier Obstacles_instance at (241, 201) size (14, 14) {
+	
+simpleIdentifier resources.CarMessages.y at (141, 375) {
+		label at (0, -1)
+		outPin {
+			connection_98
+		, connection_96
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier real_distance_to_next_obst at (651, 365) {
+		label at (0, -1)
+		inPin connection_95
+		outPin sequenceCall {
+			inPin connection_94
+		}
+	}
+	complexIdentifier calcDistance_instance at (471, 361) size (9, 4) {
+		label at (0, 1)
+		methodCall myCar.calcDistance.calc {
+			argumentPin x at (left, 0) connection_97 {
+				bendpoints (30, 0), 
+			(30, 60)
+			}
+			argumentPin y at (left, 1) connection_96
+			returnPin at (right, 0) {
+				connection_95
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+complexIdentifier Obstacles_instance at (241, 201) size (14, 14) {
 		label at (0, 1)
 		methodCall myCar.Obstacles.distance {
 			argumentPin x at (left, 6) connection_34
@@ -212,23 +250,69 @@ simpleIdentifier Lane_Change_right at (141, 425) {
 			
 		
 			
+		
+			
+			
 		argumentPin v_target_in at (left, 1) connection_82 {
-				bendpoints (30, 0), (30, 120)
+				bendpoints (0, 120)
 			}
-			returnPin at (right, 1) {
-				connection_36
+			argumentPin y at (left, 11) connection_98 {
+				bendpoints (20, 0), (20, -60)
+			}
+			returnPin at (right, 10) {
+				connection_97, connection_36
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		elementCall (myCar.Obstacles.min_dist_to_obst) {
-			returnPin at (right, 8) {
+			returnPin at (right, 3) {
 				connection_81
 			}
 			sequenceCall {
 				inPin
 			}
+		}
+	}
+simpleIdentifier resources.DriverMessages.automatic_laneChange_right at (141, 465) {
+		label at (0, -1)
+		outPin {
+			connection_105
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier resources.DriverMessages.automatic_laneChange_left at (141, 535) {
+		label at (0, -1)
+		outPin {
+			connection_107
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	or at (691, 436) {
+		inPin connection_104 {
+			bendpoints (510, 0)
+		}
+		inPin connection_105 {
+			bendpoints (510, 0)
+		}
+		outPin {
+			connection_77
+		}
+	}
+	or at (691, 506) {
+		inPin connection_106 {
+			bendpoints (510, 0)
+		}
+		inPin connection_107 {
+			bendpoints (510, 0)
+		}
+		outPin {
+			connection_79
 		}
 	}
 }
