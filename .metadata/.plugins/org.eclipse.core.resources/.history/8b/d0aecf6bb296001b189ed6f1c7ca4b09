@@ -1,0 +1,22 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.Obstacles;
+import resources.kmh;
+import resources.m;
+
+static class UnitTest_Obstacles{
+	Obstacles uuT;
+	
+	@Test
+	public void beforeFirstObstacle(){
+		m distance = uuT.distance(50.0 [m], 30.0 [kmh]);
+		Assert.assertEqual(distance, 150.0);
+	}
+	
+	@Test
+	public void vtargetSmaller(){
+		uuT.calc(15.0 [kmh], 10.0[kmh]);
+		Assert.assertEqual(uuT.power_out, 0.0);
+		Assert.assertEqual(uuT.brake_out, uuT.power);
+	}
+}

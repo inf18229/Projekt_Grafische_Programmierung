@@ -16,7 +16,7 @@ class Pre_Condition_Maneuver {
 	curve_max_count max_count_line[12] = {{5.0[kmh], 10.0[kmh], 15.0[kmh], 20.0[kmh], 25.0[kmh], 30.0[kmh], 35.0[kmh], 40.0[kmh], 45.0[kmh], 50.0[kmh], 55.0[kmh], 60.0[kmh]}, {706.0, 419.0, 236.0, 177.0, 149.0, 128.0, 116.0, 105.0, 97.0, 90.0, 84.0, 80.0}};
 	EdgeRising EdgeRising_instance;
 
-	@generated("blockdiagram", "e06a321d")
+	@generated("blockdiagram", "c94bfdc1")
 	public void calc(velocity in v_target_in, boolean in emergency_in, boolean in lane_change_right_in, boolean in lane_change_left_in) {
 		EdgeRising_instance.compute(emergency_in); // Main/calc 1
 		EdgeFalling_instance.compute(emergency_in); // Main/calc 2

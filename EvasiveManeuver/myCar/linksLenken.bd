@@ -4,10 +4,9 @@ blockdiagramSpecification Main {
 		outPin active
 	{
 			connection_1
-		, connection_14
 		}
 	}
-literal unit resources.rad "0.001396" at (231, 183) size (69, 0) {
+literal unit resources.rad "0.001396" at (231, 183) size (89, 0) {
 		outPin {
 			connection_2
 		}
@@ -18,8 +17,7 @@ literal unit resources.rad "0.001396" at (231, 183) size (69, 0) {
 			bendpoints (100, 0)
 		}
 		outPin {
-			connection_16
-		, connection_13
+			connection_13
 		}
 	}
 	addition at (321, 156) {
@@ -40,7 +38,7 @@ literal unit resources.rad "0.001396" at (231, 183) size (69, 0) {
 			inPin
 		}
 	}
-	literal unit resources.rad "0.001396" at (501, 203) size (69, 0) {
+	literal unit resources.rad "0.001396" at (501, 203) size (89, 0) {
 		outPin {
 			connection_7
 		}
@@ -54,7 +52,7 @@ literal unit resources.rad "0.001396" at (231, 183) size (69, 0) {
 			connection_9
 		}
 	}
-	literal unit resources.rad "0.2094" at (241, 203) size (49, 0) {
+	literal unit resources.rad "0.2094" at (241, 203) size (69, 0) {
 		outPin {
 			connection_10
 		}
@@ -76,21 +74,6 @@ literal unit resources.rad "0.001396" at (231, 183) size (69, 0) {
 		}
 		sequenceCall {
 			inPin connection_1
-		}
-	}
-simpleIdentifier full at (661, 245) {
-		label at (0, -1)
-		inPin connection_15
-		outPin sequenceCall {
-			inPin connection_14
-		}
-	}
-	not at (511, 241) {
-		inPin connection_16 {
-			bendpoints (0, 70)
-		}
-		outPin {
-			connection_15
 		}
 	}
 }

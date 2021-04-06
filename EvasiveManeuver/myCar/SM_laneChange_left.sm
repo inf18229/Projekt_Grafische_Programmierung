@@ -75,7 +75,7 @@
           <styles xsi:type="notation:ShapeStyle" xmi:id="_LNO60ZIEEeuuwqFazu1I3A" fontName="Verdana" fillColor="15981773" lineColor="12632256"/>
           <styles xsi:type="notation:FontStyle" xmi:id="_LNO60pIEEeuuwqFazu1I3A"/>
           <styles xsi:type="notation:BooleanValueStyle" xmi:id="_LNPh5JIEEeuuwqFazu1I3A" name="isHorizontal" booleanValue="true"/>
-          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LNO605IEEeuuwqFazu1I3A" x="243" y="71"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_LNO605IEEeuuwqFazu1I3A" x="339" y="53"/>
         </children>
         <children xmi:id="_K4qHEJIGEeuuwqFazu1I3A" type="State" element="_K4nDwJIGEeuuwqFazu1I3A">
           <children xsi:type="notation:DecorationNode" xmi:id="_K4quIJIGEeuuwqFazu1I3A" type="StateName">

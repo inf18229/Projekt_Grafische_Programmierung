@@ -25,7 +25,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			}
 		}
 	}
-	literal unit resources.m "200.0" at (91, 233) size (49, 0) {
+	literal unit resources.m "200.0" at (91, 233) size (59, 0) {
 		outPin {
 			connection_9, connection_3
 		}
@@ -39,7 +39,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			inPin connection_2
 		}
 	}
-	less at (251, 216) {
+	lessOrEqual at (251, 216) {
 		inPin connection_4 {
 			bendpoints (80, 0), (80, 60)
 		}
@@ -59,7 +59,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_10
 		}
 	}
-	less at (251, 326) {
+	lessOrEqual at (251, 326) {
 		inPin connection_14 {
 			bendpoints (80, 0), (80, 170)
 		}
@@ -88,17 +88,17 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_18
 		}
 	}
-	literal unit resources.m "450.0" at (91, 343) size (49, 0) {
+	literal unit resources.m "450.0" at (91, 343) size (59, 0) {
 		outPin {
 			connection_16, connection_13
 		}
 	}
-	literal unit resources.m "700.0" at (91, 453) size (49, 0) {
+	literal unit resources.m "700.0" at (91, 453) size (59, 0) {
 		outPin {
 			connection_26, connection_23
 		}
 	}
-	literal unit resources.m "950.0" at (91, 573) size (49, 0) {
+	literal unit resources.m "950.0" at (91, 573) size (59, 0) {
 		outPin {
 			connection_33, connection_31
 		}
@@ -123,7 +123,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_21
 		}
 	}
-	less at (251, 436) {
+	lessOrEqual at (251, 436) {
 		inPin connection_24 {
 			bendpoints (80, 0), (80, 280)
 		}
@@ -161,7 +161,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_29
 		}
 	}
-	less at (251, 556) {
+	lessOrEqual at (251, 556) {
 		inPin connection_32 {
 			bendpoints (80, 0), (80, 400)
 		}
@@ -236,7 +236,7 @@ methodArgumentIdentifier distance.x at (91, 155) {
 			connection_48
 		}
 	}
-	literal unit resources.m "1000.0" at (341, 663) size (49, 0) {
+	literal unit resources.m "1000.0" at (341, 663) size (69, 0) {
 		outPin {
 			connection_50
 		}

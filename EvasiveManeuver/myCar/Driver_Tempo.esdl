@@ -2,6 +2,7 @@ package myCar;
 import resources.velocity;
 
 class Driver_Tempo{
+	@get
 	characteristic real power = 30.0;
 	@get
 	real power_out;

@@ -1,0 +1,18 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.linksLenken;
+import myCar.rechtsLenken;
+import resources.rad;
+
+static class UnitTest_Lenken{
+	linksLenken uuTL;
+	rechtsLenken uuTR;
+	
+	@Test
+	public void testLeftMax(){
+		uuTL.steering = 0.3 [rad];
+		uuTL.calc();
+		Assert.assertEqual(uuTL.steering, 0.3 [rad]);
+	}
+}
+	

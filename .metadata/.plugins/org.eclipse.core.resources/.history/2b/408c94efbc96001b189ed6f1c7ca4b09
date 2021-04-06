@@ -1,0 +1,19 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.linksLenken;
+import myCar.rechtsLenken;
+import resources.rad;
+
+static class UnitTest_SMLanceChangeLeft {
+	linksLenken uuTL;
+	rechtsLenken uuTR;
+	
+	@Test
+	public void testLeft(){
+		uuTL.steering = 0.0 [rad];
+		uuTL.calc();
+		Assert.assertFloatEqual(uuTL.steering/1.0 [rad], 0.001396);
+	}
+	
+}
+	

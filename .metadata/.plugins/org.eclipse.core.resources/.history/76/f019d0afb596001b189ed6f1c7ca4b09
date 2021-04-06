@@ -1,0 +1,15 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.Pre_Condition_Maneuver;
+import resources.kmh;
+import resources.m;
+
+static class UnitTest_PreConditionManeuver{
+	Pre_Condition_Maneuver uuT;
+	
+	@Test
+	public void testMaxCountLine5(){
+		uuT.distance(50.0 [m], 30.0 [kmh])/1.0 [m];
+		Assert.assertEqual(distance, 150.0);
+	}
+}

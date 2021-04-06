@@ -1,0 +1,14 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.SM_laneChange_left;
+import resources.rad;
+
+static class UnitTest_SMLaneChangeLeft {
+	
+	
+	@Test
+	public void testLeft(){
+	}
+	
+}
+	

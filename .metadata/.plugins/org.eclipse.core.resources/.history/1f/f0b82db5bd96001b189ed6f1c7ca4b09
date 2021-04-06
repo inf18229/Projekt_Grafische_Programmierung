@@ -1,0 +1,19 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.SM_laneChange_left;
+import resources.rad;
+
+static class UnitTest_SMLaneChangeLeft {
+	SM_laneChange_left uuT;
+	
+	@before
+	public void setup(){
+		uuT.max_count = 1.0;
+		uuT.steering_out = 0.0;
+	}
+	@Test
+	public void testFullCircle(){
+	}
+	
+}
+	

@@ -42,21 +42,21 @@ methodArgumentIdentifier calc.v_target_in at (131, 205) {
 			inPin
 		}
 	}
-	simpleIdentifier max_count_out at (721, 205) {
+	simpleIdentifier max_count_out at  (961, 205) {
 		label at (0, -1)
 		inPin connection_21
 		outPin sequenceCall {
 			inPin connection_20
 		}
 	}
-	simpleIdentifier SM_left_Change_out at (721, 85) {
+	simpleIdentifier SM_left_Change_out at  (961, 85) {
 		label at (0, -1)
 		inPin connection_23
 		outPin sequenceCall {
 			inPin connection_22
 		}
 	}
-	simpleIdentifier SM_right_Change_out at (721, 305) {
+	simpleIdentifier SM_right_Change_out at  (961, 305) {
 		label at (0, -1)
 		inPin connection_19
 		outPin sequenceCall {
@@ -64,7 +64,7 @@ methodArgumentIdentifier calc.v_target_in at (131, 205) {
 		}
 	}
 	complexIdentifier EdgeFalling_instance at (481, 281) size (3, 3) backgroundColor #ffffff {
-		label at (0, 1)
+		label at (-60, 11)
 		methodCall SystemLib.Miscellaneous.EdgeFalling.compute {
 			argumentPin signal at (left, 1) connection_17
 			sequenceCall at (-70, -30) {
@@ -115,7 +115,7 @@ methodArgumentIdentifier calc.v_target_in at (131, 205) {
 		}
 	}
 	complexIdentifier EdgeRising_instance at (481, 61) size (3, 3) backgroundColor #ffffff {
-		label at (0, 1)
+		label at (-60, 11)
 		methodCall SystemLib.Miscellaneous.EdgeRising.compute {
 			argumentPin signal at (left, 1) connection_10 {
 				bendpoints (300, 0)

@@ -1,0 +1,79 @@
+classType myCar.rechtsLenken
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	{
+			connection_1
+		}
+	}
+literal unit resources.rad "0.001396" at (221, 243) size (89, 0) {
+		outPin {
+			connection_2
+		}
+	}
+	greater at (381, 226) {
+		inPin connection_5
+		inPin connection_10 {
+			bendpoints (100, 0)
+		}
+		outPin {
+			connection_4
+		}
+	}
+	subtraction at (311, 216) {
+		inPin connection_6
+		inPin connection_2 {
+			bendpoints (20, 0)
+		}
+		outPin {
+			connection_5
+		}
+	}
+	simpleIdentifier steering at (221, 215) {
+		label at (0, -1)
+		inPin outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal unit resources.rad "0.001396" at (491, 263) size (89, 0) {
+		outPin {
+			connection_7
+		}
+	}
+	subtraction at (591, 246) {
+		inPin connection_11 {
+			bendpoints (40, 0), (40, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_7
+		outPin {
+			connection_9
+		}
+	}
+	literal unit resources.rad "-0.2094" at (231, 263) size (79, 0) {
+		outPin {
+			connection_10
+		}
+	}
+	simpleIdentifier steering at (651, 255) {
+		label at (0, -1)
+		inPin connection_9
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin connection_12
+		}
+	}
+	if at (431, 231) {
+		inPin connection_4
+		ifControlFlowOutPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin connection_1
+		}
+	}
+}

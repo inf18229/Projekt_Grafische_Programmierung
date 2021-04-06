@@ -1,0 +1,15 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.Obstacles;
+import resources.kmh;
+import resources.m;
+
+static class UnitTest_PreConditionManeuver{
+	Obstacles uuT;
+	
+	@Test
+	public void beforeFirstObstacle(){
+		real distance = uuT.distance(50.0 [m], 30.0 [kmh])/1.0 [m];
+		Assert.assertEqual(distance, 150.0);
+	}
+}

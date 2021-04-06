@@ -1,7 +1,0 @@
-13011 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.5;calc/StatementBlock;block;/SimpleAssign;statements.0;
-13123 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.5;calc/StatementBlock;block;/SimpleAssign;statements.1;
-13235 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.5;calc/StatementBlock;block;/SimpleAssign;statements.2;
-13347 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.5;calc/StatementBlock;block;/SimpleAssign;statements.3;
-15141 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.6;reset/StatementBlock;block;/CompositeIdentifierAccess;statements.0;
-13530 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.5;calc/StatementBlock;block;/CompositeIdentifierAccess;statements.5;
-13406 = platform:/resource/EvasiveManeuver/myCar/myCar.esdl#esdlLink_PackageDecl;;myCar/ClassType;definitions.0;myCar/MethodDecl;parts.5;calc/StatementBlock;block;/SimpleAssign;statements.4;

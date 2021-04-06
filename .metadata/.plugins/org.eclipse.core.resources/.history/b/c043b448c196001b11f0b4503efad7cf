@@ -1,0 +1,45 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.SM_laneChange_left;
+import myCar.SM_laneChange_right;
+import resources.rad;
+
+static class UnitTest_SMLaneChange {
+	SM_laneChange_left uuTL;
+	SM_laneChange_right uuTR;
+	
+	@Test
+	public void testFullCircleLeft(){
+		uuTL.max_count = 1.0;
+		uuTL.emergency_msg = true;
+		uuTL.sM_ausweichenStatemachineTrigger();
+		Assert.assertTrue(uuTL.active); // StateMachine was triggered
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		uuTL.sM_ausweichenStatemachineTrigger();
+		Assert.assertFalse(uuTL.active); // StateMachine run one complete circle
+	}
+	
+	@Test
+	public void testFullCircleRight(){
+		uuTR.max_count = 1.0;
+		uuTR.emergency_msg = true;
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		Assert.assertTrue(uuTR.active); // StateMachine was triggered
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		uuTR.sM_laneChange_rightStatemachineTrigger();
+		Assert.assertFalse(uuTR.active); // StateMachine run one complete circle
+	}
+	
+}
+	

@@ -1,0 +1,15 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.linksLenken;
+import myCar.rechtsLenken;
+import resources.rad;
+
+static class UnitTest_PreConditionManeuver{
+	Pre_Condition_Maneuver uuT;
+	
+	@Test
+	public void testMaxCountLine5(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		Assert.assertEqual(uuT.max_count_out, 706.0);
+	}
+	

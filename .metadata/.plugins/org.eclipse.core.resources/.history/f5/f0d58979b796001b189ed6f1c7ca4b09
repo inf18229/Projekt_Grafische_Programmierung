@@ -1,0 +1,77 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.Pre_Condition_Maneuver;
+import resources.kmh;
+import resources.m;
+
+static class UnitTest_PreConditionManeuver{
+	Pre_Condition_Maneuver uuT;
+	
+	@Test
+	public void testMaxCountLine5(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		Assert.assertEqual(uuT.max_count_out, 706.0);
+	}
+	
+	@Test
+	public void testMaxCountLine30(){
+		uuT.calc(30.0 [kmh], false, false, false);
+		Assert.assertEqual(uuT.max_count_out, 128.0);
+	}
+	
+	@Test
+	public void testMaxCountLine60(){
+		uuT.calc(60.0 [kmh], false, false, false);
+		Assert.assertEqual(uuT.max_count_out, 80.0);
+	}
+	
+	@Test
+	public void testEmergencyRising(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		uuT.calc(5.0 [kmh], true, false, false);
+		Assert.assertTrue(uuT.SM_left_Change_out);
+	}
+	
+	@Test
+	public void testEmergencyFalling(){
+		uuT.calc(5.0 [kmh], true, false, false);
+		uuT.calc(5.0 [kmh], false, false, false);
+		Assert.assertTrue(uuT.SM_right_Change_out);
+	}
+	
+	@Test
+	public void testLaneChangeLeft(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		uuT.calc(5.0 [kmh], false, false, true);
+		Assert.assertTrue(uuT.SM_left_Change_out);
+	}
+	
+	@Test
+	public void testLaneChangeRight(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		uuT.calc(5.0 [kmh], false, true, false);
+		Assert.assertTrue(uuT.SM_right_Change_out);
+	}
+	
+	@Test
+	public void testLaneChangeLeftEmergencyRising(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		uuT.calc(5.0 [kmh], true, false, true);
+		Assert.assertTrue(uuT.SM_left_Change_out);
+	}
+	
+	@Test
+	public void testLaneChangeRightEmergency(){
+		uuT.calc(5.0 [kmh], false, false, false);
+		uuT.calc(5.0 [kmh], true, true, false);
+		Assert.assertTrue(uuT.SM_left_Change_out);
+	}
+	
+	@Test
+	public void testLaneChangeRightEmergencyFalling(){
+		uuT.calc(5.0 [kmh], true, false, false);
+		uuT.calc(5.0 [kmh], false, false, true);
+		Assert.assertTrue(uuT.SM_right_Change_out);
+	}
+	
+}

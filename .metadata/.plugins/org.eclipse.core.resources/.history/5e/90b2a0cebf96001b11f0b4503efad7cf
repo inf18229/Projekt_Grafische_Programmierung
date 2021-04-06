@@ -1,0 +1,21 @@
+package myCar.UnitTests;
+import assertLib.Assert;
+import myCar.SM_laneChange_left;
+import resources.rad;
+
+static class UnitTest_SMLaneChangeLeft {
+	SM_laneChange_left uuT;
+	
+	@before
+	public void setup(){
+		uuT.max_count = 1.0;
+	}
+	@Test
+	public void testFullCircle(){
+		uuT.emergency_msg = true;
+		uuT.sM_ausweichenStatemachineTrigger();
+		Assert.assertTrue(uuT.active); // StateMAchine was triggered
+	}
+	
+}
+	

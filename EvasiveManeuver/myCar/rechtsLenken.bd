@@ -3,10 +3,10 @@ blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active
 	{
-			connection_1, connection_13
+			connection_1
 		}
 	}
-literal unit resources.rad "0.001396" at (221, 243) size (69, 0) {
+literal unit resources.rad "0.001396" at (221, 243) size (89, 0) {
 		outPin {
 			connection_2
 		}
@@ -17,7 +17,7 @@ literal unit resources.rad "0.001396" at (221, 243) size (69, 0) {
 			bendpoints (100, 0)
 		}
 		outPin {
-			connection_4, connection_3
+			connection_4
 		}
 	}
 	subtraction at (311, 216) {
@@ -38,7 +38,7 @@ literal unit resources.rad "0.001396" at (221, 243) size (69, 0) {
 			inPin
 		}
 	}
-	literal unit resources.rad "0.001396" at (491, 263) size (69, 0) {
+	literal unit resources.rad "0.001396" at (491, 263) size (89, 0) {
 		outPin {
 			connection_7
 		}
@@ -52,7 +52,7 @@ literal unit resources.rad "0.001396" at (221, 243) size (69, 0) {
 			connection_9
 		}
 	}
-	literal unit resources.rad "-0.2094" at (231, 263) size (59, 0) {
+	literal unit resources.rad "-0.2094" at (231, 263) size (79, 0) {
 		outPin {
 			connection_10
 		}
@@ -74,21 +74,6 @@ literal unit resources.rad "0.001396" at (221, 243) size (69, 0) {
 		}
 		sequenceCall {
 			inPin connection_1
-		}
-	}
-	simpleIdentifier full at (651, 305) {
-		label at (0, -1)
-		inPin connection_14
-		outPin sequenceCall {
-			inPin connection_13
-		}
-	}
-	not at (501, 301) {
-		inPin connection_3 {
-			bendpoints (0, 70)
-		}
-		outPin {
-			connection_14
 		}
 	}
 }

@@ -4,7 +4,7 @@
     <PropertySet name="WorkspaceHandling">
       <Property name="OpenMode" type="StringProperty">LastExperiment</Property>
       <Property name="DefaultExperiment" type="StringProperty" />
-      <Property name="LastWorkspaceLocation" type="StringProperty">C:\ETAS\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver\experiments\Workspaces\PCDriver_PC\PCDriver_PC.eew</Property>
+      <Property name="LastWorkspaceLocation" type="StringProperty">C:\Users\fschi\ETAS\ASCET-DEVELOPER-7.6.0\workspace\Projekt_Grafische_Programmierung\EvasiveManeuver\experiments\Workspaces\PCDriver_PC\PCDriver_PC.eew</Property>
     </PropertySet>
     <PropertySet name="ETargetINTECRIO">
       <PropertySet name="Options">
