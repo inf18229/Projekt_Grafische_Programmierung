@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 2818595342
+		         /* programm id */ 2944419063
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -627,7 +627,7 @@
 			/* lower limit        */ 0.0
 			/* upper limit        */ 200.0
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 8
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 7
 			/end IF_DATA
 		/end CHARACTERISTIC
 
@@ -655,7 +655,7 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -699,24 +699,9 @@
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x0
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 7
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
 			/end IF_DATA
 		/end MEASUREMENT
-
-		/begin CHARACTERISTIC myCar.Driver.manual_lane_changing
-			/* long identifier    */ ""
-			/* type               */ VALUE
-			/* ecu address        */ 0x0
-			/* record layout      */ STANDARD_VALUE_U8
-			/* max diff value     */ 0.0
-			/* conversion         */ esdl_ident
-			/* lower limit        */ 0
-			/* upper limit        */ 1
-			BIT_MASK 0x1
-			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
-			/end IF_DATA
-		/end CHARACTERISTIC
 
 		/begin MEASUREMENT resources.DriverMessages.power
 			/* long identifier    */ ""
@@ -1221,6 +1206,21 @@
 			ECU_ADDRESS 0x0
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT myCar.systemTest.systemTest_done
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x0
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1000 0
 			/end IF_DATA
 		/end MEASUREMENT
@@ -1381,7 +1381,6 @@
 				myCar.Driver.v_target
 				myCar.Driver.Lane_Change_right
 				myCar.Driver.Lane_Change_left
-				myCar.Driver.manual_lane_changing
 			/end DEF_CHARACTERISTIC
 			/begin IN_MEASUREMENT
 				resources.CarMessages.v
@@ -1547,6 +1546,7 @@
 				resources.DriverMessages.automatic_laneChange_right
 			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
+				myCar.systemTest.systemTest_done
 				myCar.systemTest.systemTest_sucess
 			/end LOC_MEASUREMENT
 		/end FUNCTION
@@ -1580,7 +1580,6 @@
 				myCar.Driver.v_target
 				myCar.Driver.Lane_Change_right
 				myCar.Driver.Lane_Change_left
-				myCar.Driver.manual_lane_changing
 			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
 				myCar.Driver.distance_next_Obstacle
@@ -1771,6 +1770,7 @@
 			""
 			ROOT
 			/begin REF_MEASUREMENT
+				myCar.systemTest.systemTest_done
 				myCar.systemTest.systemTest_sucess
 			/end REF_MEASUREMENT
 		/end GROUP

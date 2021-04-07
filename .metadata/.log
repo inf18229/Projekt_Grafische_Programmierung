@@ -3016,3 +3016,144 @@ java.io.FileNotFoundException: C:\Users\fschi\ETAS\ASCET-DEVELOPER-7.6.0\workspa
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-04-06 18:04:18.317
 !MESSAGE Indexed 'EvasiveManeuver_CGen' (21 sources, 59 headers) in 0.901 sec: 8,263 declarations; 11,340 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+!SESSION 2021-04-07 11:27:05.427 -----------------------------------------------
+eclipse.buildId=7.6.0.202012031010
+java.version=11.0.9
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-07 11:27:33.602
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-07 11:32:46.786
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-07 11:41:56.998
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-07 11:47:09.147
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-07 11:53:25.652
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-07 13:59:02.653
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-07 14:06:12.841
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-07 14:06:12.844
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-07 14:06:12.846
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.resources 4 568 2021-04-07 14:07:43.421
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-04-07 14:12:13.111
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2021-04-07 14:12:13.129
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2021-04-07 14:12:13.129
+!MESSAGE Could not write metadata for '/Commons'.
+!STACK 0
+java.io.FileNotFoundException: C:\ETAS\workspace\Projekt_Grafische_Programmierung\.metadata\.plugins\org.eclipse.core.resources\.projects\Commons\.markers (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at java.base/java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:52)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1627)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1706)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1179)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2332)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_ityaEJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_ityaEZbxEeu-RqPF2W4ZVw" bindingContexts="_it0PkZbxEeu-RqPF2W4ZVw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Obstacles.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/Obstacles.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/Obstacles.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_Obstacles.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Pre_Condition_Maneuver.bd&quot; tooltip=&quot;platform:/resource/EvasiveManeuver/myCar/Pre_Condition_Maneuver.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/EvasiveManeuver/myCar/Pre_Condition_Maneuver.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.application.ui.editor&quot; name=&quot;PCDriver.app&quot; tooltip=&quot;EvasiveManeuver/myCar/PCDriver.app&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/PCDriver.app&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;DriverMessages.esdl&quot; tooltip=&quot;EvasiveManeuver/resources/DriverMessages.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/resources/DriverMessages.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;EvasiveManeuver.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/EvasiveManeuver.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/EvasiveManeuver.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;SM_laneChange_left.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.statemachine.esdl.ui.editor.StateMachineEditor&quot; name=&quot;SM_laneChange_left.sm&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.sm&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.sm&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;CarMessages.esdl&quot; tooltip=&quot;EvasiveManeuver/resources/CarMessages.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/resources/CarMessages.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;systemTest.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/systemTest.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/systemTest.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Obstacles.bd&quot; tooltip=&quot;platform:/resource/EvasiveManeuver/myCar/Obstacles.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/EvasiveManeuver/myCar/Obstacles.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;calcDistance.bd&quot; tooltip=&quot;platform:/resource/EvasiveManeuver/myCar/calcDistance.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/EvasiveManeuver/myCar/calcDistance.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Driver.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/Driver.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/Driver.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_SMLaneChange.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChange.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChange.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;EvasiveManeuver.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/EvasiveManeuver.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/EvasiveManeuver.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.layout.dsl.Layout&quot; name=&quot;SM_laneChange_left.layout&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.layout&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.layout&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_SMLaneChangeLeft.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChangeLeft.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChangeLeft.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;rechtsLenken.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/rechtsLenken.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/rechtsLenken.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;linksLenken.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/linksLenken.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/linksLenken.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTests_Lenken.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTests_Lenken.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTests_Lenken.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;systemTest.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/systemTest.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/systemTest.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.statemachine.esdl.ui.editor.StateMachineEditor&quot; name=&quot;SM_laneChange_left.sm&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.sm&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.sm&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;SM_laneChange_left.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_SMLaneChange.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChange.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChange.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_PreConditionManeuver.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_PreConditionManeuver.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_PreConditionManeuver.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_Obstacles.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_Lenken.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_Lenken.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_Lenken.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_DriverTempo.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_DriverTempo.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_DriverTempo.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Obstacles.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/Obstacles.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/Obstacles.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Pre_Condition_Maneuver.bd&quot; tooltip=&quot;platform:/resource/EvasiveManeuver/myCar/Pre_Condition_Maneuver.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/EvasiveManeuver/myCar/Pre_Condition_Maneuver.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.application.ui.editor&quot; name=&quot;PCDriver.app&quot; tooltip=&quot;EvasiveManeuver/myCar/PCDriver.app&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/PCDriver.app&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;DriverMessages.esdl&quot; tooltip=&quot;EvasiveManeuver/resources/DriverMessages.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/resources/DriverMessages.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;EvasiveManeuver.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/EvasiveManeuver.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/EvasiveManeuver.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;CarMessages.esdl&quot; tooltip=&quot;EvasiveManeuver/resources/CarMessages.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/resources/CarMessages.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Obstacles.bd&quot; tooltip=&quot;platform:/resource/EvasiveManeuver/myCar/Obstacles.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/EvasiveManeuver/myCar/Obstacles.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;calcDistance.bd&quot; tooltip=&quot;platform:/resource/EvasiveManeuver/myCar/calcDistance.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/EvasiveManeuver/myCar/calcDistance.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Driver.bd&quot; tooltip=&quot;EvasiveManeuver/myCar/Driver.bd&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/Driver.bd&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;EvasiveManeuver.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/EvasiveManeuver.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/EvasiveManeuver.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.layout.dsl.Layout&quot; name=&quot;SM_laneChange_left.layout&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.layout&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.layout&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_SMLaneChangeLeft.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChangeLeft.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChangeLeft.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_ityaEZbxEeu-RqPF2W4ZVw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_ityaEpbxEeu-RqPF2W4ZVw" x="0" y="0" width="1024" height="768">
@@ -48,7 +48,7 @@
           <tags>persp.newWizSC:com.etas.ascet.autosar.ui.wizard.AutosarMappingWizard</tags>
           <tags>persp.newWizSC:com.etas.ascet.ehooks.ui.wizard.EhooksNewWizard</tags>
           <tags>persp.viewSC:com.etas.ascet.ehooks.ui.connection.ehooksconnectionview</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_ityaFZbxEeu-RqPF2W4ZVw" selectedElement="_ityaFpbxEeu-RqPF2W4ZVw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_ityaFZbxEeu-RqPF2W4ZVw" selectedElement="_ityaHJbxEeu-RqPF2W4ZVw" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_ityaFpbxEeu-RqPF2W4ZVw" containerData="2000" selectedElement="_ityaF5bxEeu-RqPF2W4ZVw">
               <children xsi:type="basic:PartStack" xmi:id="_ityaF5bxEeu-RqPF2W4ZVw" elementId="left" containerData="7000" selectedElement="_ityaGJbxEeu-RqPF2W4ZVw">
                 <tags>active</tags>
@@ -69,9 +69,9 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_ityaHJbxEeu-RqPF2W4ZVw" containerData="8000" selectedElement="_ityaHZbxEeu-RqPF2W4ZVw" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_ityaHZbxEeu-RqPF2W4ZVw" containerData="8000" selectedElement="_ityaHpbxEeu-RqPF2W4ZVw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_ityaHZbxEeu-RqPF2W4ZVw" containerData="8000" selectedElement="_ityaH5bxEeu-RqPF2W4ZVw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_ityaHpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.editorss" containerData="6347" ref="_ityboZbxEeu-RqPF2W4ZVw"/>
-                <children xsi:type="basic:PartStack" xmi:id="_ityaH5bxEeu-RqPF2W4ZVw" elementId="bottom" containerData="3653" selectedElement="_ityaMJbxEeu-RqPF2W4ZVw">
+                <children xsi:type="basic:PartStack" xmi:id="_ityaH5bxEeu-RqPF2W4ZVw" elementId="bottom" containerData="3653" selectedElement="_ityaIpbxEeu-RqPF2W4ZVw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_ityaIJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.views.PropertySheet" ref="_itzCOJbxEeu-RqPF2W4ZVw" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -217,7 +217,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ityboZbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.editorss" selectedElement="_itybopbxEeu-RqPF2W4ZVw">
-      <children xsi:type="basic:PartStack" xmi:id="_itybopbxEeu-RqPF2W4ZVw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_itybpJbxEeu-RqPF2W4ZVw">
+      <children xsi:type="basic:PartStack" xmi:id="_itybopbxEeu-RqPF2W4ZVw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_itzBI5bxEeu-RqPF2W4ZVw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="advanced:Placeholder" xmi:id="_itybo5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.browser.view" toBeRendered="false" ref="_itzCV5bxEeu-RqPF2W4ZVw" closeable="true">
@@ -245,7 +245,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_itzBI5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="systemTest.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;systemTest.esdl&quot; partName=&quot;systemTest.esdl&quot; title=&quot;systemTest.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/systemTest.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/systemTest.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;559&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;systemTest.esdl&quot; partName=&quot;systemTest.esdl&quot; title=&quot;systemTest.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/systemTest.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/systemTest.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1347&quot; selectionTopPixel=&quot;143&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.etas.esdl.Esdl</tags>
           <tags>removeOnHide</tags>
@@ -273,7 +273,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_itzBKJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UnitTest_Obstacles.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_Obstacles.esdl&quot; partName=&quot;UnitTest_Obstacles.esdl&quot; title=&quot;UnitTest_Obstacles.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;575&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_Obstacles.esdl&quot; partName=&quot;UnitTest_Obstacles.esdl&quot; title=&quot;UnitTest_Obstacles.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_Obstacles.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2980&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.etas.esdl.Esdl</tags>
           <tags>removeOnHide</tags>
@@ -304,6 +304,42 @@
             <tags>popup:com.etas.ascet.blockdiagram.ui.editorID</tags>
           </menus>
         </children>
+        <children xsi:type="basic:Part" xmi:id="_oawPkJeDEeusxvKVtMt5Og" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UnitTest_DriverTempo.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_DriverTempo.esdl&quot; partName=&quot;UnitTest_DriverTempo.esdl&quot; title=&quot;UnitTest_DriverTempo.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_DriverTempo.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_DriverTempo.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;176&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.etas.esdl.Esdl</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_C53ysJeEEeusxvKVtMt5Og" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UnitTest_Lenken.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_Lenken.esdl&quot; partName=&quot;UnitTest_Lenken.esdl&quot; title=&quot;UnitTest_Lenken.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_Lenken.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_Lenken.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1481&quot; selectionTopPixel=&quot;353&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.etas.esdl.Esdl</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_cEsxgJeGEeusxvKVtMt5Og" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UnitTest_PreConditionManeuver.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_PreConditionManeuver.esdl&quot; partName=&quot;UnitTest_PreConditionManeuver.esdl&quot; title=&quot;UnitTest_PreConditionManeuver.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_PreConditionManeuver.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_PreConditionManeuver.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3581&quot; selectionTopPixel=&quot;1268&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.etas.esdl.Esdl</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_zBtqYJeHEeusxvKVtMt5Og" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UnitTest_SMLaneChange.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;UnitTest_SMLaneChange.esdl&quot; partName=&quot;UnitTest_SMLaneChange.esdl&quot; title=&quot;UnitTest_SMLaneChange.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChange.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/UnitTests/UnitTest_SMLaneChange.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1879&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.etas.esdl.Esdl</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_wfyQcJeYEeusxvKVtMt5Og" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SM_laneChange_left.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;SM_laneChange_left.esdl&quot; partName=&quot;SM_laneChange_left.esdl&quot; title=&quot;SM_laneChange_left.esdl&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.etas.esdl.Esdl</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_wyslYJeYEeusxvKVtMt5Og" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SM_laneChange_left.sm" iconURI="platform:/plugin/com.etas.ascet.statemachine.esdl.adapter.ui/icons/obj16/state_machine_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.ascet.statemachine.esdl.ui.editor.StateMachineEditor&quot; name=&quot;SM_laneChange_left.sm&quot; partName=&quot;SM_laneChange_left.sm&quot; title=&quot;SM_laneChange_left.sm&quot; tooltip=&quot;EvasiveManeuver/myCar/SM_laneChange_left.sm&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/EvasiveManeuver/myCar/SM_laneChange_left.sm&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.etas.ascet.statemachine.esdl.ui.editor.StateMachineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_itzBLpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.png" tooltip="" closeable="true">
@@ -313,6 +349,7 @@
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_itzBL5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -464,7 +501,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>highlighted</tags>
       <menus xmi:id="_itzCSpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -481,7 +517,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.debug.ui.ProcessConsoleType.#ContextMenu</tags>
       </menus>
-      <toolbar xmi:id="_itzCTpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
+      <toolbar xmi:id="_itzCTpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.console.ConsoleView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_itzCT5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.views.ProgressView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Progress" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/pview.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.progress.ProgressView"/>
@@ -583,7 +619,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_itzCYJbxEeu-RqPF2W4ZVw" elementId="com.etas.esdl.coverage.ui.view.CoverageView"/>
+      <toolbar xmi:id="_itzCYJbxEeu-RqPF2W4ZVw" elementId="com.etas.esdl.coverage.ui.view.CoverageView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_itzCZ5bxEeu-RqPF2W4ZVw" elementId="com.etas.ascet.ehooks.ui.connection.ehooksconnectionview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="EHOOKS Connection" iconURI="platform:/plugin/com.etas.ascet.ui.icons/icons/view16/ehooks.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.etas.ascet.ehooks.ui.EhooksExecutableExtensionFactory"/>
@@ -618,43 +654,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzCcJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzCcZbxEeu-RqPF2W4ZVw" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzCcpbxEeu-RqPF2W4ZVw" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzCc5bxEeu-RqPF2W4ZVw" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzCdJbxEeu-RqPF2W4ZVw" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzCdZbxEeu-RqPF2W4ZVw" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoMJbxEeu-RqPF2W4ZVw" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoMZbxEeu-RqPF2W4ZVw" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_itzoMpbxEeu-RqPF2W4ZVw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_it2E15bxEeu-RqPF2W4ZVw"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoM5bxEeu-RqPF2W4ZVw" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoNJbxEeu-RqPF2W4ZVw" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoNZbxEeu-RqPF2W4ZVw" elementId="build">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoNpbxEeu-RqPF2W4ZVw" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoN5bxEeu-RqPF2W4ZVw" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fZMvgJeDEeusxvKVtMt5Og" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_it2E15bxEeu-RqPF2W4ZVw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoOJbxEeu-RqPF2W4ZVw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -662,15 +662,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoOpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.workbench.edit" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoO5bxEeu-RqPF2W4ZVw" elementId="edit.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoPJbxEeu-RqPF2W4ZVw" elementId="undo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoPZbxEeu-RqPF2W4ZVw" elementId="redo">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoPpbxEeu-RqPF2W4ZVw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -693,30 +684,9 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzof5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzogJbxEeu-RqPF2W4ZVw" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzogZbxEeu-RqPF2W4ZVw" elementId="com.etas.esdl.coverage.ui.actions.CoverageDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzogpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzog5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzohJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzohZbxEeu-RqPF2W4ZVw" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzohpbxEeu-RqPF2W4ZVw" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoh5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoiJbxEeu-RqPF2W4ZVw" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -724,85 +694,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoipbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoi5bxEeu-RqPF2W4ZVw" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzojJbxEeu-RqPF2W4ZVw" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzojZbxEeu-RqPF2W4ZVw" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzojpbxEeu-RqPF2W4ZVw" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoj5bxEeu-RqPF2W4ZVw" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_itzokJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_it1f8JbxEeu-RqPF2W4ZVw"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzokZbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzokpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzok5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_itzolJbxEeu-RqPF2W4ZVw" elementId="com.etas.esdl.Esdl" visible="false">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzolZbxEeu-RqPF2W4ZVw" elementId="ui.editor.markOccurrences">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_itzolpbxEeu-RqPF2W4ZVw" elementId="com.etas.ascet.blockdiagram.ui.editorID">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzol5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.align_left">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzomJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.align_center">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzomZbxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.align_right">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzompbxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.align_top">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzom5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.align_middle">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzonJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.align_bottom">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzonZbxEeu-RqPF2W4ZVw">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzonpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.gef.zoom_widget">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzon5bxEeu-RqPF2W4ZVw">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzooJbxEeu-RqPF2W4ZVw" elementId="undo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzooZbxEeu-RqPF2W4ZVw" elementId="redo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoopbxEeu-RqPF2W4ZVw">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoo5bxEeu-RqPF2W4ZVw" elementId="delete">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzopJbxEeu-RqPF2W4ZVw">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzopZbxEeu-RqPF2W4ZVw" elementId="com.etas.ascet.blockdiagram.ui.action.showcontrolflowconnectionaction">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fZPy0JeDEeusxvKVtMt5Og" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_it1f8JbxEeu-RqPF2W4ZVw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoppbxEeu-RqPF2W4ZVw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -814,12 +706,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_itzoqpbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzoq5bxEeu-RqPF2W4ZVw" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_itzorJbxEeu-RqPF2W4ZVw" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_itzorZbxEeu-RqPF2W4ZVw" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1899,6 +1785,23 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_it1elpbxEeu-RqPF2W4ZVw" elementId="com.etas.ascet.doclink.ui.unlinkdocument" commandName="UnLink" category="_it2sSZbxEeu-RqPF2W4ZVw"/>
   <commands xmi:id="_it1el5bxEeu-RqPF2W4ZVw" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_it2sRZbxEeu-RqPF2W4ZVw"/>
   <commands xmi:id="_it1emJbxEeu-RqPF2W4ZVw" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_it2sKZbxEeu-RqPF2W4ZVw"/>

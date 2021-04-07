@@ -17,7 +17,7 @@ writes CarMessages.power, CarMessages.brake, DriverMessages.emergency, DriverMes
 	characteristic boolean Lane_Change_left = false;
 	m real_distance_to_next_obst = 100.0[m];
 	calcDistance calcDistance_instance;
-
+	characteristic boolean manual_lane_changing = false;
 	@thread
 	@generated("blockdiagram", "a61e96c7")
 	public void calc() {

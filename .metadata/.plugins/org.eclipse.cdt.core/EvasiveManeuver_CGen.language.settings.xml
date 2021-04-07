@@ -9,19 +9,19 @@
                 				
                 <language id="org.eclipse.cdt.core.gcc">
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -2089,37 +2089,37 @@
                 				
                 <language id="org.eclipse.cdt.core.g++">
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -4439,19 +4439,19 @@
                 				
                 <language id="org.eclipse.cdt.core.gcc">
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -6519,37 +6519,37 @@
                 				
                 <language id="org.eclipse.cdt.core.g++">
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="C:/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
+                    <entry kind="includePath" name="F:/Software/ETAS/ASCET-DEVELOPER7.6/plugins/org.mingw.gcc.win32.x86_8.1.0/mingw/i686-w64-mingw32/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					

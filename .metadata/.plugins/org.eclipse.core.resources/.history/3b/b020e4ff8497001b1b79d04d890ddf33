@@ -35,20 +35,14 @@ static class UnitTest_Lenken {
 		uuTR.calc();
 		Assert.assertFloatEqual(uuTR.steering/1.0 [rad], -0.001396);
 	}
-	/*
-	 * if steering is grater than the max value (12 deg) than steering
-	 * will not be increased
-	 */
+	
 	@Test
 	public void testLeftMax(){
 		uuTL.steering = 0.3 [rad];
 		uuTL.calc();
 		Assert.assertFloatEqual(uuTL.steering/1.0 [rad], 0.3);
 	}
-	/*
-	 * if steering is lower than the lower bound of steering (-12 deg)
-	 * than steering will not be decreased
-	 */
+	
 	@Test
 	public void testRightMax(){
 		uuTR.steering = -0.3 [rad];

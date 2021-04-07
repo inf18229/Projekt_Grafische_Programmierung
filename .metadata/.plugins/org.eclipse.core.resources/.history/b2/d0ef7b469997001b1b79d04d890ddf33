@@ -15,7 +15,7 @@ writes DriverMessages.automatic_laneChange_left,
 DriverMessages.automatic_laneChange_right{
 	
 	boolean systemTest_sucess = true;
-	boolean systemTest_done = false;
+	
 	@thread
 	public void calc(){
 		if(CarMessages.x < 1100.0[m]){
@@ -37,9 +37,6 @@ DriverMessages.automatic_laneChange_right{
 		}
 		if(between(CarMessages.x,1300.0[m],1310.0[m]) && DriverMessages.automatic_laneChange_right && !CarMessages.SM_right_active){
 			DriverMessages.automatic_laneChange_right = false;
-		}
-		if(CarMessages.x > 1400.0 [m] && between(CarMessages.y,-1.0 [m],1.0 [m])){
-			systemTest_done = true;
 		}
 		
 	}

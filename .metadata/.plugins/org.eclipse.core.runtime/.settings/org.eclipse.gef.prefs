@@ -1,6 +1,7 @@
 Layout\ Setting=2
 Use\ Large\ Icons\ -\ Columns=false
 Use\ Large\ Icons\ -\ Icons=false
+Use\ Large\ Icons\ -\ List=true
 eclipse.preferences.version=1
 org.eclipse.gef.psize=150
 org.eclipse.gef.pstate=4
